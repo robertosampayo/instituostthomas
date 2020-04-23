@@ -52,7 +52,7 @@ export const Layout = ({title, children}) => {
                             <li><Link href='/oferta-educativa'><a >Oferta Educativa</a></Link></li>
                             <li><Link href='/certificacion-internacional'><a >Certificacion Internacional</a></Link></li>
                             <li><Link href='/galeria'><a >Galería</a></Link></li>
-                            <li class="disabled"><Link href='/contacto'><a class="disabled">Contacto</a></Link></li>
+                            <li ><a class="disabled">Contacto</a></li>
                         </ul>
 
                             <ul className='menu-mobile' ref={menu}>
@@ -61,8 +61,8 @@ export const Layout = ({title, children}) => {
                                 <li><Link href='/quienes-somos'><a>Quienes Somos</a></Link></li>
                                 <li><Link href='/oferta-educativa'><a >Oferta Educativa</a></Link></li>
                                 <li><Link href='/certificacion-internacional'><a>Certificacion Internacional</a></Link></li>
-                                <li><Link href='/galeria'><a href='/galeria'>Galería</a></Link></li>
-                                <li><Link href='/contacto'><a class="disabled" href='/contacto'>Contacto</a></Link></li>
+                                <li><Link href='/galeria'><a >Galería</a></Link></li>
+                                <li><a class="disabled" >Contacto</a></li>
                             </ul>
 
 
@@ -114,6 +114,10 @@ export const Layout = ({title, children}) => {
                     a{
                         text-decoration: none;
                         color: #fff;
+                    }
+
+                    .disabled{
+                        pointer-events: none;
                     }
 
                     .menu-mobile a{

@@ -48,10 +48,6 @@ export default css.styles`
                 }
 
 
-                .disabled{
-                    pointer-events: none;
-                }
-
 
                 @media (min-width: 1281px) {
 
