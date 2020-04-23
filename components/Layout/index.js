@@ -52,7 +52,7 @@ export const Layout = ({title, children}) => {
                             <li><Link href='/oferta-educativa'><a >Oferta Educativa</a></Link></li>
                             <li><Link href='/certificacion-internacional'><a >Certificacion Internacional</a></Link></li>
                             <li><Link href='/galeria'><a >Galería</a></Link></li>
-                            <li><Link href='/contacto'><a >Contacto</a></Link></li>
+                            <li class="disabled"><Link href='/contacto'><a class="disabled">Contacto</a></Link></li>
                         </ul>
 
                             <ul className='menu-mobile' ref={menu}>
@@ -62,7 +62,7 @@ export const Layout = ({title, children}) => {
                                 <li><Link href='/oferta-educativa'><a >Oferta Educativa</a></Link></li>
                                 <li><Link href='/certificacion-internacional'><a>Certificacion Internacional</a></Link></li>
                                 <li><Link href='/galeria'><a href='/galeria'>Galería</a></Link></li>
-                                <li><Link href='/contacto'><a href='/contacto'>Contacto</a></Link></li>
+                                <li><Link href='/contacto'><a class="disabled" href='/contacto'>Contacto</a></Link></li>
                             </ul>
 
 

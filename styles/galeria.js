@@ -367,13 +367,7 @@ export default css.galeriaStyle`
                         }
 
 
-                        :global(main){
-                            overflow-x: hidden;
-                        }
 
-                        nav{
-                            width: 100vw;
-                        }
 
 
 

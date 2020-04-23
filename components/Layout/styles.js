@@ -26,6 +26,8 @@ export default css.styles`
                 }
 
 
+
+
                 .menu-opened{
                     animation-name: menu-open;
                     animation-duration: 1s;
@@ -46,7 +48,9 @@ export default css.styles`
                 }
 
 
-
+                .disabled{
+                    pointer-events: none;
+                }
 
 
                 @media (min-width: 1281px) {
@@ -684,6 +688,10 @@ export default css.styles`
 
                     @media (min-width: 320px) and (max-width: 480px) {
 
+                            .main{
+                                overflow-x: hidden;
+                            }
+
 
                             .close-menu{
                                 position: absolute;
@@ -744,6 +752,7 @@ export default css.styles`
                                     width: 100%;
                                     position: fixed;
                                     z-index: 99999;
+                                    width: 100vw;
 
                             }
 

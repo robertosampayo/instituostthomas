@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": " https://robertosampayo.github.io/instituostthomas",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +17,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "animate.css-react": "^1.0.0",
+    "gh-pages": "^2.2.0",
     "isomorphic-fetch": "^2.2.1",
     "next": "^9.3.2",
     "next-routes": "^1.4.2",
