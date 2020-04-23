@@ -4,12 +4,13 @@ import Head from 'next/head'
 import NProgress from 'nprogress'
 import Router from 'next/router'
 import { ThemeProvider } from 'styled-components';
-import { theme } from './theme'
+import { theme } from '../../styles/theme'
 import styles from './styles'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { IoMdClose } from 'react-icons/io'
 import SvgRedes from '../../static/imgs/svg-redes'
 import { useSpring, animated } from "react-spring";
+
 
 export const Layout = ({title, children}) => {
 
@@ -45,22 +46,23 @@ export const Layout = ({title, children}) => {
                             <AiOutlineMenu  />
 
                         </span>
-                        <div className='logo'><img src='../../static/imgs/logo.png' alt='logo-institutotomas' /></div>
+                        <div className='logo'><Link href='/'><a ><img src='../../static/imgs/logo.png' alt='logo-institutotomas' /></a></Link></div>
                         <ul className='menu'>
-                            <li>Quienes Somos</li>
-                            <li>Oferta Educativa</li>
-                            <li>Certificacion Internacional</li>
-                            <li>Galería</li>
-                            <li>Contacto</li>
+                            <li><Link href='/quienes-somos'><a >Quienes Somos</a></Link></li>
+                            <li><Link href='/oferta-educativa'><a >Oferta Educativa</a></Link></li>
+                            <li><Link href='/certificacion-internacional'><a >Certificacion Internacional</a></Link></li>
+                            <li><Link href='/galeria'><a >Galería</a></Link></li>
+                            <li><Link href='/contacto'><a >Contacto</a></Link></li>
                         </ul>
 
                             <ul className='menu-mobile' ref={menu}>
                                 <span className='close-menu' onClick={(e) => {e.preventDefault(); hideMenuMobile();}}><IoMdClose /></span>
-                                <li>Quienes Somos</li>
-                                <li>Oferta Educativa</li>
-                                <li><div>Certificacion Internacional</div></li>
-                                <li>Galería</li>
-                                <li>Contacto</li>
+                            <li><Link href='/'><a>Inicio</a></Link></li>
+                                <li><Link href='/quienes-somos'><a>Quienes Somos</a></Link></li>
+                                <li><Link href='/oferta-educativa'><a >Oferta Educativa</a></Link></li>
+                                <li><Link href='/certificacion-internacional'><a>Certificacion Internacional</a></Link></li>
+                                <li><Link href='/galeria'><a href='/galeria'>Galería</a></Link></li>
+                                <li><Link href='/contacto'><a href='/contacto'>Contacto</a></Link></li>
                             </ul>
 
 
@@ -77,7 +79,7 @@ export const Layout = ({title, children}) => {
                             <img src='../../static/imgs/logo-footer.png' alt='sttomas-log' />
                         </div>
                         <ul className='footer-info'>
-                            <li><h1>Learning English Together</h1></li>
+                            <li><h2>Learning English Together</h2></li>
                             <li>
                                 <SvgRedes />
                             </li>
@@ -109,10 +111,66 @@ export const Layout = ({title, children}) => {
                     }
                     *:focus { outline:none}
 
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+
+                    .menu-mobile a{
+                        color: ${theme.textoGray};
+                    }
+
                     @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
                     h2,h1,p{ font-family: ${theme.font_regular}}
 
+                    li {list-style: none;}
 
+                    .linea{
+                        height: 1px;
+                        background: ${theme.texto};
+                        width: 60px;
+                        margin-bottom: 20px;
+                    }
+
+                    .linea-black{
+                        height: 1px;
+                        background: ${theme.textoGray};
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+
+                    .linea-larga{
+                        height: 1px;
+                        background: ${theme.texto};
+                        width: 100%;
+                        margin-bottom: 20px;
+                        margin: 0 auto;
+                        display: flex;
+                        margin-bottom: 20px;
+                    }
+
+                    .linea-larga-black{
+                        height: 1px;
+                        background: ${theme.textoGray};
+                        width: 100%;
+                        margin-bottom: 20px;
+                        margin: 0 auto;
+                        display: flex;
+                        margin-bottom: 20px;
+                        margin-top: 20px;
+                    }
+
+
+                    h1{
+                        padding: 20px 20px 0px;
+                        font-size: 40px;
+                    }
+
+                    h2{ font-size: 30px; font-family: ${theme.font_regular}; width: 100%; }
+
+                    .menu-logo{ cursor: pointer; }
 
                 `}</style>
 

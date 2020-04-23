@@ -1,18 +1,19 @@
-import {theme} from '../Layout/theme'
+import {theme} from '../../styles/theme'
 
-export const Banner = ({src}) => {
+export const Banner = ({src, titulo, texto}) => {
 
         return <div>
 
 
                 <div className='banner'>
                     <div className='banner-texto'>
+                        <div className='banner-titulo'>
+                            <h1>{titulo}</h1>
+                            <div className='linea-larga-black'></div>
 
-                        <h1>¿Por qué elegir estudiar en St. Thomas?</h1>
+                        </div>
                         <p>
-                            Porque ponemos especial atención y dedicación en forjar la integridad del alumno.
-                            Porque enseñamos a desarrollar las habilidades blandas o soft skills.
-                            Porque nuestro equipo de trabajo realiza una continua capacitación profesional.
+                            {texto}
                         </p>
 
                     </div>
@@ -30,6 +31,8 @@ export const Banner = ({src}) => {
                         justify-content: flex-end;
                     }
 
+
+
                     .banner-texto{
                         display: flex;
                         justify-content: flex-end;
@@ -43,7 +46,8 @@ export const Banner = ({src}) => {
                         width: 60%;
                         width: 60%;
                         font-size: 60px;
-                        color: ${theme.textoGray}
+                        color: ${theme.textoGray};
+                        padding: 0;
                     }
                     p { width: 60%;
                         font-size: 20px;
@@ -52,10 +56,29 @@ export const Banner = ({src}) => {
                         color: ${theme.textoGray}
                     }
 
+                    .linea-larga-black{
+                        margin: 0 0 30px auto;
+
+                    }
+
 
                     @media (min-width: 1281px) {
 
-                       h1{ font-size: 50px; }
+                       h1{ font-size: 70px; width: 90%; }
+                       .banner {
+                            height: 800px;
+                        }
+
+                        .linea-larga-black{
+
+                            width: 60%;
+                            display: flex;
+                            justify-content: flex-start;
+                            text-align: left;
+                            margin: 0 0 20px;
+
+                        }
+
 
                     }
 
@@ -66,10 +89,21 @@ export const Banner = ({src}) => {
 
                     @media (min-width: 1025px) and (max-width: 1280px) {
 
-                        h1{ font-size: 50px; width: auto;}
+                        h1{ font-size: 50px; width: auto; padding: 0;}
                         p { font-size: 15px; width: auto; }
+
+                        .banner {
+                            height: 600px;
+                        }
+
+
+
                         .banner-texto {
                                 transform: translateX(-20%);
+                        }
+
+                        .banner-titulo{
+                            width: 80%;
                         }
 
                     }
@@ -83,6 +117,11 @@ export const Banner = ({src}) => {
 
                         h1{ font-size: 40px; width: auto;}
                         p { font-size: 15px; width: auto;}
+
+                        .banner-titulo {
+                            width: 80%;
+                        }
+
 
                     }
 
@@ -107,11 +146,28 @@ export const Banner = ({src}) => {
                         h1{ font-size: 40px; width: auto;}
                         p { font-size: 15px; width: auto;}
                         .banner-texto{
-                            width: 80%;
+                            width: 100%;
                             padding: 20px;
                             margin: auto;
                             text-align: center;
                         }
+                        .banner {
+                            background-position-x: 40%;
+                        }
+
+                        .banner-titulo {
+                            width: 60%;
+                            margin: 0 auto;
+                        }
+
+                        footer{
+
+                            height: auto;
+                            position: relative;
+                            padding: 50px 0px 50px;
+
+                        }
+
 
                     }
 
@@ -125,13 +181,18 @@ export const Banner = ({src}) => {
                         h1{ font-size: 35px; width: auto;}
                         p { font-size: 15px; width: auto;}
                         .banner-texto{
-                            width: 80%;
+                            width: 100%;
                             padding: 20px;
                             margin: auto;
                             text-align: center;
                         }
                         .banner {
                             background-position-x: 40%;
+                        }
+
+                        .banner-titulo {
+                            width: 100%;
+                            margin: 0 auto;
                         }
 
 

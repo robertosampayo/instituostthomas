@@ -1,5 +1,5 @@
 import css from 'styled-jsx/css'
-import { theme } from './theme'
+import { theme } from '../../styles/theme'
 
 export default css.styles`
 
@@ -45,6 +45,10 @@ export default css.styles`
                     max-width: 147px;
                 }
 
+
+
+
+
                 @media (min-width: 1281px) {
 
                         .menu-mobile { display: none }
@@ -67,7 +71,7 @@ export default css.styles`
                             }
 
                             footer{
-                                height: 200px;
+                                height: auto;
                                 display: flex;
                                 background: ${ theme.primaryGreen};
                                 flex: 0 0 auto;
@@ -77,6 +81,7 @@ export default css.styles`
                                 color: ${theme.texto};
                                 font-family: 'Lora', serif;
                                 align-items: center;
+                                padding: 80px 0px;
                             }
 
                             ul.menu{
@@ -169,7 +174,7 @@ export default css.styles`
                             }
 
                             footer{
-                                height: 200px;
+                                height: auto;
                                 display: flex;
                                 background: ${ theme.primaryGreen};
                                 flex: 0 0 auto;
@@ -179,6 +184,7 @@ export default css.styles`
                                 color: ${theme.texto};
                                 font-family: 'Lora', serif;
                                 align-items: center;
+                                padding: 50px 0;
                             }
 
                             ul.menu{
@@ -264,6 +270,7 @@ export default css.styles`
                                     flex-wrap: wrap;
                                     min-height: 60px;
                                     align-items: center;
+
                             }
 
                             nav .logo{
@@ -271,7 +278,7 @@ export default css.styles`
                             }
 
                             footer{
-                                height: 200px;
+                                height: auto;
                                 display: flex;
                                 background: ${ theme.primaryGreen};
                                 flex: 0 0 auto;
@@ -281,6 +288,8 @@ export default css.styles`
                                 color: ${theme.texto};
                                 font-family: 'Lora', serif;
                                 align-items: center;
+                                position: relative;
+                                padding: 50px 0px 50px;
                             }
 
                             ul.menu{
@@ -332,6 +341,7 @@ export default css.styles`
                                 display: flex;
                                 justify-content: center;
                                 flex-direction: column;
+                                text-align: center;
 
                             }
                             .footer-info li{
@@ -393,7 +403,7 @@ export default css.styles`
                             }
 
                             footer{
-                                height: 200px;
+                                height: auto;
                                 display: flex;
                                 background: ${ theme.primaryGreen};
                                 flex: 0 0 auto;
@@ -403,6 +413,8 @@ export default css.styles`
                                 color: ${theme.texto};
                                 font-family: 'Lora', serif;
                                 align-items: center;
+                                position: relative;
+                                padding: 50px 0px 50px;
                             }
 
                             ul.menu{
@@ -505,6 +517,7 @@ export default css.styles`
                             }
 
 
+
                             .menu-mobile {
 
                                 background: ${theme.background};
@@ -545,7 +558,10 @@ export default css.styles`
                                     flex-wrap: wrap;
                                     min-height: 60px;
                                     align-items: center;
-                                    position: relative;
+                                    width: 100%;
+                                    position: fixed;
+                                    z-index: 99999;
+
                             }
 
                             nav .logo{
@@ -553,7 +569,7 @@ export default css.styles`
                             }
 
                             footer{
-                                height: 200px;
+                                height: auto;
                                 display: flex;
                                 background: ${ theme.primaryGreen};
                                 flex: 0 0 auto;
@@ -563,6 +579,8 @@ export default css.styles`
                                 color: ${theme.texto};
                                 font-family: 'Lora', serif;
                                 align-items: center;
+                                position: relative;
+                                padding: 50px 0px 50px;
                             }
 
 
@@ -570,6 +588,8 @@ export default css.styles`
                                 flex: 1 0 auto;
                                 min-height: 100vh;
                                 padding: 0px;
+                                position: relative;
+                                top: 60px;
                             }
 
                             .footer-content{
@@ -665,7 +685,7 @@ export default css.styles`
                     @media (min-width: 320px) and (max-width: 480px) {
 
 
-                             .close-menu{
+                            .close-menu{
                                 position: absolute;
                                 top:0;
                                 left:0;
@@ -678,6 +698,7 @@ export default css.styles`
 
 
                             }
+
 
 
                             .menu-mobile {
@@ -704,16 +725,6 @@ export default css.styles`
 
                             }
 
-                            .menu-mobile li{
-                                width: 80%;
-                                text-align: center;
-                                line-height: 90px;
-                            }
-
-                            .menu-mobile li div{
-                                line-height: 30px;
-                            }
-
                             .menu-logo{ display: block; position: absolute; top: 0; color: #fff; font-size: 25px;
                                     height: 100%;
                                     width: auto;
@@ -730,7 +741,10 @@ export default css.styles`
                                     flex-wrap: wrap;
                                     min-height: 60px;
                                     align-items: center;
-                                    position: relative;
+                                    width: 100%;
+                                    position: fixed;
+                                    z-index: 99999;
+
                             }
 
                             nav .logo{
@@ -738,7 +752,7 @@ export default css.styles`
                             }
 
                             footer{
-                                height: 200px;
+                                height: auto;
                                 display: flex;
                                 background: ${ theme.primaryGreen};
                                 flex: 0 0 auto;
@@ -748,6 +762,8 @@ export default css.styles`
                                 color: ${theme.texto};
                                 font-family: 'Lora', serif;
                                 align-items: center;
+                                position: relative;
+                                padding: 50px 0px 50px;
                             }
 
 
