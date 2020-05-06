@@ -82,6 +82,7 @@ export default css.styles`
                                 font-family: 'Lora', serif;
                                 align-items: center;
                                 padding: 80px 0px;
+                                width: 100vw;
                             }
 
                             ul.menu{
@@ -526,7 +527,7 @@ export default css.styles`
                                 left: 0;
                                 bottom: 0;
                                 height: 100vh;
-                                width: 100%;
+                                width: 100vw;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -684,6 +685,8 @@ export default css.styles`
 
                     @media (min-width: 320px) and (max-width: 480px) {
 
+
+
                             .main{
                                 overflow-x: hidden;
                             }
@@ -713,7 +716,7 @@ export default css.styles`
                                 left: 0;
                                 bottom: 0;
                                 height: 100vh;
-                                width: 100%;
+                                width: 100vw;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -736,6 +739,19 @@ export default css.styles`
                                     align-items: center;
                                     left: 30px;
                             }
+
+                            .menu-mobile li {
+
+                                margin: 0 70px;
+                                text-align: center;
+                                margin-bottom: 10px;
+                                border-style: solid;
+                                border-width: 0 0 4px;
+                                border-color: ${theme.textoGray};
+
+                            }
+
+
                             ul.menu { display: none; }
                             nav{
                                     display: flex;

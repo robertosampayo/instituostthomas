@@ -239,7 +239,35 @@ export default css.galeriaStyle`
 
                     @media (min-width: 1281px) {
                             .galeria{
-                                width: 50%;
+                                width: 80%;
+                            }
+
+                            .galeria .form5 img{
+                                left: 700px;
+                            }
+
+                            .galeria .image05{
+                                    top: -200px;
+                                    position: relative;
+                                    left: 50px;
+
+                            }
+
+                            .galeria .image15 {
+                                top: -40px;
+
+                            }
+
+                            .galeria .image14 {
+                                left: 250px;
+                            }
+
+                            .galeria .image18{
+                                left: 250px;
+                            }
+
+                            .galeria .image18{
+                                left: 80px;
                             }
                     }
 

@@ -57,6 +57,7 @@ export default css.certificacionInternacionalStyle`
 
                 .comminsoon h3{
                     font-family: ${theme.font_montserrat};
+                    font-weight: 600;
 
 
                 }

@@ -523,18 +523,27 @@ export default css.quienesSomosStyle`
                         .mision-vision .contenido{
                             flex-direction: column;
                             height: 600px;
+                            padding: 50px 20px 50px 20px;
                         }
 
                         .mision-vision .contenido .item{
                             height: auto;
                             width: 100%;
                         }
+
+                        .oferta-educativa{
+                            margin-bottom: 20px;
+
+                        }
+
+
                         .valores{
-                            height: 600px;
+                            height: 800px;
                         }
 
                         .valores .linea{
-                            width: 100%;
+                            width: 80%;
+                            margin: 0 auto;
                         }
 
                         .valores .contenido{
@@ -544,10 +553,12 @@ export default css.quienesSomosStyle`
                         .valores .titulo, .valores .texto{
                                 width: 100%;
                                 text-align: center;
+                                // margin-top: 20px;
                         }
 
                         .valores .titulo, .valores .texto h2{
                             font-size: 40px;
+                            margin-top: 40px;
                         }
 
                         .valores .titulo, .valores .texto p{
@@ -580,6 +591,8 @@ export default css.quienesSomosStyle`
                         :global(footer){
                             height: 500px;
                         }
+
+
 
                     }
 `

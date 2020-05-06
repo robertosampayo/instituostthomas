@@ -15,20 +15,29 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^7.0.1",
     "animate.css": "^3.7.2",
     "animate.css-react": "^1.0.0",
+    "dotenv": "^8.2.0",
+    "framer-motion": "^1.10.3",
     "gh-pages": "^2.2.0",
+    "gsap": "^3.2.6",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^9.3.2",
+    "next": "^9.3.6",
+    "next-page-transitions": "^1.0.0-beta.2",
     "next-routes": "^1.4.2",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.13.1",
-    "react-icons": "^3.9.0",
+    "react-icons": "^3.10.0",
+    "react-id-swiper": "^3.0.0",
+    "react-responsive": "^8.0.3",
     "react-reveal": "^1.2.2",
+    "react-scroll-parallax": "^2.3.2",
     "react-spring": "^8.0.27",
     "slugify": "^1.4.0",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.1.0",
+    "swiper": "^5.3.8"
   }
 }

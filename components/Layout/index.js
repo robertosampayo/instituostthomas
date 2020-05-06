@@ -10,15 +10,13 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { IoMdClose } from 'react-icons/io'
 import SvgRedes from '../../static/imgs/svg-redes'
 import { useSpring, animated } from "react-spring";
-
+import { TimelineLite, Power4, CSSPlugin, gsap } from 'gsap'
+import { AnimatePresence, motion } from "framer-motion";
+import Cargador from '../Cargador'
 
 export const Layout = ({title, children}) => {
 
-    Router.onRouteChangeStart = (url) => {
-        NProgress.start()
-    }
-    Router.onRouteChangeComplete = () => NProgress.done()
-    Router.onRouteChangeError = () => NProgress.done()
+
 
         const menu = useRef(null);
 
@@ -33,6 +31,8 @@ export const Layout = ({title, children}) => {
         }
 
         return <div>
+
+
             <ThemeProvider theme={theme}>
 
                 <Head>
@@ -41,6 +41,7 @@ export const Layout = ({title, children}) => {
                 </Head>
 
                 <header>
+
                     <nav>
                         <span className='menu-logo' onClick={(e) => {e.preventDefault(); showMenuMobile();}}>
                             <AiOutlineMenu  />
@@ -48,27 +49,32 @@ export const Layout = ({title, children}) => {
                         </span>
                         <div className='logo'><Link href='/'><a ><img src='../../static/imgs/logo.png' alt='logo-institutotomas' /></a></Link></div>
                         <ul className='menu'>
-                            <li><Link href='/quienes-somos'><a >Quienes Somos</a></Link></li>
-                            <li><Link href='/oferta-educativa'><a >Oferta Educativa</a></Link></li>
-                            <li><Link href='/certificacion-internacional'><a >Certificacion Internacional</a></Link></li>
-                            <li><Link href='/galeria'><a >Galería</a></Link></li>
-                            <li ><a class="disabled">Contacto</a></li>
+                            <AnimatePresence>
+
+                                <li key={'quienes-somos'}><Link href='/quienes-somos'><a >Quienes Somos</a></Link></li>
+                                <li key={'oferta-educativa'}><Link href='/oferta-educativa'><a>Oferta Educativa</a></Link></li>
+                                <li key={'certificacion-internacional'}><Link href='/certificacion-internacional'><a >Certificacion Internacional</a></Link></li>
+                                <li key={'galeria'}><Link href='/galeria'><a >Galería</a></Link></li>
+                                <li key={'contacto'}><Link href='/contacto'><a >Contacto</a></Link></li>
+
+                            </AnimatePresence>
                         </ul>
 
                             <ul className='menu-mobile' ref={menu}>
                                 <span className='close-menu' onClick={(e) => {e.preventDefault(); hideMenuMobile();}}><IoMdClose /></span>
-                            <li><Link href='/'><a>Inicio</a></Link></li>
+                                <li><Link href='/'><a>Inicio</a></Link></li>
                                 <li><Link href='/quienes-somos'><a>Quienes Somos</a></Link></li>
                                 <li><Link href='/oferta-educativa'><a >Oferta Educativa</a></Link></li>
                                 <li><Link href='/certificacion-internacional'><a>Certificacion Internacional</a></Link></li>
                                 <li><Link href='/galeria'><a >Galería</a></Link></li>
-                                <li><a class="disabled" >Contacto</a></li>
+                                <li><Link href='/contacto'><a >Contacto</a></Link></li>
                             </ul>
 
 
 
                     </nav>
                 </header>
+
                 <div className='main'>
                     { children }
                 </div>
@@ -99,7 +105,7 @@ export const Layout = ({title, children}) => {
                     box-sizing: border-box;
                     }
 
-                    html { height: 100%; }
+                    html { background: ${theme.background};     min-width: 320px;}
                     body {
                         margin:0px;
                         padding:0px;
@@ -108,7 +114,22 @@ export const Layout = ({title, children}) => {
                         flex-direction: column;
                         height: 100%;
                         background: ${theme.background};
+                        width: 100vw;
+                            min-width: 320px;
                     }
+                    .main {
+                        width: 100vw;
+                        overflow-x: hidden;
+                    }
+
+                    .italic{
+                        font-family: ${theme.font_italic};
+                    }
+
+                    .strong {
+                        font-weight: 600;
+                    }
+
                     *:focus { outline:none}
 
                     a{
@@ -116,8 +137,26 @@ export const Layout = ({title, children}) => {
                         color: #fff;
                     }
 
+                    .hover-text:hover{
+
+                        animation: showIn 0.1s ease-in-out forwards;
+                    }
+
+                    @keyframes showIn {
+                        from {}
+                        to {background: ${theme.primaryGreen}; color: ${theme.texto}; border-color: ${theme.primaryGreen};}
+                    }
+
                     .disabled{
                         pointer-events: none;
+                    }
+
+                    .hide-in-mobile{
+                        display: block!important;
+                    }
+
+                    .hide-in-mobile-flex{
+                        display: flex!important;
                     }
 
                     .menu-mobile a{
@@ -127,26 +166,28 @@ export const Layout = ({title, children}) => {
                     @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
                     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
+                    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
                     h2,h1,p{ font-family: ${theme.font_regular}}
 
                     li {list-style: none;}
 
                     .linea{
-                        height: 1px;
+                        height: 2.5px;
                         background: ${theme.texto};
                         width: 60px;
                         margin-bottom: 20px;
                     }
 
                     .linea-black{
-                        height: 1px;
+                        height: 2px;
                         background: ${theme.textoGray};
                         width: 100%;
                         margin-bottom: 20px;
                     }
 
                     .linea-larga{
-                        height: 1px;
+                        height: 2px;
                         background: ${theme.texto};
                         width: 100%;
                         margin-bottom: 20px;
@@ -156,7 +197,7 @@ export const Layout = ({title, children}) => {
                     }
 
                     .linea-larga-black{
-                        height: 1px;
+                        height: 2px;
                         background: ${theme.textoGray};
                         width: 100%;
                         margin-bottom: 20px;
@@ -175,6 +216,57 @@ export const Layout = ({title, children}) => {
                     h2{ font-size: 30px; font-family: ${theme.font_regular}; width: 100%; }
 
                     .menu-logo{ cursor: pointer; }
+
+                        .prelader{
+                                width: 100vw;
+                                height: 100vh;
+                                background: pink;
+                                position: absolute;
+                                top: 60px;
+                                left:-120%;
+                                z-index: 999999999;
+                        }
+
+                    .preloader .cortina-uno, .preloader .cortina-dos, .preloader .cortina-tres{
+                        background: ${theme.backgroundSepia};
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: skew(25deg, 0deg);
+                        transform-origin: center bottom;
+                        position: absolute;
+                        z-index: 9999;
+                        left: 0;
+
+                    }
+
+                    .preloader .cortina-dos
+                    {
+                        background: white;
+                        z-index: 2;
+                        left: 5%;
+                    }
+
+                    .preloader .cortina-tres {
+                        background: white;
+                        opacity: 0.7;
+                        z-index: 1;
+                        left: 10%;
+                    }
+
+                     @media (min-width: 320px) and (max-width: 480px) {
+
+                            .hide-in-mobile{
+                                display: none!important;
+                            }
+
+                            .hide-in-mobile-flex{
+                                display: none!important;
+                            }
+
+                     }
 
                 `}</style>
 

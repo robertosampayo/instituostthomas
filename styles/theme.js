@@ -11,9 +11,12 @@ export const theme = {
     textoGray: '#616160',
     backgroundBlue: '#3a3745',
     backgroundWhite: '#fffdf6',
+    backgroundSepia: '#f6e4c4',
+    white: '#ffffff',
     mobile: '576px',
+    navSize: '60px',
 
-    font_montserrat: '\'Montserrat\', sans-serif;',
+    font_montserrat: '\'Montserrat\', sans-serif; font-weight: 400;' ,
     font_regular: '\'Lora\', serif; font-weight: 400;',
     font_italic: '\'Lora\', serif; font-weight: 400; font-style: italic',
 }

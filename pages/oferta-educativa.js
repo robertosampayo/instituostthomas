@@ -9,10 +9,20 @@ export default class extends React.Component {
 
         return (<Layout>
 
-            <Banner src='../../static/imgs/oferta-banner.png'
-                titulo= '¿Por qué elegir estudiar en St. Thomas?'
-                texto= 'Porque ponemos especial atención y dedicación en forjar la integridad del alumno. Porque enseñamos a desarrollar las habilidades blandas o soft skills.  Porque nuestro equipo de trabajo realiza una continua capacitación profesional.'
-            />
+            <div className='banner'>
+                <div className='banner-texto'>
+                    <div className='banner-titulo'>
+                        <h1>¿Por qué elegir estudiar en St. Thomas?</h1>
+                        <div className='linea-larga-black'></div>
+
+                    </div>
+                    <p>
+                        Porque ponemos especial atención y dedicación en forjar la integridad del alumno. <br /><br /> Porque enseñamos a desarrollar las habilidades blandas o <span className='italic strong'>soft skills</span>. <br /> <br /> Porque nuestro equipo de trabajo realiza una continua capacitación profesional.
+                    </p>
+
+                </div>
+            </div>
+
             <section className='metodologia'>
                 <span className='circulo1'></span>
                 <span className='circulo2'></span>
@@ -22,16 +32,16 @@ export default class extends React.Component {
                     <div className='linea'></div>
                     </h2>
                     <p>
-
-                        Porque ponemos especial atención y dedicación en forjar la integridad del alumno. Porque enseñamos a desarrollar las habilidades blandas o soft skills. Porque nuestro equipo de trabajo realiza una continua capacitación profesional.</p>
+                        Integra todas las habilidades de la lengua: habla, escritura, comprensión auditiva y comprensión lectora, las cuales, basadas en situaciones reales, contribuyen a la motivación de nuestros alumnos.
+                    </p>
                 </div>
 
                 <div className='texto2'>
-                    <h2>Metodolofía
+                    <h2>Metodología
 
                     <div className='linea'></div>
                     </h2>
-                    <p>Porque ponemos especial atención y dedicación en forjar la integridad del alumno. Porque enseñamos a desarrollar las habilidades blandas o soft skills. Porque nuestro equipo de trabajo realiza una continua capacitación profesional.</p>
+                        <p>Mediante diferentes métodos de aprendizaje, generamos un ambiente donde se aprende a disfrutar del idioma inglés. En un contexto donde se desarrollan habilidades y competencias de comunicación, el alumno pone en práctica la resolución de problemas, la creatividad y el trabajo en equipo mediante el uso de recursos tecnológicos de vanguardia.</p>
                 </div>
             </section>
 
@@ -49,15 +59,15 @@ export default class extends React.Component {
                     <li>
                         <img src='../static/imgs/oferta1.png' />
                         <div className='texto'>
-                            <h2>Tenns</h2>
-                            <p>Adolescentes desde 1° a 5° años.</p>
+                            <h2>Kinder a Kids VII:</h2>
+                            <p>Niños a partir de los 5 años, desde preescolar hasta séptimo grado.</p>
 
                         </div>
                     </li>
                     <li>
                         <img src='../static/imgs/oferta2.png' />
                         <div className='texto'>
-                            <h2>Tenns</h2>
+                            <h2>Tenns:</h2>
                             <p>Adolescentes desde 1° a 5° años.</p>
 
                         </div>
@@ -65,8 +75,8 @@ export default class extends React.Component {
                     <li>
                         <img src='../static/imgs/oferta3.png' />
                         <div className='texto'>
-                            <h2>Adultos</h2>
-                            <p>Inglés general o con fines espec.</p>
+                            <h2>Adultos:</h2>
+                            <p>Inglés general o con fines específicos (turismo, legal, médico, entre otros) Inglés de negocios: a particulares o empresas en inglés de negocios (Business English).</p>
 
                         </div>
                     </li>

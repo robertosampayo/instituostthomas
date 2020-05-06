@@ -46,14 +46,14 @@ export const Banner = ({src, titulo, texto}) => {
                         width: 60%;
                         width: 60%;
                         font-size: 60px;
-                        color: ${theme.textoGray};
-                        padding: 0;
+                        color: ${theme.primaryGray};
+                        padding: 0 0 15px;
                     }
                     p { width: 60%;
                         font-size: 20px;
                        line-height: 30px;
                         margin-top: 20px;
-                        color: ${theme.textoGray}
+                        color: ${theme.primaryGray}
                     }
 
                     .linea-larga-black{
