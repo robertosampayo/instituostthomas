@@ -311,7 +311,7 @@ const Home = () => {
                             <span>OFERTA EDUCATIVA</span>
                         </li>
                         <li className='servicio2'>
-                                <img src='../static/imgs/animados/avion2.gif' />
+                                <img src='../static/imgs/animados/Avion2.gif' />
                             <span>VIAJES DE ESTUDIO</span>
                         </li>
                         <li className='servicio3'>
@@ -319,7 +319,7 @@ const Home = () => {
                             <span>SERVICIO DE TRADUCCIÓN</span>
                         </li>
                         <li className='servicio4'>
-                            <img src='../static/imgs/animados/arboles.gif' />
+                            <img src='../static/imgs/animados/Arboles.gif' />
                             <span>IMMERSION CAMPS</span>
                         </li>
                     </ul>
