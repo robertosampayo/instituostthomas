@@ -279,7 +279,7 @@ const Home = () => {
 
                                     </div>
                                     <div className='servicio dos'>
-                                            <img src='../static/imgs/avion.png' />
+                                            <img src='../static/imgs/Avion.png' />
                                             <span>VIAJES DE ESTUDIO</span>
                                     </div>
                                     <div className='servicio tres'>
@@ -294,7 +294,7 @@ const Home = () => {
                                     </div>
                                     <div className='servicio cinco'>
 
-                                        <img src='../static/imgs/animados/arboles.gif' />
+                                        <img src='../static/imgs/animados/Arboles.gif' />
                                         <span>IMMERSION CAMPS</span>
                                     </div>
 
