@@ -6,7 +6,7 @@ export default css.certificacionInternacionalStyle`
 
 
                 .banner{
-                    height: 500px;
+                    height: 90vh;
                     background-image: url('../../static/imgs/certificacion.png');
                     background-size: cover;
                     display: flex;
@@ -27,22 +27,22 @@ export default css.certificacionInternacionalStyle`
                 .banner h1{
 
                     width: 100%;
-                    font-size: 30px;
+                    font-size: 60px;
                     color: ${theme.textoGray};
-                    padding: 0;
+                    padding: 0 0 10px 0;
 
 
                 }
                 .banner p {
                     width: 100%;
-                    font-size: 15px;
-                    line-height: 30px;
-                    margin-top: 20px;
+                    font-size: 18px;
+                    line-height: 1.3;
                     color: ${theme.textoGray}
                 }
 
                 .linea-larga-black{
-                    margin: 0 0 30px auto;
+                    margin: 0 0 30px;
+                    width: 85%;
 
                 }
 
@@ -53,6 +53,7 @@ export default css.certificacionInternacionalStyle`
                     color: ${theme.shadesBlue};
                     display: flex;
                     flex-direction: row;
+                    height: 70vh;
                 }
 
                 .comminsoon h3{
@@ -82,32 +83,62 @@ export default css.certificacionInternacionalStyle`
 
                 }
 
+                @media (min-width: 1650px) {
+
+                    .comminsoon {
+                        height: 750px;
+                    }
 
 
-                @media (min-width: 1281px) {
+                    .banner h1 {
+                        font-size: 100px;
+                    }
+
+                    .banner p {
+                        width: 90%;
+                        font-size: 20px;
+                    }
+
+                    .comminsoon img {
+                        left: -10%;
+                        width: 30%;
+                    }
+                    .comminsoon h3{
+                        font-size: ${theme.comminsoonSize};
+                    }
+
+
+                    .comminsoon h1{
+                        font-size: ${theme.tituloDesktop};
+                        font-weight: 300;
+                    }
+                }
+
+                @media (min-width: 1281px) and (max-width: 1650px) {
 
                     .banner {
                         height: 700px;
                     }
 
-                    .comminsoon img{
-                        width: 40%;
-                    }
-
                     .comminsoon {
-                        height: 800px;
-                    }
-                    .banner .banner-texto{
-                        width: 30%;
+                        height: 90vh;
                     }
 
-                    .comminsoon .contenido {
-                        width: 100%;
-                    }
-
-                    .comminsoon img{
+                    .comminsoon img {
+                        left: -10%;
                         width: 30%;
                     }
+                    .comminsoon h3{
+                        font-size: ${theme.comminsoonSize};
+                    }
+
+
+                    .comminsoon h1{
+                        font-size: ${theme.tituloDesktop};
+                        font-weight: 300;
+                    }
+
+
 
 
                 }
@@ -120,22 +151,26 @@ export default css.certificacionInternacionalStyle`
                 @media (min-width: 1025px) and (max-width: 1280px) {
 
 
+                    .comminsoon {
+                        height: 100vh;
+                    }
+
                     .comminsoon img{
                         width: 40%;
                     }
 
-                    .comminsoon {
-                        height: 600px;
+                    .comminsoon .contenido h1{
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 50px;
+                        font-weight: 300;
                     }
 
-                    .banner-texto{
-                        width: 40%;
-                    }
 
-                    .comminsoon .contenido{
-                        width: 40%;
-                    }
 
+                    .comminsoon h3 {
+                        font-size: 30px;
+                    }
                 }
 
                 /*
@@ -145,7 +180,9 @@ export default css.certificacionInternacionalStyle`
 
                 @media (min-width: 768px) and (max-width: 1024px) {
 
-
+                    .comminsoon img{
+                        left: -20%;
+                    }
 
                 }
 
@@ -166,8 +203,15 @@ export default css.certificacionInternacionalStyle`
 
                 @media (min-width: 481px) and (max-width: 767px) {
 
+                    .linea-larga-black {
+                        margin: 0 auto;
+                        width: 80%;
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+
                     .banner p{
-                        font-size: 12px;
+                        font-size: 20px;
                         margin: 0;
 
                     }
@@ -183,18 +227,28 @@ export default css.certificacionInternacionalStyle`
                         text-align: center;
                     }
 
-                    .comminsoon{
-                        flex-direction: column-reverse;
-                        height: 700px;
+                    .comminsoon {
+                        height: 100vh;
+                        flex-direction: column;
                     }
 
                     .comminsoon img{
-                        width: 60%;
+                        left: -20%;
+                        width: 350px;
                     }
 
-                    .comminsoon .contenido, .comminsoon .logo{
+                    .comminsoon .contenido {
+
+                        padding: 50px 0 0;
+                    }
+
+                    .comminsoon .contenido h1{
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+
+                    .comminsoon .contenido, .comminsoon .logo {
                         width: 100%;
-                        height: 100%;
                     }
 
 
@@ -207,9 +261,6 @@ export default css.certificacionInternacionalStyle`
 
                 @media (min-width: 320px) and (max-width: 480px) {
 
-                        .comminsoon{
-                            flex-direction: column;
-                        }
 
                         .banner{
                             height: auto;
@@ -222,17 +273,24 @@ export default css.certificacionInternacionalStyle`
                             margin: 0 auto;
                             text-align: center;
                         }
-                        .comminsoon .contenido{
-                            width: 100%;
-                            padding: 50px 0px;
 
+                        .comminsoon {
+                            flex-direction: column;
+                        }
+
+                        .comminsoon .contenido {
+                            width: 100%;
+                            margin-top: 50px;
                         }
 
                         .comminsoon img{
-                            width: 80%;
+                            position: absolute;
                             bottom: 0;
-                            left: -30%;
+                            width: 70%;
+                        }
 
+                        .comminsoon {
+                            height: 100vh;
                         }
 
 

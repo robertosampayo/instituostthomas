@@ -76,7 +76,7 @@ export default () => {
         </p>
 
         {/* <div className='linea-green'></div> */}
-        <h3>TAMBIÉN PUEDES ENCONTRARNOS EN Instagram Y Facebook</h3>
+        <h3>TAMBIÉN PUEDES ENCONTRARNOS EN <a target='blank_' href='https://www.instagram.com/institutost.thomas/'>Instagram</a> Y  <a target='blank_' href='https://www.facebook.com/pages/Instituto-de-Ingl%C3%A9s-St-Thomas/395813450541322'>Facebook</a></h3>
         {/* <div className='linea-green'></div> */}
       </section>
 

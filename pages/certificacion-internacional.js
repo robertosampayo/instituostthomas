@@ -15,9 +15,9 @@ export default class extends React.Component {
                 <div className='banner-texto'>
                     <div className='banner-titulo'>
                         <h1 className='text-focus-in'>
-                            Preparación
-                            para exámenes
-                            internacionales
+                            Preparación <br />
+                            para exámenes <br />
+                            internacionales <br />
                         </h1>
                         <div className='linea-larga-black'></div>
 
@@ -41,9 +41,9 @@ export default class extends React.Component {
                 <div className='contenido'>
                     <h3>- COMING SOON -</h3>
                     <h1>
-                        Algo nuevo
-                        está por llegar
-                        a St. Thomas
+                        Algo nuevo <br />
+                        está por llegar <br />
+                        a St. Thomas <br />
                     </h1>
 
                 </div>

@@ -25,28 +25,30 @@ const Home = () => {
         let cortina2 = useRef();
         let cortina3 = useRef();
         let servicio1 = useRef();
+        let nextSlideBanner = useRef();
 
         const [swiper, updateSwiper] = useState(null);
-        // const [swiperServicios, updateSwiperServicios] = useState(null);
+        const [show1, setShow1] = useState(true);
+        const [show2, setShow2] = useState(false);
+        const [show3, setShow3] = useState(false);
+        var [contador, setContador] = useState(1);
 
 
 
         const goNext = () => {
 
-            if (swiper !== undefined && swiper !== null) {
 
-                animateCortina();
-                setTimeout(
-                    function() {
+                animateCortina()
+                if (window !== null){
 
-                            swiper.slideNext();
-                    }
-                    .bind(this),
-                    1500
-                );
+                    window.setTimeout(function(){
+                        if (swiper && swiper !== null) {
+                            swiper.slideNext(swiper.slides.length)
+                        }
 
-            }
-        };
+                    }, 1700);
+                }
+        }
 
 
         const animateCortina = () => {
@@ -68,37 +70,82 @@ const Home = () => {
 
         }
 
+
         const params = {
             pagination: {
             clickable: false
             },
             noSwiping: true,
             effect: 'fade',
-            autoplay: {
-                delay: 10000,
-                disableOnInteraction: false
-            },
+            // autoplay: {
+            //     delay: 10000,
+            //     disableOnInteraction: false
+            // },
             loop: true,
             spaceBetween: 0,
             slidesPerView: 1,
             autoresize: true,
+            runCallbacksOnInit: true,
+            on: {
 
+
+
+                slideChange: function () {
+
+                    var show_1 = contador === 1 ? true : false
+                    var show_2 = contador === 2 ? true : false
+                    var show_3 = contador === 3 ? true : false
+
+                    // window.setTimeout(function (){
+
+                        setShow1(show_1)
+                        setShow2(show_2)
+                        setShow3(show_3)
+
+                    // }, 1500)
+
+                    contador = contador + 1
+                    contador = contador === 4 ? 1 : contador
+
+                    setContador(contador)
+
+
+                },
+            },
         }
 
         const paramsDos = {
             slidesPerView: 1,
             centeredSlides: true,
             spaceBetween: 0,
-            // pagination: {
-            //     el: '.swiper-pagination',
-            //     clickable: true
-            // },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
 
             autoresize: true,
             navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
             },
+
+
+        }
+
+
+        const paramsTituloBanner = {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            centeredSlides: true,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false
+            },
+
 
         }
 
@@ -130,7 +177,21 @@ const Home = () => {
         }
 
 
-        useEffect(() => { animateCortina()  },[]);
+        useEffect(() => {
+            animateCortina()
+        },[]);
+
+
+        useEffect(() => {
+
+            setInterval(function(){
+                if (nextSlideBanner.current !== null){
+                    nextSlideBanner.current.click()
+                }
+
+            }, 10000);
+
+        }, []);
 
 
 
@@ -141,7 +202,7 @@ const Home = () => {
 
                 <section className='home-container hide-in-mobile-flex'>
 
-                        <button className='arrowSwiper' onClick={goNext}> <BsChevronRight /> </button>
+                        <button className='hide arrowSwiper' ref={nextSlideBanner} onClick={goNext}> <BsChevronRight /> </button>
                         <section className='banner-container' ref={cortina1}>
                                 <div className='cortina' >
                                 </div>
@@ -149,7 +210,26 @@ const Home = () => {
                                 </div>
                                 <div className='cortina-tres' ref={cortina3}>
                                 </div>
-                                <h1>Learning English Together</h1>
+
+
+                        <div className='swiper-titulo-container'>
+
+                            <div className={show1 ? 'fade-in-bottom titulo-banner titulo1 show' : 'titulo-banner titulo1 hide'} >
+                                    <h1>Learning English Together</h1>
+                                </div>
+                            <div className={show2 ? 'fade-in-bottom titulo-banner titulo2 show' : 'titulo-banner titulo2 hide'} >
+                                <img src='../static/imgs/logo-stthomas.png' />
+                            </div>
+                            <div className={show3 ? 'fade-in-bottom titulo-banner titulo3 show' : 'titulo-banner titulo3 hide'}>
+                                <h1>
+                                    We create <br />
+                                    moments. <br />
+                                    We work <br />
+                                    with people. <br />
+                                </h1>
+                            </div>
+
+                        </div>
 
 
 
@@ -170,6 +250,10 @@ const Home = () => {
 
                             </section>
 
+                            <section className='banner3'>
+
+                            </section>
+
 
                     </Swiper>
                 </section>
@@ -178,14 +262,25 @@ const Home = () => {
 
             <MediaQuery maxDeviceWidth={480}>
 
+
+
                 <Swiper {...paramsBannerMobile} getSwiper={updateSwiper}>
                         <section className='banner'>
 
-
+                            <h1>Learning English Together</h1>
                         </section>
 
                         <section className='banner2'>
+                            <img src='../static/imgs/logo-stthomas.png' />
+                        </section>
 
+                        <section className='banner3'>
+                            <h1>
+                                We create <br />
+                                moments. <br />
+                                We work <br />
+                                with people. <br />
+                            </h1>
                         </section>
 
 
@@ -203,7 +298,7 @@ const Home = () => {
                                 <a>
 
 
-                                    <div className='imagen1'>
+                                    <div className='imagen imagen1'>
                                         <div className='cortina-imagen'></div>
                                         <h4>LEER MÁS</h4>
                                     </div>
@@ -225,7 +320,7 @@ const Home = () => {
 
                                 <a>
 
-                                    <div className='imagen2'>
+                                    <div className='imagen imagen2'>
                                         <div className='cortina-imagen'></div>
                                         <h4>LEER MÁS</h4>
                                     </div>
@@ -245,7 +340,7 @@ const Home = () => {
                             <Link href='/quienes-somos'>
 
                                 <a>
-                                    <div className='imagen3'>
+                                    <div className='imagen imagen3'>
                                         <div className='cortina-imagen'></div>
                                         <h4>LEER MÁS</h4>
                                     </div>
@@ -292,11 +387,7 @@ const Home = () => {
                                         <span>IMMERSION CAMPS</span>
 
                                     </div>
-                                    <div className='servicio cinco'>
 
-                                        <img src='../static/imgs/animados/Arboles.gif' />
-                                        <span>IMMERSION CAMPS</span>
-                                    </div>
 
 
 
@@ -308,19 +399,19 @@ const Home = () => {
                     <ul>
                         <li className='servicio1'>
                             <img src='../static/imgs/animados/libro.gif' />
-                            <span>OFERTA EDUCATIVA</span>
+                                <span>OFERTA <br /><strong>EDUCATIVA</strong></span>
                         </li>
                         <li className='servicio2'>
                                 <img src='../static/imgs/animados/Avion2.gif' />
-                            <span>VIAJES DE ESTUDIO</span>
+                                <span>VIAJES <br /><strong>DE ESTUDIO</strong></span>
                         </li>
                         <li className='servicio3'>
                             <img src='../static/imgs/animados/compu2.gif' />
-                            <span>SERVICIO DE TRADUCCIÓN</span>
+                                <span>SERVICIO <br /><strong>DE TRADUCCIÓN</strong></span>
                         </li>
                         <li className='servicio4'>
                             <img src='../static/imgs/animados/Arboles.gif' />
-                            <span>IMMERSION CAMPS</span>
+                                <span>IMMERSION <br /><strong>CAMPS</strong></span>
                         </li>
                     </ul>
                 </MediaQuery>
@@ -329,7 +420,7 @@ const Home = () => {
 
             <ParallaxBanner
 
-                    className="your-class"
+                    className="explora-background"
                     layers={[
                         {
                             image: '../../static/imgs/girl-write.png',
@@ -341,7 +432,7 @@ const Home = () => {
                         // },
                     ]}
                     style={{
-                        height: '400px',
+                        height: '70vh',
                     }}
             >
 
@@ -373,7 +464,7 @@ const Home = () => {
                             <Link href='/quienes-somos'>
                                 <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
                                     <img src='../static/imgs/equipo2.png' />
-                                    <span>Gera</span>
+                                    <span>Gra</span>
 
                                 </a>
                             </Link>
@@ -438,7 +529,7 @@ const Home = () => {
                                         <Link href='/quienes-somos'>
                                             <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
                                                 <img src='../static/imgs/equipo2.png' />
-                                                <h2>Gera</h2>
+                                                <h2>Gra</h2>
 
                                             </a>
                                         </Link>
@@ -531,7 +622,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <div className='comminsoon'>
+            <section className='comminsoon'>
                 <div className='logo'>
 
                     <img className='slide-right' src='../../static/imgs/logo-certificacion.png' />
@@ -540,14 +631,30 @@ const Home = () => {
                 <div className='contenido'>
                     <h3>- COMING SOON -</h3>
                     <h1>
-                        Algo nuevo
-                        está por llegar
-                        a St. Thomas
+                        Algo nuevo <br />
+                        está por llegar <br />
+                        a St. Thomas <br />
                     </h1>
 
                 </div>
 
-            </div>
+            </section>
+
+                <section className='contacto'>
+                    <div className='contenedor'>
+                        <img src='../../static/imgs/animados/carta.gif'></img>
+                        <h2>Learning English Together</h2>
+                        <p>Si desea estudiar en St. Thomas u obtener información sobre alguno de nuestros servicios, puede contactarse con nosotros.</p>
+                        <Link href='/contacto'>
+                            <a >
+                                <h3 className='hover-text'><strong>AQUÍ</strong> </h3>
+
+                            </a>
+                        </Link>
+                    </div>
+
+
+                </section>
 
 
                 <style jsx>

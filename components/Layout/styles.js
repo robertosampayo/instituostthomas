@@ -47,6 +47,14 @@ export default css.styles`
                     max-width: 147px;
                 }
 
+                footer li a {
+                    margin: 0 30px 0 0;
+                }
+
+                footer .footer-info  .svg-redes{
+                    padding: 15px 0;
+                }
+
 
 
                 @media (min-width: 1281px) {
@@ -125,7 +133,7 @@ export default css.styles`
 
                             .footer-content .logo-container img{
                                 width: auto;
-                                height: 158px;
+                                height: 200px;
                             }
 
 
@@ -138,6 +146,16 @@ export default css.styles`
                             }
                             .footer-info li{
                                 list-style: none;
+                                margin: 10px 0;
+                                font-size: 20px;
+                            }
+
+                            .footer-info .svg-redes{
+                                padding: 10px 0px;
+                            }
+
+                            .footer-info li h2 {
+                                font-size: 50px;
                             }
 
                             .footer-info li svg:not(:last-child){
@@ -561,7 +579,7 @@ export default css.styles`
                                     align-items: center;
                                     width: 100%;
                                     position: fixed;
-                                    z-index: 99999;
+                                    z-index: 99999999;
 
                             }
 
@@ -785,6 +803,7 @@ export default css.styles`
                                 align-items: center;
                                 position: relative;
                                 padding: 50px 0px 50px;
+
                             }
 
 
@@ -859,9 +878,18 @@ export default css.styles`
 
                         .footer-info li{
                             display: flex;
-                            justify-content: center;
+                            justify-content: space-around;
                             text-align: center;
                             padding-bottom: 10px;
+                        }
+
+                        .footer-info li .svg-redes{
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+
+                        .footer-info li a{
+                            margin: 0;
                         }
 
                         .footer-info li svg{

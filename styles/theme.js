@@ -12,11 +12,21 @@ export const theme = {
     backgroundBlue: '#3a3745',
     backgroundWhite: '#fffdf6',
     backgroundSepia: '#f6e4c4',
+    backgroundSepiaTransparente: '#f6e4c49c',
+    borderLines: '#a29371',
     white: '#ffffff',
     mobile: '576px',
     navSize: '60px',
+    tituloDesktop: '75px',
+    paddingButton: '5px 20px',
+    fontSizeButton: '25px',
+    fontSizeP: '20px',
+    comminsoonSize: '40px',
+    sectionsHeight: '80vh',
+
 
     font_montserrat: '\'Montserrat\', sans-serif; font-weight: 400;' ,
     font_regular: '\'Lora\', serif; font-weight: 400;',
     font_italic: '\'Lora\', serif; font-weight: 400; font-style: italic',
+    font_regular_important: '\'Lora\', serif!important; font-weight: 400;',
 }

@@ -4,13 +4,23 @@ import { theme } from './theme'
 export default css.quienesSomosStyle`
 
 
+                h2{ font-size: 50px; }
+
+                h1{ font-family: ${theme.font_italic}; font-size: 60px; color: ${theme.texto}; padding: 0;}
+
+                h3{ font-family: ${theme.font_italic}; font-size: 30px; }
+
                     .banner{
-                        height: 500px;
+                        height: 90vh;
                         background-image: url('../../static/imgs/quienes-somos-banner-blank.png');
                         background-size: cover;
                         display: flex;
                         align-items: center;
                         justify-content: flex-end;
+                    }
+
+                    .banner .contenido {
+                        width: 70%;
                     }
 
                     .banner .logo{
@@ -19,6 +29,8 @@ export default css.quienesSomosStyle`
                         justify-content: center;
                         align-items: center;
                     }
+
+                    p { font-size: 18px; }
 
                     .banner .logo img{ width: 400px; height: 300px; }
 
@@ -35,10 +47,12 @@ export default css.quienesSomosStyle`
                     }
 
                     .banner h1{
-                        width: 100%;
-                        font-size: 60px;
+                        width: 80%;
+                        font-size: 70px;
                         color: ${theme.textoGray};
                         padding: 0;
+                        border-width: 0 0 2px;
+                        border-style: solid;
                     }
 
                     .banner p { width: 60%;
@@ -50,15 +64,18 @@ export default css.quienesSomosStyle`
 
 
                 .mision-vision-background{
-                    height: 350px;
+                    height: 90vh;
                     background: url('../static/imgs/instituto-fachada.png');
                     background-size: cover;
                 }
 
                 .mision-vision{
-                    height: auto;
+                    height: 90vh;
                     background: ${theme.background};
                     position: relative;
+                    display: flex;
+                    align-items: center;
+
 
                 }
 
@@ -66,7 +83,7 @@ export default css.quienesSomosStyle`
                     padding: 20px;
                     display: flex;
                     flex-direction: row;
-                    width: 80%;
+                    width: 70%;
                     margin: 0 auto;
                     height: 400px;
                     justify-content: space-between;
@@ -80,7 +97,23 @@ export default css.quienesSomosStyle`
                     width: 30%;
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
+                    align-items: flex-start;
+                }
+
+                .mision-vision .contenido .item h2 {
+                    font-size: ${theme.font_italic};
+                    color: ${theme.textoGray};
+                }
+
+                .mision-vision .contenido .item p{
+                    color:${theme.textoGray};
+                }
+
+                .mision-vision .contenido .linea-black{
+
+                    width: 30%;
+                    background: ${theme.primaryGreen};
+
                 }
 
                 .circulo1{
@@ -105,7 +138,7 @@ export default css.quienesSomosStyle`
 
                 .valores{
                     background: ${theme.primaryGreen};
-                    height: 400px;
+                    height: 90vh;
                     position: relative;
                     z-index: 999;
                     display: flex;
@@ -115,7 +148,7 @@ export default css.quienesSomosStyle`
                 .valores .contenido{
                     display: flex;
                     flex-direction: row;
-                    width: 80%;
+                    width: 70%;
                     margin: 0 auto;
                 }
 
@@ -129,11 +162,16 @@ export default css.quienesSomosStyle`
                 }
 
                 .valores h2{
+                    font-size: 40px;
+                    font-family: ${theme.font_italic};
                     color: ${theme.darkGreen};
                 }
 
-                .valores p{
-                    color: ${theme.texto};
+                .valores .texto p{
+                    font-family: ${theme.font_regular};
+                    font-size: 20px;
+                    margin: 0 0 20px;
+                    color: ${theme.background};
                 }
 
                 .valores .texto{
@@ -154,15 +192,16 @@ export default css.quienesSomosStyle`
                     margin: 0 auto;
                 }
 
+
                 .fundadora .contenido{
-                    width: 100%;
+                    width: 70%;
                     margin: 0 auto;
                     display: flex;
                 }
 
 
                 .fundadora .foto, .fundadora .texto{
-                    padding: 50px 0px;
+                    padding: 100px 0px;
                     width: 50%;
                 }
 
@@ -188,19 +227,30 @@ export default css.quienesSomosStyle`
 
                 .fundadora h1{
                     color: ${theme.primaryGreen};
-                    line-height: 50px;
                     margin-bottom: 20px;
+                    line-height: 0.9;
+                    font-size: 80px;
+                }
+
+                .fundadora h3, .fundadora p{
+                    color: ${theme.textoGray};
+                }
+
+                .fundadora .sub-texto {
+                    font-size: 20px;
                 }
 
                 .fundadora .linea-black{
                     margin: 20px 0px;
                 }
 
+                .fundadora h3 {
+                    font-weight: 500;
+                    font-size: 35px;
+                    margin: 0 0 10px;
+                }
 
-                h1{ font-family: ${theme.font_italic}; font-size: 60px; color: ${theme.texto}; padding: 0;}
 
-                h3{ font-family: ${theme.font_italic}; font-size: 30px; }
-                p { font-family: ${theme.font_italic}; }
 
                 .staff {
                     background: ${theme.backgroundBlue};
@@ -208,12 +258,12 @@ export default css.quienesSomosStyle`
                     display: flex;
                     justify-content: center;
                     height: auto;
-                    padding: 20px;
+                    padding: 100px 20px;
 
                 }
 
                 .staff .contenido {
-                    width: 80%;
+                    width: 70%;
                     margin: 0 auto;
                     display: flex;
                     flex-wrap: wrap;
@@ -281,18 +331,300 @@ export default css.quienesSomosStyle`
                     justify-content: center;
                 }
 
+                .staff .staff-texto .texto h2{
+                    font-family: ${theme.font_regular};
+                    font-size: 60px;
+                }
+
+                .staff .staff-texto {
+                    padding: 0;
+                }
 
 
 
-                @media (min-width: 1281px) {
+                .staff .staff-texto .texto{
+                    margin: 0;
+                    width: 100%;
+                }
+
+                .staff .staff-texto .texto h1{
+                    font-size: 100px;
+                }
+
+                .staff .staff-texto .texto .linea{
+                    width: 100px;
+                }
+
+                .staff .staff-texto .texto p{
+                    font-size: 17px;
+                    line-height: 1.5;
+                }
+
+                .staff .staff-texto .texto h2 {
+                    font-size: 100px;
+                }
+
+
+
+                @media (min-width: 1650px) {
+
+                    .banner, .mision-vision-background, .mision-vision {
+                        height: 90vh;
+
+                    }
+
+                    .banner h1{
+                        border-style: solid;
+                        border-width: 0px 0px 2px;
+                        border-color: ${theme.primaryGreen};
+                        font-size: 130px;
+                        padding: 0;
+                        margin: 0;
+                        width: 60%;
+
+                    }
+
+
+                    .banner p{
+                        width: 60%;
+                        font-size: 26px;
+                    }
+
+                    .banner .logo img{
+                        width: 500px;
+                        height: auto;
+                    }
+
+                    .banner .contenido {
+                        width: 90%;
+                    }
+
+                    .mision-vision{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
 
                     .mision-vision .contenido{
+
+                        width: 60%;
+                        height: 100%;
+                    }
+
+                    .mision-vision .contenido .linea-black{
+
+                        width: 30%;
+                        background: ${theme.primaryGreen};
+
+                    }
+
+                    .mision-vision .contenido .item {
+                        width: 30%;
+                        height: 350px;
+                        align-items: flex-start;
+                    }
+
+
+                    .mision-vision .contenido .item h2 {
+                        font-size: 55px;
+                        margin: 0 0 5px;
+                        font-size: ${theme.font_italic};
+                        color: ${theme.textoGray};
+                    }
+
+                    .mision-vision .contenido .item p{
+                        font-size: 25px;
+                        color:${theme.textoGray};
+                    }
+
+                    .circulo1 {
+                        width: 600px;
+                        height: 600px;
+                    }
+
+                    .circulo2{
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    .valores {
+                        height: 80vh;
+                    }
+
+                    .valores h1{
+                        font-size: 100px;
+                        width: 80%;
+                    }
+
+                    .valores h2{
+                        font-size: 50px;
+                        font-family: ${theme.font_italic};
+                    }
+
+                    .valores .texto p{
+                        font-family: ${theme.font_regular};
+                        font-size: 25px;
+                        margin: 0 0 20px;
+                    }
+
+                    .valores .contenido{
+                        width: 60%;
+                    }
+
+                    .fundadora {
+                        height: auto;
+                    }
+
+                    .fundadora .foto{
+                        padding: 100px 0;
+                    }
+
+                    .fundadora .contenido {
+                        width: 60%;
+
+                    }
+
+                    .fundadora img {
+                        width: auto;
+                        height: 600px;
+                    }
+
+
+                    .fundadora h1{
+                        line-height: 0.9;
+                        font-size: 100px;
+                    }
+
+                    .fundadora h3{
+                        font-size: 50px;
+                        color: ${theme.textoGray};
+                    }
+
+                    .fundadora p{
+                        font-size: 20px;
+                    }
+
+                    .staff {
+                        height: auto;
+                        align-items: center;
+                    }
+
+                    .staff .contenido {
+                        width: 60%;
+                    }
+
+                    .staff .contenido {
+                        font-size: 22px;
+                    }
+
+                    .staff .item {
+                        height: 500px;
+                        width: 45%;
+                    }
+
+                    .staff .staff-texto {
+                        padding: 0;
+                    }
+
+
+
+                    .staff .staff-texto .texto{
+                        margin: 0;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+
+                    .staff .staff-texto .texto h1{
+                        font-size: 100px;
+                    }
+
+                    .staff .staff-texto .texto .linea{
+                        width: 100px;
+                    }
+
+                    .staff .staff-texto .texto p{
+                        font-size: 25px;
+                        line-height: 1.5;
+                    }
+
+                    .staff .staff-texto .texto h2 {
+                        font-size: 100px;
+                    }
+
+
+
+
+                }
+
+
+
+                @media (min-width: 1281px) and (max-width: 1650px) {
+
+                    .banner {
+                        height: 90vh;
+
+                    }
+
+                    .banner h1{
+                        border-style: solid;
+                        border-width: 0px 0px 2px;
+                        border-color: ${theme.primaryGreen};
+                        font-size: 85px;
+                        padding: 0;
+                        margin: 0;
                         width: 50%;
+
+                    }
+
+                    .banner p{
+                        width: 70%;
+                    }
+
+                    .banner .contenido{
+                        width: 100%;
+                    }
+
+
+                    .mision-vision .contenido .linea-black{
+
+                        width: 30%;
+                        background: ${theme.primaryGreen};
+
+                    }
+
+                    .mision-vision .contenido .item {
+                        width: 30%;
+                        height: 400px;
+                        align-items: flex-start;
+                    }
+
+
+                    .mision-vision .contenido .item h2 {
+                        font-size: 55px;
+                        margin: 0 0 5px;
+                        font-size: ${theme.font_italic};
+                        color: ${theme.textoGray};
+                    }
+
+                    .mision-vision .contenido .item p{
+                        font-size: 25px;
+                        color:${theme.textoGray};
+                    }
+
+                    .ciruclo1{
+                        width: 700px;
+                        height: 700px;
                     }
 
                     .fundadora {
                         width: 60%;
                     }
+
+                    .fundadora .contenido{
+                        width: 100%;
+                    }
+
                     .valores .contenido{
                         width: 50%;
                     }
@@ -305,6 +637,15 @@ export default css.quienesSomosStyle`
                         line-heigt: 60px;
                     }
 
+                    .staff .contenido {
+                        width: 60%;
+                        justify-content: space-between;
+                    }
+
+                    .staff .item {
+                        width: 46%;
+                    }
+
                 }
 
                     /*
@@ -314,14 +655,18 @@ export default css.quienesSomosStyle`
 
                     @media (min-width: 1025px) and (max-width: 1280px) {
 
-                        .banner .contenido { width: 100%; }
+                        .banner .contenido { width: 90%; }
 
                         .banner-texto{
                             width: 50%;
                         }
 
-                        .banner p, .banner .banner-titulo, .banner h1{
-                            width: 100%;
+                        .banner p, .banner .banner-titulo{
+                            width: 80%;
+                        }
+
+                        .banner h1{
+                            width: 60%;
                         }
 
                         .valores .contenido{
@@ -329,7 +674,7 @@ export default css.quienesSomosStyle`
                         }
 
                         .valores h1{
-                            font-size: 70px;
+                            font-size: 85px;
                         }
 
                         .fundadora .contenido{
@@ -338,6 +683,10 @@ export default css.quienesSomosStyle`
 
                         .mision-vision-background{
                             height: 550px;
+                        }
+
+                        .mision-vision .contenido .item {
+                            height: 300px;
                         }
 
 
@@ -404,7 +753,9 @@ export default css.quienesSomosStyle`
                         }
 
                         .banner .banner-texto{
-                            width: 100%;
+                            width: 90%;
+                            margin: 0 auto;
+                            padding: 20px;
                         }
 
                         .banner .banner-titulo .linea-larga-black{
@@ -426,24 +777,38 @@ export default css.quienesSomosStyle`
                         .banner h1{
                             font-size: 40px;
                             text-align: center;
+                            width: 80%;
+                            margin: 0 auto;
+                            padding: 0 0 10px;
                         }
 
                         .valores{
-
-                            height: 600px;
+                            height: auto;
+                            padding: 50px 0;
                         }
 
                         .valores .contenido{
                             flex-direction: column;
+
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
                         }
 
-                        .fundadora .contenido{
-                            flex-direction: column;
+                        .valores .texto, .valores .titulo {
+                            width: 100%;
                         }
+
+                        .valores .linea{
+                            width: 100%;
+                        }
+
+
+
 
                         .mision-vision .contenido{
                             flex-direction: column;
-                            height: 550px;
+                            height: auto;
                             width: 80%;
                         }
 
@@ -451,6 +816,17 @@ export default css.quienesSomosStyle`
                             text-align: center;
                             height: 100%;
                             width: 100%;
+                            justify-content: center;
+                            align-items: flez-start;
+                            margin: 0 0 20px;
+                        }
+
+                        .mision-vision .contenido .item h2 {
+                            text-align: left;
+                        }
+
+                        .mision-vision .contenido .item p{
+                            text-align: left;
                         }
 
                         .mision-vision .linea-black {
@@ -467,10 +843,16 @@ export default css.quienesSomosStyle`
                         .fundadora .texto{
                             margin: 0 auto;
                             text-align: center;
-                            width: 80%;
+                            width: 100%;
                             postition: relative;
-                            height: 800px;
+                            height: auto;
                         }
+
+                        .fundadora .contenido{
+                            flex-direction: column;
+                        }
+
+
 
                         .staff .contenido {
                             height: auto;
@@ -490,101 +872,145 @@ export default css.quienesSomosStyle`
 
                     @media (min-width: 320px) and (max-width: 480px) {
 
+                        p{ font-size: 16px;}
+
                         .banner {
-                            height: 90vh;
+                            height: 100vh
                         }
 
-                        .banner .contenido {
-                            flex-direction: column;
+                        .banner .contenido{
                             width: 100%;
+                            flex-direction: column;
+                        }
+
+                        .banner .logo{
+                            width: 100%;
+                            height: 40vh;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            top: 60px;
+                        }
+
+                        .banner .banner-texto{
+                            width: 100%;
+                            margin: 0 auto;
+                            padding: 20px;
+                        }
+
+                        .banner .banner-titulo .linea-larga-black{
+                            width: 50%;
+                        }
+
+                        .banner .logo img{
+                            width: auto;
+                            height: 150px;
+                        }
+
+
+
+                        .banner p{
+                            width: 80%;
+                            text-align: center;
+                            font-size: 20px;
+                            margin: 0 auto;
+                            padding: 20px 0;
                         }
 
                         .banner h1{
                             font-size: 40px;
                             text-align: center;
+                            width: 90%;
+                            margin: 0 auto;
+                            padding: 10px 0 10px;
                         }
-                        .banner .logo{
-                            width: 100%;
-                        }
-
-                        .banner .logo img{
-                            width: 200px;
-                            height: 150px;
-                        }
-
-                        .banner p{
-                            width: 100%;
-                        }
-
-                        .banner-texto {
-                            width: 100%;
-                        }
-
-                        .mision-vision .contenido{
-                            flex-direction: column;
-                            height: 600px;
-                            padding: 50px 20px 50px 20px;
-                        }
-
-                        .mision-vision .contenido .item{
-                            height: auto;
-                            width: 100%;
-                        }
-
-                        .oferta-educativa{
-                            margin-bottom: 20px;
-
-                        }
-
 
                         .valores{
-                            height: 800px;
-                        }
-
-                        .valores .linea{
-                            width: 80%;
-                            margin: 0 auto;
+                            height: auto;
+                            padding: 50px 0;
                         }
 
                         .valores .contenido{
                             flex-direction: column;
+
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
                         }
 
-                        .valores .titulo, .valores .texto{
-                                width: 100%;
-                                text-align: center;
-                                // margin-top: 20px;
+                        .valores .texto, .valores .titulo {
+                            width: 100%;
                         }
 
-                        .valores .titulo, .valores .texto h2{
-                            font-size: 40px;
-                            margin-top: 40px;
+                        .valores .linea{
+                            width: 100%;
                         }
 
-                        .valores .titulo, .valores .texto p{
-                            font-size: 20px;
+                        .mision-vision-background {
+                            background-position-x: 60%;
+                        }
+
+
+                        .mision-vision .contenido{
+                            flex-direction: column;
+                            height: auto;
+                            width: 80%;
+                        }
+
+                        .mision-vision .contenido .item{
+                            text-align: center;
+                            height: 100%;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: flez-start;
+                            margin: 0 0 20px;
+                        }
+
+                        .mision-vision .contenido .item h2 {
+                            text-align: left;
+                        }
+
+                        .mision-vision .contenido .item p{
+                            text-align: left;
+                        }
+
+                        .mision-vision .linea-black {
+                            width: 50%;
+                        }
+
+                        .fundadora h1 {
+                            font-size: 65px;
+                        }
+
+                        .fundadora .foto {
+                            position: relative;
+                            z-index: 999;
+                            margin: 0 auto;
+                            width: 100%;
+                        }
+
+                        .fundadora .texto{
+                            margin: 0 auto;
+                            text-align: center;
+                            width: 100%;
+                            postition: relative;
+                            height: auto;
+                            padding: 50px 0px 100px;
                         }
 
                         .fundadora .contenido{
                             flex-direction: column;
-                        }
-
-                        .fundadora .foto, .fundadora .texto{
                             width: 80%;
-                            margin: 0 auto;
                         }
 
-                        .staff .contenido{
-                            text-align: center;
+                        .staff {
+                            padding: 100px 0px;
                         }
 
-                        .staff .linea{
-                            width: 60px;
-                            margin: 0 auto;
-                            margin-bottom: 20px;
-                        }
-
-                        .staff .texto{
+                        .staff .contenido {
+                            height: auto;
+                            padding: 0 0 50px;
                             width: 100%;
                         }
 

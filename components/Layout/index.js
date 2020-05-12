@@ -8,7 +8,10 @@ import { theme } from '../../styles/theme'
 import styles from './styles'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { IoMdClose } from 'react-icons/io'
-import SvgRedes from '../../static/imgs/svg-redes'
+import  SvgFB  from '../../static/imgs/svgs/icono-fb'
+import  SvgWP  from '../../static/imgs/svgs/icono-wp'
+import  SvgInsta  from '../../static/imgs/svgs/icono-insta'
+
 import { useSpring, animated } from "react-spring";
 import { TimelineLite, Power4, CSSPlugin, gsap } from 'gsap'
 import { AnimatePresence, motion } from "framer-motion";
@@ -52,7 +55,7 @@ export const Layout = ({title, children}) => {
                             <AnimatePresence>
 
                                 <li key={'quienes-somos'}><Link href='/quienes-somos'><a >Quienes Somos</a></Link></li>
-                                <li key={'oferta-educativa'}><Link href='/oferta-educativa'><a>Oferta Educativa</a></Link></li>
+                                <li key={'oferta-educativa'}><Link href='/oferta-educativa'><a>Oferta Educativa y Servicios</a></Link></li>
                                 <li key={'certificacion-internacional'}><Link href='/certificacion-internacional'><a >Certificacion Internacional</a></Link></li>
                                 <li key={'galeria'}><Link href='/galeria'><a >Galería</a></Link></li>
                                 <li key={'contacto'}><Link href='/contacto'><a >Contacto</a></Link></li>
@@ -64,7 +67,7 @@ export const Layout = ({title, children}) => {
                                 <span className='close-menu' onClick={(e) => {e.preventDefault(); hideMenuMobile();}}><IoMdClose /></span>
                                 <li><Link href='/'><a>Inicio</a></Link></li>
                                 <li><Link href='/quienes-somos'><a>Quienes Somos</a></Link></li>
-                                <li><Link href='/oferta-educativa'><a >Oferta Educativa</a></Link></li>
+                                <li><Link href='/oferta-educativa'><a >Oferta Educativa y Servicios</a></Link></li>
                                 <li><Link href='/certificacion-internacional'><a>Certificacion Internacional</a></Link></li>
                                 <li><Link href='/galeria'><a >Galería</a></Link></li>
                                 <li><Link href='/contacto'><a >Contacto</a></Link></li>
@@ -82,12 +85,15 @@ export const Layout = ({title, children}) => {
                     <div className='footer-content'>
                         <div className='logo-container'>
 
-                            <img src='../../static/imgs/logo-footer.png' alt='sttomas-log' />
+                            <Link href='/'><a><img src='../../static/imgs/logo-footer.png' alt='sttomas-log' /></a></Link>
                         </div>
                         <ul className='footer-info'>
                             <li><h2>Learning English Together</h2></li>
-                            <li>
-                                <SvgRedes />
+                            <li className='svg-redes'>
+                                <a target='blank_' href='#' ><SvgWP /></a>
+                                <a target='blank_' href='https://www.facebook.com/pages/Instituto-de-Ingl%C3%A9s-St-Thomas/395813450541322' ><SvgFB /></a>
+                                <a target='blank_' href='https://www.instagram.com/institutost.thomas/' ><SvgInsta /></a>
+
                             </li>
                             <li>Dirección: Cabral 194, Venado Tuerto, CP:2600, Santa Fe, Argentina</li>
 
@@ -126,6 +132,10 @@ export const Layout = ({title, children}) => {
                         font-family: ${theme.font_italic};
                     }
 
+                    .regular{
+                        font-family: ${theme.font_regular_important};
+                    }
+
                     .strong {
                         font-weight: 600;
                     }
@@ -141,11 +151,44 @@ export const Layout = ({title, children}) => {
 
                         animation: showIn 0.1s ease-in-out forwards;
                     }
+                    .fade-in-bottom {
+                        -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                                animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                    }
 
                     @keyframes showIn {
                         from {}
                         to {background: ${theme.primaryGreen}; color: ${theme.texto}; border-color: ${theme.primaryGreen};}
                     }
+
+
+                    @-webkit-keyframes fade-in-bottom {
+                        0% {
+                            -webkit-transform: translateY(50px);
+                                    transform: translateY(50px);
+                            opacity: 0;
+                        }
+                        100% {
+                            -webkit-transform: translateY(0);
+                                    transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                    @keyframes fade-in-bottom {
+                        0% {
+                            -webkit-transform: translateY(50px);
+                                    transform: translateY(50px);
+                            opacity: 0;
+                        }
+                        100% {
+                            -webkit-transform: translateY(0);
+                                    transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+
+
+
 
                     .disabled{
                         pointer-events: none;
@@ -158,6 +201,15 @@ export const Layout = ({title, children}) => {
                     .hide-in-mobile-flex{
                         display: flex!important;
                     }
+
+                    .hide{
+                        visibility: hidden!important;
+                    }
+
+                    .show{
+                        visibility: visible!important;
+                    }
+
 
                     .menu-mobile a{
                         color: ${theme.textoGray};
@@ -180,14 +232,14 @@ export const Layout = ({title, children}) => {
                     }
 
                     .linea-black{
-                        height: 2px;
+                        height: 2.5px;
                         background: ${theme.textoGray};
                         width: 100%;
                         margin-bottom: 20px;
                     }
 
                     .linea-larga{
-                        height: 2px;
+                        height: 2.5px;
                         background: ${theme.texto};
                         width: 100%;
                         margin-bottom: 20px;
@@ -197,7 +249,7 @@ export const Layout = ({title, children}) => {
                     }
 
                     .linea-larga-black{
-                        height: 2px;
+                        height: 2.5px;
                         background: ${theme.textoGray};
                         width: 100%;
                         margin-bottom: 20px;

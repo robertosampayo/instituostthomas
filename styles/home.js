@@ -5,17 +5,44 @@ import { theme } from './theme'
 export default css.homeStyle`
 
                 .home {
-                    overflow-x: hidden;
+                    overflow: hidden;
                 }
 
                 .home-container{
 
                     width: 100%;
-                    height: 500px;
+                    height: 90vh;
                     position: absolute;
                     top: ${theme.navSize};
                     display: flex;
                     align-items: center;
+                }
+
+                .titulo-banner{
+                    width: 300px;
+                    height: 400px;
+                    position: absolute;
+                    left: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    visibility: hidden;
+                }
+
+                .titulo-banner img{
+                    width: 300px;
+                }
+
+                .swiper-titulo-container {
+                    position: relative;
+                    z-index: 9999;
+                    left: 0;
+                    display: flex;
+                    width: 5;
+                    justify-content: center;
+                    align-items: center;
+
+
                 }
 
 
@@ -52,9 +79,9 @@ export default css.homeStyle`
                 }
 
 
-                .banner, .banner2{
-                    height: 500px;
-                    background-image: url('../../static/imgs/banner2.png');
+                .banner, .banner2, .banner3{
+                    height: 90vh;
+                    background-image: url('../../static/imgs/instituto-fachada.png');
                     background-size: cover;
                     display: flex;
                     position: relative;
@@ -65,9 +92,12 @@ export default css.homeStyle`
                 }
 
                 .banner2{
-                    background-image: url('../../static/imgs/instituto-fachada.png');
+                    background-image: url('../../static/imgs/banner2.png');
                 }
 
+                .banner3{
+                    background-image: url('../../static/imgs/banner3.png');
+                }
 
 
                 .banner-container .cortina, .banner-container .cortina-dos, .banner-container .cortina-tres{
@@ -89,25 +119,25 @@ export default css.homeStyle`
                 {
                     background: white;
                     z-index: 2;
-                    left: 5%;
+                    left: 10%;
                 }
 
                 .banner-container .cortina-tres {
                     background: white;
                     opacity: 0.7;
                     z-index: 1;
-                    left: 10%;
+                    left: 20%;
                 }
 
                 .banner-container h1{
-                    width: 250px;
+                    // width: 250px;
                     border-style: solid;
                     border-width: 0px 0px 2px;
                     padding: 0px 0px 20px;
                     text-align: left;
                     position: absolute;
                     z-index: 9999;
-                    left: 200px;
+                    // left: 200px;
                     color: ${theme.primaryGreen};
                     font-size: 50px;
                 }
@@ -121,6 +151,7 @@ export default css.homeStyle`
                     align-items: center;
                     flex-direction: column;
                     padding: 0px 0px 50px;
+                    height: 90vh;
 
                 }
 
@@ -128,13 +159,13 @@ export default css.homeStyle`
 
                     font-family: ${theme.font_montserrat};
                     font-weight: 500;
-                    font-size: 15px;
+                    font-size: 20px;
                     padding: 15px 0px;
                     border-width: 2px 0px;
                     border-style: solid;
-                    width: 50%;
+                    width: 40%;
                     margin: 50px 0px;
-                    line-height: 25px;
+                    line-height: 2;
 
                 }
 
@@ -158,7 +189,7 @@ export default css.homeStyle`
                     height: 150px;
                     width: 100%;
                     background-image: url('../../static/imgs/girl.png');
-                    background-size: cover;
+                    background-size: 100%;
                     display: flex;
                     align-items: center;
                     position: relative;
@@ -175,7 +206,7 @@ export default css.homeStyle`
                 }
 
 
-                .info .cortina-imagen{
+                .info ul li .cortina-imagen{
                     position: relative;
                     z-index: 999;
                     opacity: 0.6;
@@ -184,6 +215,7 @@ export default css.homeStyle`
                     left: 0;
                     width: 100%;
                     height: 100%;
+                    visibility: hidden;
                 }
 
                 .info ul li h4{
@@ -195,27 +227,31 @@ export default css.homeStyle`
                         border-style: solid;
                         padding: 5px 0px;
                         font-size: 12px;
+                        visibility: hidden;
                 }
 
                 .info ul li .contenido{
-                    background: ${theme.primaryGreen};
+                    background: ${theme.background};
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
                     flex-direction: column;
-                    border-width: 0px 0px 2.2px;
+                    border-width: 0px 0px 3px;
                     border-style: solid;
-                    border-color: ${theme.white};
+                    border-color: ${theme.borderLines};
                     padding: 15px;
                     height: 250px;
                 }
 
+
                 .info ul li .contenido span{
                     display: flex;
-                    font-size: 12px;
+                    font-size: 15px;
                     height: 10px;
                     font-family: ${theme.font_montserrat};
                     font-weight: 600;
+                    color: ${theme.primaryGray};
+                    padding: 20px 0 10px;
 
 
                 }
@@ -223,11 +259,66 @@ export default css.homeStyle`
                 .info ul li .contenido h2{
                     font-size: 20px;
                     padding: 20px 0px;
+                    color: ${theme.primaryGreen}
                 }
 
                 .info ul li .contenido p{
                     font-size: 12px;
+                    color: ${theme.primaryGray};
+                    font-family: ${theme.font_regular};
                 }
+
+
+                // -------------------------------
+                // hover
+                // -------------------------------
+
+                .info ul li:hover .cortina-imagen{
+                    visibility: visible;
+                }
+
+                .info ul li:hover h4{
+                    visibility: visible;
+                }
+
+                .info ul li:hover .contenido{
+                    background: ${theme.primaryGreen};
+                    border-color: ${theme.background};
+                }
+
+
+                .info ul li:hover .contenido span{
+
+                    color: ${theme.background};
+
+
+                }
+
+                .info ul li:hover .contenido h2{
+                    color: ${theme.background}
+                }
+
+                .info ul li:hover .contenido p{
+                    color: ${theme.background};
+                }
+                .info ul li .imagen {
+                    background-size: 100% 100%;
+                    transition: background-size 1s ease-in-out;
+                    -moz-transition: background-size 1s ease-in-out;
+                    -ms-transition: background-size 1s ease-in-out;
+                    -o-transition: background-size 1s ease-in-out;
+                    -webkit-transition: background-size 1s ease-in-out;
+
+                }
+
+                .info ul li:hover .imagen{
+
+                    background-size: 120% 120%;
+
+                }
+
+
+
 
                 .explora{
                     display: flex;
@@ -235,16 +326,20 @@ export default css.homeStyle`
                     flex-direction: column;
                     background: ${theme.background};
                     text-align: center;
-                    justify-content: space-between;
+                    height: ${theme.sectionsHeight};
+                    align-items: center;
+                    align-content: center;
 
                 }
 
                 .explora h1{
                     border-width: 0px 0px 1.5px;
                     border-style: solid;
+                    border-color: ${theme.primaryGreen};
                     width: auto;
                     margin: 0 auto;
                     padding: 50px 25px 12px;
+                    color: ${theme.textoGray};
                 }
 
                 .explora ul{
@@ -274,7 +369,8 @@ export default css.homeStyle`
                     padding: 20px 0px;
                     font-family: ${theme.font_montserrat};
                     font-weight: 600;
-                    font-size: 12px;
+                    font-size: 20px;
+                    color: ${theme.primaryGreen};
                 }
 
                 .explora .servicio {
@@ -286,8 +382,10 @@ export default css.homeStyle`
                     height: 300px;
                 }
 
+
+
                 .servicios-mobile{
-                    width: 300px;
+                    width: 80%;
                     margin: 0 auto;
                 }
 
@@ -318,8 +416,9 @@ export default css.homeStyle`
                     flex-direction: column;
                     background: ${theme.background};
                     text-align: center;
-                    justify-content: space-between;
+                    justify-content: justify-center;
                     padding: 0 0 100px;
+                    height: ${theme.sectionsHeight};
 
                 }
 
@@ -327,14 +426,19 @@ export default css.homeStyle`
                     width: 45%;
                     margin: 0 auto;
                     padding: 40px 0px;
+                    color: ${theme.textoGray};
+                    font-size: ${theme.fontSizeP};
+
                 }
 
                 .equipo h1{
-                    border-width: 0px 0px 1.5px;
+                    border-width: 0px 0px 2px;
                     border-style: solid;
+                    border-color: ${theme.primaryGreen};
                     width: auto;
                     margin: 0 auto;
                     padding: 50px 150px 12px;
+                    color: ${theme.textoGray};
                 }
 
                 .equipo h3{
@@ -342,10 +446,11 @@ export default css.homeStyle`
                     font-weight: 400;
                     color: ${theme.primaryGreen};
                     border-style: solid;
-                    width: 200px;
+                    width: 350px;
                     margin: 0 auto;
                     border-width: 1.5px 0px 1.5px;
-                    padding: 5px 0 5px;
+                    padding: ${theme.paddingButton};
+                    font-size: ${theme.fontSizeButton};
 
                 }
 
@@ -400,6 +505,8 @@ export default css.homeStyle`
                     display: flex;
                     flex-direction: column;
                     padding: 80px 0;
+                    height: 70vh;
+                    justify-content: center;
                 }
 
                 .momentos h1{
@@ -408,7 +515,8 @@ export default css.homeStyle`
                     border-width: 0px 0px 1.5px;
                     padding: 0px 0px 5px;
                     margin: 0px 0px 30px;
-                    color: ${theme.primaryGreen};
+                    color: ${theme.textoGray};
+                    border-color: ${theme.primaryGreen};
                 }
 
                 .momentos .content{
@@ -418,6 +526,14 @@ export default css.homeStyle`
                     width: 80%;
                     transform: translateX(5%);
                 }
+
+                 .momentos .content .texto {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                 }
 
                 .momentos .content .texto, .momentos .content .galeria {
                     width: 35%;
@@ -434,7 +550,8 @@ export default css.homeStyle`
                     font-weight: 500;
                     border-style: solid;
                     border-width: 1px 0;
-                    padding: 5px 0;
+                    padding: ${theme.paddingButton};
+                    font-size: ${theme.fontSizeButton};
                 }
 
                 .momentos .content .texto img{
@@ -451,6 +568,7 @@ export default css.homeStyle`
                     color: ${theme.shadesBlue};
                     display: flex;
                     flex-direction: row;
+                    height: 70vh;
                 }
 
                 .comminsoon h3{
@@ -482,7 +600,7 @@ export default css.homeStyle`
 
                 .content .people{
                     width: 100%;
-                    height: 280px;
+                    height: 450px;
                     transform: translateY(-20px);
                     border-style: solid;
                     border-width: 0 2.5px;
@@ -516,10 +634,62 @@ export default css.homeStyle`
                 }
 
                 .slides-gallery1 img, .slides-gallery2 img{
-                    width: 200px;
+                    width: 300px;
                     margin: 0px 20px;
 
                 }
+
+                .contacto {
+                    background: ${theme.background};
+                    width: 100%;
+                    height: 70vh;
+                    display: flex;
+                    justify-content: center;
+
+
+                }
+
+                .contacto .contenedor{
+                    width: 70%;
+                    margin: 0 auto;
+                    padding: 50px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .contacto .contenedor img {
+                    width: 100px;
+                }
+
+                .contacto .contenedor h2 {
+                    width: 100%;
+                    padding: 40px 0px;
+                    font-family: ${theme.font_regular};
+                    color: ${theme.primaryGray};
+                    font-size: 75px;
+                }
+
+                .contacto .contenedor h3 {
+                    color: ${theme.primaryGreen};
+                    border-style: solid;
+                    padding: ${theme.paddingButton};
+                    border-width: 2px 0;
+                    font-size: ${theme.fontSizeButton};
+                    font-family: ${theme.font_montserrat};
+                }
+
+                .contacto .contenedor p{
+                    width: 70%;
+                    padding: 0 0 50px;
+                    font-family: ${theme.font_regular};
+                    color: ${theme.textoGray};
+                    font-size: ${theme.fontSizeP};
+                }
+
+
 
 
                 @keyframes carrusel {
@@ -542,8 +712,245 @@ export default css.homeStyle`
                     }
                 }
 
-                @media (min-width: 1281px) {
+                @media (min-width: 1650px) {
 
+                    .titulo-banner{
+                        width: 450px;
+                    }
+
+                    .titulo-banner img{
+                        width: 100%;
+                    }
+
+                    .banner-container h1 {
+                        font-size: 70px;
+                    }
+
+                    .explora ul li img {
+                        width: 200px;
+                    }
+
+                    .explora ul{
+                        width; 55%;
+                    }
+
+                    .explora h1{
+                        border-width: 0px 0px 2px;
+                        padding: 50px 50px 12px;
+                        font-size: ${theme.tituloDesktop};
+                    }
+
+                    .equipo h1{
+                        font-size: ${theme.tituloDesktop};
+                        padding: 50px 250px 12px;
+                    }
+
+                    .equipo ul{
+                        width: 55%;
+                    }
+
+                    .equipo p{
+                        font-size: 20px;
+                        width: 40%;
+                    }
+
+                    .info  {
+                        height: 1200px;
+                    }
+
+                    .explora, .equipo, .momentos, .comminsoon, .contacto{
+                        height: 750px;
+                    }
+
+                    .info ul{
+                        width: 70%;
+                    }
+
+                    .info ul li{
+                        width: 400px;
+                        margin-right: 50px;
+                    }
+
+
+                    .info ul li .contenido h2{
+                        font-size: 40px;
+                    }
+
+                    .info ul li .contenido {
+                        height: 65%;
+                    }
+
+                    .info .imagen1, .info .imagen2, .info .imagen3{
+                        height: 250px;
+                    }
+
+                    .info ul li .contenido p{
+                        font-size: 20px;
+                        width: 85%;
+                    }
+                    .info ul li h4 {
+                        font-size: 20px;
+                    }
+
+                    .explora ul{
+                        width: 60%;
+                    }
+
+
+                    .momentos h1{
+                        width: 450px;
+                        font-size: 75px;
+                        margin: 0px 100px 30px 0px;
+
+                    }
+
+
+                    .momentos .content .texto img{
+                        width: 50px;
+                    }
+
+                    .comminsoon img {
+                        left: 0%;
+                        width: 30%;
+                    }
+                    .comminsoon h3{
+                        font-size: ${theme.comminsoonSize};
+                    }
+
+
+                    .comminsoon h1{
+                        font-size: ${theme.tituloDesktop};
+                        font-weight: 300;
+                    }
+
+                    .contacto .contenedor img{
+                        width: 180px;
+                    }
+
+
+
+                }
+
+                @media (min-width: 1281px) and (max-width: 1650px) {
+
+                    .titulo-banner{
+                        width: 450px;
+                    }
+
+                    .titulo-banner img{
+                        width: 100%;
+                    }
+
+                    .banner-container h1 {
+                        font-size: 70px;
+                    }
+
+                    .explora ul li img {
+                        width: 200px;
+                    }
+
+                    .explora ul{
+                        width; 55%;
+                    }
+
+                    .explora ul li{
+                        margin: 0 20px 0 0;
+                    }
+
+                    .explora h1{
+                        border-width: 0px 0px 2px;
+                        padding: 50px 50px 12px;
+                        font-size: ${theme.tituloDesktop};
+                    }
+
+                    .equipo h1{
+                        font-size: ${theme.tituloDesktop};
+                        padding: 50px 250px 12px;
+                    }
+
+                    .equipo ul{
+                        width: 55%;
+                    }
+
+                    .equipo ul li{
+                        margin: 0 20px 0 0;
+                    }
+
+                    .equipo p{
+                        font-size: 20px;
+                        width: 40%;
+                    }
+
+                    .info  {
+                        height: 1200px;
+                    }
+
+                    .explora, .equipo, .momentos, .comminsoon, .contacto{
+                        height: 90vh;
+                    }
+
+                    .info ul{
+                        width: 80%;
+                    }
+
+
+                    .info ul li .contenido h2{
+                        font-size: 40px;
+                    }
+
+                    .info ul li .contenido {
+                        height: 400px;
+                    }
+
+                    .info .imagen1, .info .imagen2, .info .imagen3{
+                        height: 250px;
+                    }
+
+                    .info ul li .contenido p{
+                        font-size: 20px;
+                        width: 85%;
+                    }
+                    .info ul li h4 {
+                        font-size: 20px;
+                    }
+
+                    .explora ul{
+                        width: 60%;
+                    }
+                    .momentos .content .texto {
+                        width: 50%;
+                        padding: 0 50px 0 0;
+                    }
+
+                    .momentos h1{
+                        width: 450px;
+                        font-size: 75px;
+                        margin: 0px 100px 30px 0px;
+
+                    }
+
+
+                    .momentos .content .texto img{
+                        width: 50px;
+                    }
+
+                    .comminsoon img {
+                        left: 0%;
+                        width: 30%;
+                    }
+                    .comminsoon h3{
+                        font-size: ${theme.comminsoonSize};
+                    }
+
+
+                    .comminsoon h1{
+                        font-size: ${theme.tituloDesktop};
+                        font-weight: 300;
+                    }
+
+                    .contacto .contenedor img{
+                        width: 180px;
+                    }
 
 
                 }
@@ -555,9 +962,14 @@ export default css.homeStyle`
 
                 @media (min-width: 1025px) and (max-width: 1280px) {
 
-                    .momentos .content .texto{
-                        width: 50%;
-                        padding: 0 50px 0 0;
+
+                    .info{
+                        height: auto;
+                        padding: 0px 0px 150px;
+                    }
+
+                    .info h3{
+                        margin: 100px 0px;
                     }
 
                     .info ul{
@@ -565,21 +977,108 @@ export default css.homeStyle`
                     }
                     .info ul li .contenido {
 
-                        padding: 15px 40px
+                        padding: 15px 20px;
+                        height: 70%;
 
                     }
 
                     .info ul li .contenido h2{
-                        font-size: 25px;
+                        font-size: 35px;
                     }
 
-                    .explora ul{
-                        width: 70%;
+                    .info ul li .contenido p{
+                        font-size: 14px;
                     }
+
 
                     .info h3{
                             width: 40%;
 
+                    }
+
+                    .info ul li .imagen {
+                        background-size: 100% 100%;
+                        transition: background-size 1s ease-in-out;
+                        -moz-transition: background-size 1s ease-in-out;
+                        -ms-transition: background-size 1s ease-in-out;
+                        -o-transition: background-size 1s ease-in-out;
+                        -webkit-transition: background-size 1s ease-in-out;
+
+                    }
+
+                    .info ul li:hover .imagen{
+
+                        background-size: 120% 120%;
+
+                    }
+
+                    .equipo{
+                        width: 80%;
+                        margin: 0 auto;
+                        padding: 0px 0px 100px 0px;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+
+                    }
+
+                    .equipo p{
+                        padding: 40px 0px 0px 0px;
+                    }
+
+                    .equipo ul {
+                        width: 100%;
+                        padding: 70px 0px 70px;
+                    }
+
+                    .equipo ul li{
+                        margin: 0 20px 0 0;
+                    }
+
+
+
+
+                    .explora, .contacto {
+                        height: 100vh;
+                    }
+                    .explora ul{
+                        width: 70%;
+                    }
+
+                    .explora ul li{
+                        margin: 0 20px 0 0;
+                    }
+
+                    .explora h1, .equipo h1, .contacto .contenedor h2 {
+                        font-size: 60px;
+                    }
+
+
+                    .momentos {
+                        height: auto;
+                    }
+
+                    .momentos .content .texto{
+                        width: 50%;
+                        padding: 0 50px 0 0;
+                    }
+
+                    .momentos .slides-gallery1 img,
+                    .momentos .slides-gallery2 img {
+                        width: 250px;
+                    }
+                    .momentos .content .people{
+                        height: 350px;
+                    }
+
+                    .momentos h1 {
+                        width: 300px;
+                        font-size: 50px;
+                        margin: 0px 0px 30px 0px;
+                    }
+
+                    .comminsoon {
+                        height: 100vh;
                     }
 
                     .comminsoon img{
@@ -590,6 +1089,14 @@ export default css.homeStyle`
                     .comminsoon .contenido h1{
                         width: 80%;
                         margin: 0 auto;
+                        font-size: 50px;
+                        font-weight: 300;
+                    }
+
+
+
+                    .comminsoon h3 {
+                        font-size: 30px;
                     }
 
                     .momentos .content{
@@ -617,7 +1124,131 @@ export default css.homeStyle`
                     .swiper-container{
                         width: 80%;
                     }
+                    .info{
+                        height: auto;
+                        padding: 0px 0px 100px;
+                    }
 
+                    .info h3{
+                        margin: 100px 0px;
+                    }
+
+                    .info ul{
+                        width: 80%;
+                    }
+                    .info ul li .contenido {
+
+                        padding: 15px 20px;
+                        height: 70%;
+
+                    }
+
+                    .info ul li .contenido h2{
+                        font-size: 30px;
+                    }
+
+                    .info ul li .contenido p{
+                        font-size: 14px;
+                    }
+
+
+                    .info h3{
+                            width: 40%;
+
+                    }
+
+                    .info ul li .imagen {
+                        background-size: 100% 150%;
+                        transition: background-size 1s ease-in-out;
+                        -moz-transition: background-size 1s ease-in-out;
+                        -ms-transition: background-size 1s ease-in-out;
+                        -o-transition: background-size 1s ease-in-out;
+                        -webkit-transition: background-size 1s ease-in-out;
+
+                    }
+
+                    .info ul li:hover .imagen{
+
+                        background-size: 120% 170%;
+
+                    }
+
+                    .equipo{
+                        width: 80%;
+                        margin: 0 auto;
+                        padding: 0px 0px 100px 0px;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+
+                    }
+
+                    .equipo p{
+                        padding: 40px 0px 0px 0px;
+                    }
+
+                    .equipo ul {
+                        width: 100%;
+                        padding: 70px 0px 70px;
+                    }
+
+
+
+                    .explora, .contacto {
+                        height: 100vh;
+                    }
+                    .explora ul{
+                        width: 70%;
+                    }
+
+                    .explora h1, .equipo h1, .contacto .contenedor h2 {
+                        font-size: 60px;
+                    }
+
+
+                    .momentos {
+                        height: 70vh;
+                    }
+
+                    .momentos .content .texto{
+                        width: 50%;
+                        padding: 0 50px 0 0;
+                    }
+
+                    .momentos .slides-gallery1 img,
+                    .momentos .slides-gallery2 img {
+                        width: 250px;
+                    }
+                    .momentos .content .people{
+                        height: 350px;
+                    }
+
+                    .comminsoon {
+                        height: 100vh;
+                    }
+
+                    .comminsoon img{
+                        left: 0%;
+                        width: 40%;
+                    }
+
+                    .comminsoon .contenido h1{
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+
+                    .momentos .content{
+                        width: 80%;
+                    }
+
+                    .swiper-container{
+                        width: 80%;
+                    }
+
+                    .swiper-slide img{
+                        width: 200px;
+
+                    }
                 }
 
                 /*
@@ -636,9 +1267,227 @@ export default css.homeStyle`
                 */
 
                 @media (min-width: 481px) and (max-width: 767px) {
+                    .swiper-container{
+                        width: 80%;
+                    }
 
 
+                    .home-container {
+                        top: 0px;
+                    }
 
+                    .banner-container h1{
+                        background: ${theme.backgroundSepiaTransparente};
+                        text-align: center;
+                    }
+
+                    .banner-container .cortina, .banner-container .cortina-dos, .banner-container .cortina-tres {
+                        width: 150%;
+                        display: none;
+                    }
+
+                    .banner-container .cortina-dos {
+                        left: 65%;
+                    }
+
+
+                    .banner-container .cortina-tres {
+                        left: 75%;
+                    }
+                    .info{
+                        height: auto;
+                        padding: 0px 0px 100px;
+                    }
+
+                    .info .imagen1, .info .imagen2, .info .imagen3 {
+                        height: 200px;
+                    }
+
+                    .info ul li h4 {
+                        font-size: 20px;
+                    }
+
+                    .info h3{
+                        margin: 100px 0px;
+                    }
+
+                    .info ul{
+                        width: 80%;
+                    }
+                    .info ul li .contenido {
+
+                        padding: 15px 20px;
+                        height: auto;
+
+                    }
+
+                    .info ul li .contenido h2{
+                        font-size: 35px;
+                    }
+
+                    .info ul li .contenido p{
+                        font-size: 20px;
+                    }
+
+
+                    .info h3{
+                            width: 80%;
+
+                    }
+
+                    .info ul {
+                        width: 80%;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .info ul li{
+                        width: 80%;
+                        margin: 0 0 20px;
+                    }
+
+                    .info ul li .imagen {
+                        background-size: 100% 150%;
+                        transition: background-size 1s ease-in-out;
+                        -moz-transition: background-size 1s ease-in-out;
+                        -ms-transition: background-size 1s ease-in-out;
+                        -o-transition: background-size 1s ease-in-out;
+                        -webkit-transition: background-size 1s ease-in-out;
+
+                    }
+
+                    .info ul li:hover .imagen{
+
+                        background-size: 120% 170%;
+
+                    }
+
+                    .equipo{
+                        width: 80%;
+                        margin: 0 auto;
+                        padding: 0px 0px 100px 0px;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+
+                    }
+
+                    .equipo p{
+                        padding: 40px 0px 0px 0px;
+                    }
+
+                    .equipo ul {
+                        width: 100%;
+                        padding: 70px 0px 70px;
+                        flex-direction: column
+                    }
+
+                    .equipo h1{
+                        padding: 50px 0px 12px;
+                    }
+
+                    .equipo p{
+                        width: 100%;
+                    }
+
+                    .equipo ul li {
+                        margin: 0 0 20px;
+                    }
+
+
+                    .explora{
+                        height: auto;
+                    }
+
+                    .explora ul{
+                        width: 80%;
+                        flex-direction: column;
+                    }
+
+                    .explora h1{
+                       padding: 50px 0 20px;
+                    }
+
+                    .explora h1, .equipo h1, .contacto .contenedor h2 {
+                        font-size: 30px;
+                        width: 80%;
+                    }
+
+                    .explora ul li img{
+                        width: 200px;
+                    }
+
+
+                    .momentos {
+                        height: auto;
+                    }
+
+                    .momentos h1{
+                        text-align: center;
+                    }
+
+                    .momentos .content {
+                        flex-direction: column;
+                        transform: translateX(0%);
+                    }
+
+                    .momentos .content .texto{
+                        width: 100%;
+                        padding: 0 0 0 0;
+                        align-items: center;
+                        margin: 0 0 50px;
+                    }
+
+                    .momentos .slides-gallery1 img,
+                    .momentos .slides-gallery2 img {
+                        width: 250px;
+                    }
+                    .momentos .content .people{
+                        height: 350px;
+                    }
+
+                    .comminsoon {
+                        height: 100vh;
+                        flex-direction: column;
+                    }
+
+                    .comminsoon img{
+                        left: 0%;
+                        width: 350px;
+                    }
+
+                    .comminsoon .contenido {
+
+                        padding: 50px 0 0;
+                    }
+
+                    .comminsoon .contenido h1{
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+
+                    .comminsoon .contenido, .comminsoon .logo {
+                        width: 100%;
+                    }
+
+                    .momentos .content{
+                        width: 80%;
+                    }
+
+                    .swiper-container{
+                        width: 80%;
+                    }
+
+                    .swiper-slide img{
+                        width: 200px;
+
+                    }
+
+
+                    .contacto {
+                        height: 100vh;
+                    }
                 }
 
                 /*
@@ -648,15 +1497,80 @@ export default css.homeStyle`
 
                 @media (min-width: 320px) and (max-width: 480px) {
 
+                    .swiper-titulo-container{
+
+                        position: absolute;
+                        z-index: 9999;
+                        align-items: center;
+                        height: 100vh;
+                        justify-content: center;
+
+                    }
+
+                    .titulo-banner {
+                        width: 100vw;
+                        height: auto;
+                        align-items: center;
+                        text-align: center;
+                        position: relative;
+                        left: 0;
+
+                    }
+
+                    .titulo-banner h1{
+                        width: 70%;
+                        padding: 50px 0px;
+                        background: ${theme.backgroundSepiaTransparente};
+
+                    }
+
+
                     .banner-container {
                         display: none;
+                    }
+
+
+                    .banner, .banner2, .banner3{
+
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
+
+                    .banner2, .banner3 {
+                        background-position-x: 50%;
+                    }
+
+                    .banner3{
+                        background-position-x: 70%;
+                    }
+
+                    .banner h1, .banner3 h1{
+                        background: ${theme.backgroundSepia};
+                        width: 80%;
+                        margin: 0 auto;
+                        padding: 20px;
+                        color: ${theme.primaryGreen};
+                        border-style: solid;
+                        border-color: ${theme.primaryGreen};
+
+                    }
+
+                    .banner2 img{
+                        width: 250px;
+                        background: ${theme.backgroundSepia};
+                        padding: 20px;
+
                     }
 
                     .arrowSwiper{ z-index: 999;}
 
                     .info h3{
                         width: 80%;
+                        font-size: 10px;
                     }
+
+
 
                     .info ul{
                         flex-direction: column;
@@ -670,10 +1584,29 @@ export default css.homeStyle`
                         margin-bottom: 20px;
                     }
 
+                    .info ul li .contenido {
+                        height: auto;
+                    }
+
+                    .info ul li .contenido h2 {
+                        font-size: 30px;
+                    }
+
+                    .info ul li .contenido p {
+                        font-size: 20px;
+                    }
+
+                    .info .imagen1, .info .imagen2, .info .imagen3 {
+                        height: 200px;
+                    }
+
                     .explora h1 {
 
                         padding: 50px 0px 12px;
                         font-size: 25px;
+                    }
+                    .explora .servicio span {
+                        font-size: 20px;
                     }
 
                     .team-mobile{
@@ -701,6 +1634,9 @@ export default css.homeStyle`
                         padding: 0;
                         margin-top: 40px;
                     }
+                    .equipo h3 {
+                        width: 80%;
+                    }
 
                     .equipo p{
                         width: 80%;
@@ -721,6 +1657,9 @@ export default css.homeStyle`
                         width: 100%;
                         text-align: center;
                         margin-bottom: 70px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
 
                     .momentos .content .texto span{
@@ -748,6 +1687,26 @@ export default css.homeStyle`
                         position: absolute;
                         bottom: 0;
                         width: 70%;
+                    }
+
+                    .contacto .contenedor {
+                        width: 80%;
+                    }
+
+                    .contacto .contenedor h2 {
+                        font-size: 50px;
+                    }
+
+                    .contacto .contenedor p {
+                        width: 100%;
+                    }
+
+                    .info, .equipo, .momentos, .contacto  {
+                        height: auto;
+                    }
+
+                    .comminsoon {
+                        height: 100vh;
                     }
 
 

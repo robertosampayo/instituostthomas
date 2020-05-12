@@ -15,7 +15,7 @@ export default css.contactoStyle`
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    padding: 100px 0px;
+                    padding: 0px 0px 100px;
                 }
                 .info{
                     display: flex;
@@ -25,14 +25,16 @@ export default css.contactoStyle`
                     align-items: center;
                     justify-content: center;
                     padding: 20px;
+                    height: 95vh;
                 }
 
                 .info h1{
                     padding: 40px 0px;
                     color: ${theme.primaryGreen};
+                    font-size: 70px;
                 }
                 .info h3{
-                    font-size: 14px;
+                    font-size: 18px;
                     font-family: ${theme.font_montserrat};
                     color: ${theme.primaryGreen};
                     font-weight: 500;
@@ -44,14 +46,20 @@ export default css.contactoStyle`
                     padding: 10px;
                     border-color: #53764c;
                 }
+
+                .info h3 a:hover, .info p span:hover{
+                    font-weight: 600;
+                }
+
                 .info p{
                     width: 65%;
                     padding: 0 0 40px;
                     font-family: ${theme.font_regular};
                     color: ${theme.textoGray};
+                    font-size: 22px;
                 }
                 .info img{
-                    width: 250px;
+                    width: 300px;
                 }
 
                 .info a{
@@ -68,7 +76,7 @@ export default css.contactoStyle`
                 }
 
                 #formulario{
-                    padding-top: 50px;
+                    padding: 0 0 50px 0;
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
@@ -88,6 +96,7 @@ export default css.contactoStyle`
                 #formulario label{
                     font-family: ${theme.font_regular};
                     color: ${theme.primaryGreen};
+                    padding: 0 0 10px;
                 }
 
                 #formulario input{
@@ -109,12 +118,22 @@ export default css.contactoStyle`
                     border-radius: 50px;
                     background: transparent;
                     padding: 5px;
-                    background: ${theme.primaryGreen};
-                    color: ${theme.texto};
+                    background: ${theme.background};
+                    color: ${theme.primaryGreen};
                     text-decoration: none;
                     border: 0;
                     cursor: pointer;
                     padding: 8px;
+                    border-style: solid;
+                    border-width: 2px;
+                    border-color: ${theme.primaryGreen};
+                }
+
+                #formulario button:hover{
+
+                    background: ${theme.primaryGreen};
+                    color: ${theme.texto};
+
                 }
 
                 @media (min-width: 1281px) {
@@ -131,8 +150,13 @@ export default css.contactoStyle`
 
                 @media (min-width: 1025px) and (max-width: 1280px) {
 
+                        main { padding: 20px 0px 100px; }
+                        .info h1{ font-size: 50px; }
+                        .info img { width: 250px; }
 
 
+                        .info p{ font-size: 18px; padding: 0 0 20px; }
+                        .info h3{ font-size: 15px;  }
 
                 }
 
@@ -164,12 +188,12 @@ export default css.contactoStyle`
 
                 @media (min-width: 481px) and (max-width: 767px) {
 
-                    main{
-                        padding: 50px 0px 100px;
-                    }
+
                     main, .info{
                         width: 100%;
                     }
+
+                    .info h3{ width: 80%; }
 
                     .info h1{
                         font-size: 35px;

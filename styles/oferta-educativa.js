@@ -16,7 +16,6 @@ export default css.ofertaEducativaStyle`
                     }
 
 
-
                     .banner-texto{
                         display: flex;
                         justify-content: flex-end;
@@ -41,7 +40,7 @@ export default css.ofertaEducativaStyle`
                     }
 
                     .banner .linea-larga-black{
-                        margin: 0 0 30px auto;
+                        margin: 0 0 30px 0;
 
                     }
 
@@ -75,30 +74,41 @@ export default css.ofertaEducativaStyle`
 
                     display: flex;
                     flex-direction: row;
-                    padding: 20px 20px 20px 0;
+                    padding: 0px 0px 20px 0;
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding: 50px 0;
                 }
 
-                .traduccion-contenido img{
-                    height: 319px;
-                    width: auto;
-                }
 
-                .traduccion-texto{
-                    padding: 0px 20px;
-                    line-height: 28px;
-                }
 
                 .traduccion-texto p{
                     color: ${theme.primaryGray};
                 }
 
-                .traduccion-texto h2{
-                    margin-top: 20px;
+                .traduccion-texto h3{
+                    margin: 20px 0px;
                     font-family: ${theme.font_italic};
                     color: ${theme.primaryGreen};
+                    font-size: 40px;
                 }
                 .traduccion .linea-black {
                     background: ${theme.primaryGreen};
+                }
+
+
+                .traduccion .imagen {
+                    width: 30%;
+                }
+                .traduccion .traduccion-texto {
+                    line-height: 1.3;
+                    width: 70%;
+                    padding: 0px 0px 0px 50px;
+                }
+
+                .traduccion .imagen img {
+                    height: auto;
+                    width: 100%;
                 }
 
                 .actividades {
@@ -139,12 +149,15 @@ export default css.ofertaEducativaStyle`
                     padding: 20px;
                     height: 550px;
                     margin: 10px 0px;
-                    font-family: ${theme.font_italic};
+
                 }
 
-                .actividades .actividades-texto h2{
-                    font-size: 40px;
+                .actividades .actividades-texto h3{
+                    font-size: 50px;
                     color: ${theme.primaryGreen};
+                    font-family: ${theme.font_italic};
+                    font-weight: 400;
+
                 }
 
                 .actividades-titulo{
@@ -152,7 +165,7 @@ export default css.ofertaEducativaStyle`
                     margin: 0 auto;
                 }
 
-                .oferta-educativa .texto h2{
+                .oferta-educativa .texto h3{
                     font-family: ${theme.font_italic};
                     color: ${theme.primaryGreen};
 
@@ -174,15 +187,28 @@ export default css.ofertaEducativaStyle`
                     color: ${theme.primaryGray};
                 }
 
+                .linea-black{
+                    background: ${theme.primaryGreen};
+                }
 
 
+                .linea-larga{
+                    margin-bottom: 50px;
+                }
 
+                .linea{ width: 120px;}
 
-                @media (min-width: 1281px) {
+                 @media (min-width: 1650px) {
 
+                    h2{ font-size: 70px; }
+                    h3 { font-size: 50px; }
 
+                    .linea-black { margin-bottom: 50px; }
+                    p {
+                        font-size: 20px;
+                    }
 
-                        .banner h1{ font-size: 70px; width: 90%; }
+                      .banner h1{ font-size: 70px; width: 90%; }
                        .banner {
                             height: 800px;
                         }
@@ -200,7 +226,7 @@ export default css.ofertaEducativaStyle`
                         .metodologia{
 
                             width: 100%;
-                            height: 500px;
+                            height: auto;
                             background: ${theme.backgroundBlue};
                             color: ${theme.texto};
                             display: flex;
@@ -208,7 +234,7 @@ export default css.ofertaEducativaStyle`
                             align-items: center;
                             flex-direction: row;
                             text-align: left;
-                            padding: 20px 0px;
+                            padding: 150px 0px;
                             position: relative;
                         }
 
@@ -235,7 +261,6 @@ export default css.ofertaEducativaStyle`
 
                         .texto1 p, .texto2 p{
                             line-height: 25px;
-                            font-size: 16px;
                         }
 
                         .circulo2{
@@ -256,7 +281,7 @@ export default css.ofertaEducativaStyle`
                             flex-direction: column;
                             align-items: center;
                             align-content: center;
-                            width: 45%;
+                            width: 60%;
                             margin: 0 auto;
                             padding: 50px 0px;
                         }
@@ -282,8 +307,8 @@ export default css.ofertaEducativaStyle`
 
 
                         .oferta-educativa ul li img{
-                            height: 150px;
-                            width: 250px;
+                            height: auto;
+                            width: 300px;
                         }
 
                         .oferta-educativa ul{
@@ -296,32 +321,75 @@ export default css.ofertaEducativaStyle`
                             flex-direction: row;
                             justify-content: center;
                             align-items: center;
-                            width: 60%;
+                            width: 70%;
                         }
 
                         .horario-atencion .horario-texto{
                             padding: 20px;
                         }
 
-                        .horario-atencion .horario-texto h2{
-                            font-size: 40px;
-                        }
 
                         .horario-atencion .horario-texto .linea-black{
                             margin-bottom: 0px;
                         }
 
                         .horario-atencion img{
-                            height: 164px;
-                            width: 164px;
+                            height: auto;
+                            width: 250px;
                         }
 
 
 
                         .actividades-contenido, .actividades-titulo, .traduccion{
-                            width: 50%;
+                            width: 60%;
                             margin: 0 auto;
 
+                        }
+
+                        .actividades .actividades-texto {
+                            margin: 20px 0px;
+                            height: 650px;
+                        }
+
+                        .actividades .actividades-texto h3 {
+                            font-size: 60px;
+                        }
+
+                        .actividades .actividades-texto p {
+                            font-size: 25px;
+                        }
+
+                        .traduccion{
+                            height: auto;
+                            padding: 100px 0;
+                        }
+
+                        .traduccion-contenido {
+                            padding: 20px 0px 20px 0;
+                            justify-content: center;
+                            align-items: flex-start;
+                        }
+
+                        .traduccion .imagen {
+                            width: 30%;
+                        }
+                        .traduccion .traduccion-texto {
+                            width: 70%;
+                            padding: 0px 0px 0px 50px;
+                        }
+
+                        .traduccion .imagen img {
+                            height: auto;
+                            width: 100%;
+                        }
+
+                        .traduccion .traduccion-texto p{
+                            font-size: 25px;
+                            line-height: 1.5;
+                        }
+
+                        .traduccion .traduccion-texto h3{
+                            font-size: 50px;
                         }
 
                         .traduccion-background{
@@ -335,6 +403,236 @@ export default css.ofertaEducativaStyle`
                         .actividades-texto p {
                             font-size: 20px;
                         }
+
+                        .actividades-contenido{
+                            flex-direction: row!important;
+                            align-items: flex-start!important;
+                            justify-content: space-between!important;
+                        }
+
+                        .actividades-contenido li {
+                            margin: 0!important;
+                            width: 48%!important;
+                        }
+                 }
+
+
+                @media (min-width: 1281px) and (max-width: 1650px) {
+
+                        h2{ font-size: 70px; }
+                        h3 { font-size: 50px; }
+
+                        .linea-black { margin-bottom: 50px; }
+                        p {
+                            font-size: 20px;
+                        }
+
+                      .banner h1{ font-size: 70px; width: 90%; }
+                       .banner {
+                            height: 800px;
+                        }
+
+                        .banner .linea-larga-black{
+
+                            width: 60%;
+                            display: flex;
+                            justify-content: flex-start;
+                            text-align: left;
+                            margin: 0 0 20px;
+
+                        }
+
+                        .metodologia{
+
+                            width: 100%;
+                            height: auto;
+                            background: ${theme.backgroundBlue};
+                            color: ${theme.texto};
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: row;
+                            text-align: left;
+                            padding: 150px 0px;
+                            position: relative;
+                        }
+
+
+
+                        .metodologia .texto1, .metodologia .texto2{
+                            display: flex;
+                            flex-direction: column;
+                            width: 70%;
+                            margin-bottom: 20px;
+                            height: 300px;
+                            align-items: center;
+                            align-content: center;
+                            width: 30%;
+                            padding: 20px;
+                        }
+                        .metodologia .texto1 {
+                            width: 30%;
+                        }
+
+                        .metodologia h2{
+                            font-size: 60px;
+                        }
+
+                        .texto1 p, .texto2 p{
+                            line-height: 25px;
+                        }
+
+                        .circulo2{
+
+                            width: 300px;
+                            height: 300px;
+                            left: -150px;
+                            top: 30%;
+
+                        }
+
+
+
+                        .oferta-educativa{
+                            height: auto;
+                            justify-content: center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            align-content: center;
+                            width: 70%;
+                            margin: 0 auto;
+                            padding: 50px 0px;
+                        }
+
+                        .oferta-educativa ul li{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            background: ${theme.shadesGreen};
+                            display: flex;
+                            justify-content: flex-start;
+
+                        }
+
+                        .oferta-educativa ul li:not(:last-child){
+                            margin-bottom: 20px;
+                        }
+
+                        .oferta-educativa ul li .texto{
+                            padding: 20px;
+                        }
+
+
+                        .oferta-educativa ul li img{
+                            height: auto;
+                            width: 300px;
+                        }
+
+                        .oferta-educativa ul{
+                            width: 100%;
+                        }
+
+                        .horario-atencion{
+                            padding: 50px 0px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            width: 80%;
+                        }
+
+                        .horario-atencion .horario-texto{
+                            padding: 20px;
+                        }
+
+
+                        .horario-atencion .horario-texto .linea-black{
+                            margin-bottom: 0px;
+                        }
+
+                        .horario-atencion img{
+                            height: auto;
+                            width: 250px;
+                        }
+
+
+
+                        .actividades-contenido, .actividades-titulo, .traduccion{
+                            width: 70%;
+                            margin: 0 auto;
+
+                        }
+
+                        .actividades .actividades-texto {
+                            margin: 20px 0px!important;
+                            height: 650px!important;
+                        }
+
+                        .actividades .actividades-texto h3 {
+                            font-size: 40px!important;
+                        }
+
+                        .actividades .actividades-texto p {
+                            font-size: 25px;
+                        }
+
+                        .traduccion{
+                            height: auto;
+                            padding: 100px 0;
+                        }
+
+                        .traduccion-contenido {
+                            padding: 20px 0px 20px 0;
+                            justify-content: center;
+                            align-items: flex-start;
+                        }
+
+                        .traduccion .imagen {
+                            width: 40%;
+                        }
+                        .traduccion .traduccion-texto {
+                            width: 60%;
+                            padding: 0px 0px 0px 50px;
+                        }
+
+                        .traduccion .imagen img {
+                            height: auto;
+                            width: 100%;
+                        }
+
+                        .traduccion .traduccion-texto p{
+                            font-size: 20px;
+                            line-height: 1;
+                        }
+
+                        .traduccion .traduccion-texto h3{
+                            font-size: 40px;
+                        }
+
+                        .traduccion-background{
+                            height: 850px;
+                        }
+
+                        .oferta-educativa-background{
+                            height: 550px;
+                        }
+
+                        .actividades-texto p {
+                            font-size: 20px;
+                        }
+
+                        .actividades-contenido{
+                            flex-direction: row!important;
+                            align-items: flex-start!important;
+                            justify-content: space-between!important;
+                        }
+
+                        .actividades-contenido li {
+                            margin: 0!important;
+                            width: 48%!important;
+                        }
                 }
 
                     /*
@@ -344,8 +642,26 @@ export default css.ofertaEducativaStyle`
 
                     @media (min-width: 1025px) and (max-width: 1280px) {
 
-                        .banner h1{ font-size: 50px; width: auto; padding: 0;}
-                        .banner p { font-size: 15px; width: auto; }
+
+
+                        h2{ font-size: 50px; }
+                        h3 { font-size: 35px; }
+
+                        .linea-black {
+                            margin: 0;
+                        }
+
+                        p {
+                            font-size: 18px;
+                        }
+                        .banner  .linea-larga-black {
+                            height: 2px;
+                            width: 70%;
+                            margin: 0 0 10px 0;
+                        }
+
+                        .banner h1{ font-size: 60px; width: auto; padding: 0 0 30px;}
+                        .banner p { width: auto; }
 
                         .banner {
                             height: 600px;
@@ -354,11 +670,11 @@ export default css.ofertaEducativaStyle`
 
 
                         .banner-texto {
-                                transform: translateX(-20%);
+                                transform: translateX(0%);
                         }
 
                         .banner-titulo{
-                            width: 80%;
+                            width: 100%;
                         }
 
 
@@ -421,17 +737,25 @@ export default css.ofertaEducativaStyle`
                         }
 
                         .traduccion p{
-                            font-size: 15px;
+                            font-size: 16.5px;
                         }
 
                         .traduccion .traduccion-texto{
                             width: 100%;
                         }
 
-                        .traduccion .traduccion-contenido img{
-                            height: 100%;
+                        .traduccion .imagen {
+                            width: 40%;
+                        }
+
+                        .traduccion .traduccion-texto {
                             width: 60%;
                         }
+
+                        .traduccion .traduccion-texto h3 {
+                            font-size: 35px;
+                        }
+
 
                         .oferta-educativa{
                             height: auto;
@@ -443,6 +767,10 @@ export default css.ofertaEducativaStyle`
                             width: 55%;
                             margin: 0 auto;
                             padding: 50px 0px;
+                        }
+
+                        .oferta-educativa .linea-black {
+                            margin-bottom: 50px;
                         }
 
                         .oferta-educativa ul li{
@@ -488,9 +816,14 @@ export default css.ofertaEducativaStyle`
                         }
 
                         .horario-atencion img{
-                            height: 164px;
-                            width: 164px;
+                            height: auto;
+                            width: 200px;
                         }
+
+                        .horario-atencion .linea-black {
+                            margin-bottom: 0px;
+                        }
+
 
                         .actividades-contenido, .actividades-titulo, .traduccion{
                             width: 60%;
@@ -498,7 +831,22 @@ export default css.ofertaEducativaStyle`
 
                         }
 
+                        .actividades .actividades-texto {
+                            height: 500px!important;
+                        }
 
+                        .actividades-contenido{
+                            flex-direction: row!important;
+                            align-items: flex-start!important;
+                            justify-content: space-between!important;
+                        }
+
+                        .actividades-contenido li {
+                            margin: 0!important;
+                            width: 48%!important;
+                        }
+
+                        .actividades .linea-black { margin-bottom: 50px; }
 
                     }
 
@@ -510,8 +858,20 @@ export default css.ofertaEducativaStyle`
                     @media (min-width: 768px) and (max-width: 1024px) {
 
 
+
+                        h2{ font-size: 50px; }
+                        h3 { font-size: 35px; }
+
+                        .linea-black {
+                            margin: 0 0 50px;
+                        }
+
+                        p {
+                            font-size: 16px;
+                        }
+
                         .banner h1{ font-size: 40px; width: auto;}
-                        .banner p { font-size: 15px; width: auto;}
+                        .banner p { font-size: 15px; width: auto; margin: 0; line-height: 1.5;}
 
                         .banner-titulo {
                             width: 80%;
@@ -529,7 +889,7 @@ export default css.ofertaEducativaStyle`
                             align-items: center;
                             flex-direction: row;
                             text-align: left;
-                            padding: 20px 0px;
+                            padding: 100px 0px;
                             position: relative;
                         }
 
@@ -543,12 +903,18 @@ export default css.ofertaEducativaStyle`
                             height: 300px;
                             align-items: center;
                             align-content: center;
-                            width: 30%;
+                            width: 40%;
                             padding: 20px;
                         }
 
                         .texto1 p, .texto2 p{
                             line-height: 25px;
+                        }
+
+                        .traduccion {
+                            width: 70%;
+                            margin: 0 auto;
+                            padding: 50px 0;
                         }
 
                       .circulo2{
@@ -602,13 +968,34 @@ export default css.ofertaEducativaStyle`
                             width: 100%;
                         }
 
+                        .traduccion .imagen {
+                            width: 40%;
+                        }
+
+                        .traduccion .traduccion-texto {
+                            line-height: 1.2;
+                            width: 60%;
+
+                        }
+
+                        .traduccion .traduccion-texto p {
+                            font-size: 16px;
+                        }
+                        .traduccion-texto h3 {
+                            font-size: 35px;
+                        }
+
+                        .horario-atencion .linea-black {
+                            margin: 0;
+                        }
+
                         .horario-atencion{
                             padding: 50px 0px;
                             display: flex;
                             flex-direction: row;
                             justify-content: center;
                             align-items: center;
-                            width: 80%;
+                            width: 100%;
                         }
 
                         .horario-atencion .horario-texto{
@@ -616,8 +1003,23 @@ export default css.ofertaEducativaStyle`
                         }
 
                         .horario-atencion img{
-                            height: 164px;
-                            width: 164px;
+                            height: auto;
+                            width: 200px;
+                        }
+
+                        .actividades .actividades-texto h3 {
+                            font-size: 40px;
+                        }
+
+                        .actividades-contenido{
+                            flex-direction: row!important;
+                            align-items: flex-start!important;
+                            justify-content: space-between!important;
+                        }
+
+                        .actividades-contenido li {
+                            margin: 0!important;
+                            width: 48%!important;
                         }
 
                     }
@@ -639,8 +1041,17 @@ export default css.ofertaEducativaStyle`
 
                     @media (min-width: 481px) and (max-width: 767px) {
 
+                        h2 {
+                            font-size: 50px;
+                            text-align: center;
+                        }
+
+                        p {
+                            font-size: 20px;
+                        }
+
                         .banner h1{ font-size: 40px; width: auto;}
-                        .banner p { font-size: 15px; width: auto;}
+                        .banner p { font-size: 20px; width: auto; margin-top: 0px; }
                         .banner-texto{
                             width: 100%;
                             padding: 20px;
@@ -649,10 +1060,11 @@ export default css.ofertaEducativaStyle`
                         }
                         .banner {
                             background-position-x: 40%;
+                            height: 90vh;
                         }
 
                         .banner-titulo {
-                            width: 60%;
+                            width: auto;
                             margin: 0 auto;
                         }
 
@@ -677,7 +1089,7 @@ export default css.ofertaEducativaStyle`
                             text-align: left;
                             padding: 20px 0px;
                             position: relative;
-                            z-index: -1;
+                            z-index: 1;
                         }
 
 
@@ -689,6 +1101,12 @@ export default css.ofertaEducativaStyle`
                             margin-bottom: 20px;
                         }
 
+                        .metodologia .linea {
+                            width: 100%;
+                            margin-bottom: 20px;
+                            margin: 0 auto;
+                            margin-bottom: 20px;
+                        }
 
 
                         .circulo2{
@@ -717,6 +1135,14 @@ export default css.ofertaEducativaStyle`
                                 padding: 50px 0px;
                             }
 
+                            .oferta-educativa .texto h3 {
+                                font-size: 40px;
+                            }
+
+                            .oferta-educativa .texto p {
+                                font-size: 20px;
+                            }
+
                             .oferta-educativa ul li{
                                 display: flex;
                                 flex-direction: row;
@@ -732,14 +1158,18 @@ export default css.ofertaEducativaStyle`
                                 margin-bottom: 20px;
                             }
 
-                            .oferta-educativa ul li .texto{
-                                padding: 20px;
+                            .oferta-educativa ul li {
+                                flex-direction: column;
                             }
 
-
                             .oferta-educativa ul li img{
-                                height: 150px;
-                                width: 250px;
+                                height: auto;
+                                width: 100%;
+                            }
+
+                            .oferta-educativa ul li .texto{
+                                padding: 20px;
+                                width: 100%;
                             }
 
                             .oferta-educativa ul{
@@ -749,10 +1179,11 @@ export default css.ofertaEducativaStyle`
                             .horario-atencion{
                                 padding: 50px 0px;
                                 display: flex;
-                                flex-direction: row;
                                 justify-content: center;
                                 align-items: center;
                                 width:  100%;
+                                flex-direction: column;
+                                text-align: center;
                             }
 
                             .horario-atencion .horario-texto{
@@ -764,12 +1195,51 @@ export default css.ofertaEducativaStyle`
                                 width: 164px;
                             }
 
-                            .traduccion-contenido img{
+                            .traduccion {
+                                width: 80%;
+                                margin: 0 auto;
+                                padding: 50px 0;
+                            }
+
+                            .traduccion .traduccion-contenido img {
                                 display: none;
                             }
 
+
+                            .traduccion .traduccion-contenido{
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .traduccion .traduccion-texto {
+                                padding: 0;
+                                width: 100%;
+                            }
+}
+
                             .actividades .actividades-contenido{
                                 padding: 0 0 50px;
+                                justify-content: center;
+                                flex-direction: column;
+                                align-items: center;
+
+                            }
+                            .actividades .actividades-contenido li {
+                                margin: 0;
+                                width: 100%;
+                            }
+
+                            .actividades .actividades-texto h3 {
+                                font-size: 35px;
+                            }
+
+                            .actividades .actividades-texto {
+                                height: auto;
+                                margin: 10px 0px;
+                                padding: 20px 20px 100px 20px;
                             }
 
 
@@ -781,85 +1251,40 @@ export default css.ofertaEducativaStyle`
                     */
 
                     @media (min-width: 320px) and (max-width: 480px) {
-                        .banner { height: 600px; }
-                        .banner h1{ font-size: 35px; width: auto;}
-                        .banner p { font-size: 15px; width: auto;}
+
+                        h2 {
+                            font-size: 40px;
+                            text-align: left;
+                        }
+
+                        p {
+                            font-size: 16px;
+                        }
+
+                        .banner h1{ font-size: 40px; width: auto;}
+                        .banner p { font-size: 16px; width: auto; margin-top: 0px; }
                         .banner-texto{
                             width: 100%;
-                            padding: 20px;
+                            padding: 80px 20px;
                             margin: auto;
                             text-align: center;
                         }
                         .banner {
                             background-position-x: 40%;
-
+                            height: 90vh;
                         }
 
                         .banner-titulo {
-                            width: 100%;
+                            width: auto;
                             margin: 0 auto;
                         }
 
+                        footer{
 
-                        .traduccion-contenido img{
-                            display: none;
-                        }
-
-                        .oferta-educativa{
                             height: auto;
-                            justify-content: center;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            align-content: center;
-                            width: 80%;
-                            margin: 0 auto;
-                            padding: 50px 0px;
-                        }
+                            position: relative;
+                            padding: 50px 0px 50px;
 
-                        .oferta-educativa ul li{
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                            align-items: center;
-                            background: ${theme.shadesGreen};
-                            display: flex;
-                            justify-content: flex-start;
-
-                        }
-
-
-
-                        .oferta-educativa ul li .texto{
-                            padding: 20px;
-                        }
-
-
-                        .oferta-educativa ul li img{
-                            height: 150px;
-                            width: 250px;
-                        }
-
-                        .oferta-educativa ul{
-                            width: 100%;
-                        }
-
-                        .horario-atencion{
-                            padding: 50px 0px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                            align-items: center;
-                            width: 100%;
-                        }
-
-                        .horario-atencion .horario-texto{
-                            padding: 20px;
-                        }
-
-                        .horario-atencion img{
-                            height: 164px;
-                            width: 164px;
                         }
 
                         .metodologia{
@@ -887,16 +1312,19 @@ export default css.ofertaEducativaStyle`
                             margin-bottom: 20px;
                         }
 
-                        .metodologia h2{
-                                margin: 20px 0 20px;
-                                text-align: center;
-                                font-size: 40px;
+                        .metodologia .linea {
+                            width: 100%;
+                            margin-bottom: 20px;
+                            margin: 0 auto;
+                            margin-bottom: 20px;
                         }
 
 
-
                         .circulo2{
-                            display: none;
+                            width: 150px;
+                            height: 150px;
+                            left: -18%;
+                            top: 30%;
 
                         }
 
@@ -918,9 +1346,17 @@ export default css.ofertaEducativaStyle`
                                 padding: 50px 0px;
                             }
 
+                            .oferta-educativa .texto h3 {
+                                font-size: 40px;
+                            }
+
+                            .oferta-educativa .texto p {
+                                font-size: 20px;
+                            }
+
                             .oferta-educativa ul li{
                                 display: flex;
-                                flex-direction: column;
+                                flex-direction: row;
                                 justify-content: center;
                                 align-items: center;
                                 background: ${theme.shadesGreen};
@@ -929,14 +1365,21 @@ export default css.ofertaEducativaStyle`
 
                             }
 
+                            .oferta-educativa ul li:not(:last-child){
+                                margin-bottom: 20px;
+                            }
+
+                            .oferta-educativa ul li {
+                                flex-direction: column;
+                            }
+
+                            .oferta-educativa ul li img{
+                                height: auto;
+                                width: 100%;
+                            }
 
                             .oferta-educativa ul li .texto{
                                 padding: 20px;
-                            }
-
-
-                            .oferta-educativa ul li img{
-                                height: 200px;
                                 width: 100%;
                             }
 
@@ -947,15 +1390,18 @@ export default css.ofertaEducativaStyle`
                             .horario-atencion{
                                 padding: 50px 0px;
                                 display: flex;
-                                flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
                                 width:  100%;
+                                flex-direction: column;
                                 text-align: center;
                             }
 
                             .horario-atencion .horario-texto{
                                 padding: 20px;
+                            }
+                            .horario-atencion .horario-texto h2 {
+                                text-align: center;
                             }
 
                             .horario-atencion img{
@@ -963,59 +1409,53 @@ export default css.ofertaEducativaStyle`
                                 width: 164px;
                             }
 
-                            .traduccion-background{
-                                background-position-x: -100px;
+                            .traduccion {
+                                width: 80%;
+                                margin: 0 auto;
+                                padding: 50px 0;
+
                             }
 
-                            .traduccion h1{ text-align: center;}
-
-                            .traduccion-contenido img{
+                            .traduccion .traduccion-contenido img {
                                 display: none;
                             }
 
-                            .actividades .actividades-contenido{
-                                padding: 0 0 50px;
-                            }
 
-                            .actividades-titulo{
-                                text-align: center;
-                            }
-
-                            .actividades-contenido{
+                            .traduccion .traduccion-contenido{
+                                display: flex;
                                 flex-direction: column;
                                 width: 100%;
+                                justify-content: center;
+                                align-items: center;
                             }
 
-                            .actividades-contenido li{
-                                width: 80%;
-                                margin: 0 auto!important;
-                            }
-
-                            .linea{
+                            .traduccion .traduccion-texto {
+                                padding: 0;
                                 width: 100%;
-                                margin: auto;
-                                height: 2px;
+                            }
+}
+
+                            .actividades .actividades-contenido{
+                                padding: 0 0 50px;
+                                justify-content: center;
+                                flex-direction: column;
+                                align-items: center;
+
+                            }
+                            .actividades .actividades-contenido li {
+                                margin: 0;
+                                width: 100%;
                             }
 
-                            .traduccion {
-                                padding: 40px 20px 70px 20px;
-                                text-align: center;
+                            .actividades .actividades-texto h3 {
+                                font-size: 35px;
                             }
 
-                            .traduccion .linea-black{
-                                width: 80%;
-                                margin: 0 auto;
+                            .actividades .actividades-texto {
+                                height: auto;
+                                margin: 10px 0px;
+                                padding: 20px 20px 100px 20px;
                             }
-
-                            .traduccion-contenido{
-                                padding: 0;
-                                margin-top: 40px;
-                            }
-
-                            .traduccion-texto{
-                                padding: 0;
-                            }
-
 
 
                     }

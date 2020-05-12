@@ -24,7 +24,6 @@ export default class extends React.Component {
                     <div className='banner-texto text-focus-in'>
                         <div className='banner-titulo'>
                             <h1 className='text-focus-in'>Quienes Somos</h1>
-                            <div className='linea-larga-black'></div>
 
                         </div>
                         <p className='text-focus-in'>
@@ -59,9 +58,9 @@ export default class extends React.Component {
 
                             <Fade duration={1500}>
                                 <p >
-                                    Niños
-                                    Adolescentes
-                                    Adultos
+                                    Niños <br />
+                                    Adolescentes <br />
+                                    Adultos <br />
                                 </p>
                             </Fade>
 
@@ -84,7 +83,7 @@ export default class extends React.Component {
                     <div className='item'>
                         <h2>Misión</h2>
                         <div className='linea-black'></div>
-                            <Fade duration={2000}>
+                            <Fade duration={1500}>
                                 <p>
                                     Combinar excelentes estándares de enseñanza con un fuerte compromiso para con nuestros alumnos, con el fin de que puedan comunicarse en el contexto donde lo necesiten.
                                 </p>
@@ -125,7 +124,7 @@ export default class extends React.Component {
                     <div className='texto'>
                         <h1>María Carolina Baracco</h1>
                         <h3>Fundadora</h3>
-                        <p>Profesora de Inglés General y para Fines Específicos, Teacher of Business English LCCI y Directora del Instituto St. Thomas. </p>
+                        <p className='sub-texto'>Profesora de Inglés General y para Fines Específicos, Teacher of Business English LCCI y Directora del Instituto St. Thomas. </p>
                         <div className='linea-black'></div>
                         <p>
                             El idioma Inglés fue desde siempre mi pasión. Elegí hacer de esta pasión mi profesión: enseñar a comunicarnos en este mundo global. Y fue así que en 1988, luego de haberme graduado como Profesora de Inglés, comencé este emprendimiento: el Instituto de Inglés St. Thomas, con unos pocos alumnos y mucho entusiasmo.
@@ -143,9 +142,9 @@ export default class extends React.Component {
 
             <section className='staff'>
                 <div className='contenido'>
-                    <div className='item'>
-                        <div className='texto'>
-                            <h1>Staff</h1>
+                    <div className='item staff-texto'>
+                        <div className='texto '>
+                            <h2 className='regular'>Staff</h2>
                             <div className='linea'></div>
                             <p>
                                 Profesionales graduadas (profesoras, traductoras y licenciadas) con certificación comprobable y altamente capacitadas para el desempeño idóneo de la profesión.
@@ -169,7 +168,7 @@ export default class extends React.Component {
                     <div className='item staff2 '>
                         <div className='shadow-box'></div>
                         <div className='texto'>
-                            <h2>Graciela Malpassi</h2>
+                            <h2>Natalia Valentini</h2>
                             <div className='linea-larga'></div>
                             <p>
                                 Profesora de Inglés General y para Fines Específicos y Traductora Literaria y Técnico-Científica en Inglés.
@@ -180,7 +179,7 @@ export default class extends React.Component {
                     <div className='item staff3'>
                         <div className='shadow-box'></div>
                         <div className='texto'>
-                            <h2>Graciela Malpassi</h2>
+                            <h2>María Eugenia Pellegrin</h2>
                             <div className='linea-larga'></div>
                             <p >
                                 Profesora de Inglés General y para Fines Específicos y Traductora Literaria y Técnico-Científica en Inglés.
@@ -191,7 +190,7 @@ export default class extends React.Component {
                     <div className='item staff4'>
                         <div className='shadow-box'></div>
                         <div className='texto'>
-                            <h2>Graciela Malpassi</h2>
+                            <h2>María Delia Manila</h2>
                             <div className='linea-larga'></div>
                             <p>
                                 Profesora de Inglés General y para Fines Específicos y Traductora Literaria y Técnico-Científica en Inglés.
@@ -203,7 +202,7 @@ export default class extends React.Component {
                     <div className='item staff5'>
                         <div className='shadow-box'></div>
                         <div className='texto'>
-                            <h2>Graciela Malpassi</h2>
+                            <h2>Nanci <br />  Rius</h2>
                             <div className='linea-larga'></div>
                             <p>
                                 Profesora de Inglés General y para Fines Específicos y Traductora Literaria y Técnico-Científica en Inglés.

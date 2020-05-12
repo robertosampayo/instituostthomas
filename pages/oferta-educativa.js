@@ -12,12 +12,12 @@ export default class extends React.Component {
             <div className='banner'>
                 <div className='banner-texto'>
                     <div className='banner-titulo'>
-                        <h1>¿Por qué elegir estudiar en St. Thomas?</h1>
+                        <h1>¿Por qué elegir <br /> estudiar en <br /> St. Thomas?</h1>
                         <div className='linea-larga-black'></div>
 
                     </div>
                     <p>
-                        Porque ponemos especial atención y dedicación en forjar la integridad del alumno. <br /><br /> Porque enseñamos a desarrollar las habilidades blandas o <span className='italic strong'>soft skills</span>. <br /> <br /> Porque nuestro equipo de trabajo realiza una continua capacitación profesional.
+                        Porque ponemos especial atención y <br /> dedicación en forjar la integridad del alumno. <br /><br /> Porque enseñamos a desarrollar las<br /> habilidades blandas o <span className='italic strong'>soft skills</span>. <br /> <br /> Porque nuestro equipo de trabajo realiza una <br /> continua capacitación profesional.
                     </p>
 
                 </div>
@@ -59,7 +59,7 @@ export default class extends React.Component {
                     <li>
                         <img src='../static/imgs/oferta1.png' />
                         <div className='texto'>
-                            <h2>Kinder a Kids VII:</h2>
+                            <h3>Kinder a Kids VII:</h3>
                             <p>Niños a partir de los 5 años, desde preescolar hasta séptimo grado.</p>
 
                         </div>
@@ -67,7 +67,7 @@ export default class extends React.Component {
                     <li>
                         <img src='../static/imgs/oferta2.png' />
                         <div className='texto'>
-                            <h2>Tenns:</h2>
+                            <h3>Tenns:</h3>
                             <p>Adolescentes desde 1° a 5° años.</p>
 
                         </div>
@@ -75,7 +75,7 @@ export default class extends React.Component {
                     <li>
                         <img src='../static/imgs/oferta3.png' />
                         <div className='texto'>
-                            <h2>Adultos:</h2>
+                            <h3>Adultos:</h3>
                             <p>Inglés general o con fines específicos (turismo, legal, médico, entre otros) Inglés de negocios: a particulares o empresas en inglés de negocios (Business English).</p>
 
                         </div>
@@ -102,19 +102,22 @@ export default class extends React.Component {
 
             <section className='traduccion'>
 
-                <h1>Servicio de traducción</h1>
+                <h2>Servicio de traducción</h2>
                 <div className='linea-black'></div>
                 <div className='traduccion-contenido'>
-                    <img src='../static/imgs/recurso3.png' />
+                    <div className='imagen'>
+                        <img src='../static/imgs/recurso3.png' />
+
+                    </div>
                     <div className='traduccion-texto'>
                         <p>
                             Nuestro equipo de traductoras cuenta con amplia experiencia en sus áreas de especialización.
                             Nuestro servicio de traducciones abarca dos grandes áreas:
 
                         </p>
-                        <h2>Traducciones técnicas</h2>
+                        <h3>Traducciones técnicas</h3>
                         <p>Documentación que requiere de conocimientos técnicos específicos en materia tanto de terminología como de funcionamiento de la industria o sector de negocio: medicina, agro, tecnología, ingeniería, economía, documentación de divulgación científica, entre otros.</p>
-                        <h2>Traducciones jurídicas</h2>
+                        <h3>Traducciones jurídicas</h3>
                         <p>Documentación para cuya traducción se necesita la firma de un profesional colegiado. </p>
 
                     </div>
@@ -124,7 +127,7 @@ export default class extends React.Component {
 
             <section className='actividades'>
                 <div className='actividades-titulo'>
-                    <h1>Otras actividades</h1>
+                    <h2>Otras actividades</h2>
                     <div className='linea-larga'></div>
 
                 </div>
@@ -132,7 +135,7 @@ export default class extends React.Component {
                     <li>
                         <img src='../static/imgs/actividades1.png' />
                         <div className='actividades-texto'>
-                            <h2>Campamentos de inmersión al idioma para niños y adolescentes.</h2>
+                            <h3>Campamentos de inmersión al idioma para niños y adolescentes.</h3>
                             <div className='linea-larga-black'></div>
                             <p>
                                     Los alumnos tienes la posibilidad  de practicar el idioma en distintas situaciones interactuando con nativos de distintos países.
@@ -144,7 +147,7 @@ export default class extends React.Component {
                     <li>
                         <img src='../static/imgs/actividades2.png' />
                         <div className='actividades-texto'>
-                            <h2>Viajes de estudios a USA: Boston, <br /> Massachusetts</h2>
+                            <h3>Viajes de estudios a USA: Boston, <br /> Massachusetts</h3>
                             <div className='linea-larga-black'></div>
                             <p>
                                 Curso semi-intensivo de tres o cuatro semanas. 20 horas semanales. Alojamiento en campus. A solo 20 minutos del centro de Boston. Excelentes clases dadas por profesionales nativos experimentados.
