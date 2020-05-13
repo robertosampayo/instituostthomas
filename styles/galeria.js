@@ -589,9 +589,7 @@ export default css.galeriaStyle`
 
                         }
 
-                        .galeria .image12 {
-                            display: none;
-                        }
+
 
 
 
