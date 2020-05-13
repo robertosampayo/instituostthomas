@@ -596,7 +596,7 @@ export default css.galeriaStyle`
                         .galeria .image16{
 
                             position: relative;
-                            transform: translateX(-30%) rotate(-8deg);
+                            transform: rotate(-8deg);
 
                         }
 

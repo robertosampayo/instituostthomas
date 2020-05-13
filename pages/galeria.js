@@ -411,7 +411,6 @@ export default class extends React.Component {
                 <img className='forma-absoluta3' src='../../static/imgs/galeria/students-20.png' />
                 <img className='forma-absoluta4' src='../../static/imgs/galeria/students-21.png' />
                 <img className='forma-absoluta5' src='../../static/imgs/galeria/aulas-09.png' />
-                <img className='forma-absoluta6' src='../../static/imgs/galeria/form9.png' />
 
 
                 </div>
