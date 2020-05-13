@@ -441,6 +441,10 @@ export default css.homeStyle`
                     color: ${theme.textoGray};
                 }
 
+                .equipo .conoce-staff {
+                    padding: 50px 0 0;
+                }
+
                 .equipo h3{
                     font-family: ${theme.font_montserrat};
                     font-weight: 400;
@@ -462,7 +466,7 @@ export default css.homeStyle`
                     align-items: center;
                     width: 80%;
                     margin: 0 auto;
-                    padding: 40px 0px;
+                    padding: 0px 0px 40px;
                 }
 
                 .equipo ul li{

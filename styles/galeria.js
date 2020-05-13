@@ -12,10 +12,10 @@ export default css.galeriaStyle`
                         margin: 0 auto;
                         align-items: center;
                         padding: 80px 0px;
-}
+
                     }
 
-                    .banner .logo {
+                    .banner img {
                         width: 200px;
                     }
 
@@ -29,17 +29,79 @@ export default css.galeriaStyle`
                         text-align: center;
                     }
 
+
                     .galeria{
                         width: 80%;
                         margin: 0 auto;
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
+                        justify-content: center;
+                        height: 100%;
+                        padding: 0px 0px 150px;
+                        position: relative;
+                    }
+
+                    .galeria .image-container {
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
 
                     .galeria img{
                         padding: 20px;
+                        position: relative;
+                        z-index: 99999;
                     }
+
+                    .galeria .forma-absoluta1,
+                    .galeria .forma-absoluta2,
+                    .galeria .forma-absoluta3,
+                    .galeria .forma-absoluta4,
+                    .galeria .forma-absoluta5,
+                    .galeria .forma-absoluta6
+                    {
+
+                        position: absolute;
+                        top: 83%;
+                        left: 10%;
+                        z-index: 99;
+                        width: 100px;
+                    }
+
+                    .galeria .forma-absoluta2 {
+                        top: 45%;
+                        left: 60%;
+                        width: 150px;
+                    }
+
+                    .galeria .forma-absoluta3 {
+                        top: 35%;
+                        left: 40%;
+                        width: 100px;
+                    }
+
+                    .galeria .forma-absoluta4 {
+                        top: 35%;
+                        left: 90%;
+                        width: 100px;
+                    }
+
+                    .galeria .forma-absoluta5 {
+                        top: 9%;
+                        left: 45%;
+                        width: 150px;
+                    }
+
+
+                    .galeria .forma-absoluta6 {
+                        top: 17%;
+                        left: 35%;
+                        width: 150px;
+                        height: 50px;
+                    }
+
 
                     .galeria .image01{
                         transform: rotate(-10deg);
@@ -47,11 +109,12 @@ export default css.galeriaStyle`
 
                     .galeria .image02{
                         animation-fill-mode: initial;
-                        transform: rotate(10deg);
+                        transform: rotate(1deg);
                     }
 
                     .galeria .image03{
                         transform: rotate(-6deg);
+                        position: relative;
                     }
 
                     .galeria .image04{
@@ -61,7 +124,7 @@ export default css.galeriaStyle`
 
                     .galeria .image05{
                         animation-fill-mode: initial;
-                        transform: rotate(10deg);
+                        transform: rotate(0deg);
                     }
 
                     .galeria .image06{
@@ -82,30 +145,29 @@ export default css.galeriaStyle`
                         transform: rotate(-6deg);
                     }
 
-                    .galeria .form1{
-                        height: 50px;
+                    .galeria .form1 {
                         position: relative;
-                        top: -100px;
+                        z-index: 999;
                     }
 
                     .galeria .form1 img{
-                        transform: rotate(10deg);
+                        transform: rotate(-10deg);
                         position: relative;
-                        transform: scale(0.3);
+                        width: 400px;
 
                     }
 
                     .galeria .form2 img{
                         transform: rotate(10deg);
                         position: relative;
-                        top: -80px;
+
 
                     }
 
                     .galeria .image10{
                             transform: rotate(-10deg);
                             position: relative;
-                            top: 50px;
+
                             z-index: 9999999;
                     }
 
@@ -122,8 +184,6 @@ export default css.galeriaStyle`
                         height: 250px;
 
                     }
-
-                    .form3 { height: 50px; }
 
 
 
@@ -143,22 +203,19 @@ export default css.galeriaStyle`
 
                         transform: rotate(-5deg);
                         position: relative;
-                        top: -30px;
-                        left: 150px;
+
                     }
 
                     .galeria .image14{
                         transform: rotate(-15deg);
                         position: relative;
-                        top: -50px;
-                        left: 0px;
+
                     }
 
                     .galeria .image15{
                         transform: rotate(8deg);
                         position: relative;
-                        left: 250px;
-                        top: -260px;
+
                     }
 
                     .galeria .image16{
@@ -198,37 +255,23 @@ export default css.galeriaStyle`
                     .galeria .form2{
                         transform: rotate(10deg);
                         position: relative;
-                        top: 60px;
+
                     }
 
                     .galeria .form2{
                         transform: rotate(10deg);
                         position: relative;
-                        top: 60px;
                     }
 
-                    .galeria .form3{
-                        height: 0px;
-                    }
 
                     .galeria .form-camps img{
                         transform: rotate(10deg);
                         position: relative;
-                        top: 50px;
+
                     }
 
-                    .galeria .form4 img{
-                        width: 300px;
-                        transform: rotate(-15deg);
-                    }
 
-                    .galeria .form5 img{
-                        transform: rotate(10deg);
-                        position: relative;
-                        top: -100px;
-                        left: -100px;
-                        width: 350px;
-                    }
+
 
                     .galeria .green-space{
                         width: 50%;
@@ -236,39 +279,223 @@ export default css.galeriaStyle`
                     }
 
 
+                    .galeria .medida-standard {
+                        width: 450px;
+                        height: auto;
+                    }
 
-                    @media (min-width: 1281px) {
-                            .galeria{
-                                width: 80%;
-                            }
 
-                            .galeria .form5 img{
-                                left: 700px;
-                            }
+                    .galeria .medida-menor {
+                        width: 250px;
+                        height: auto;
+                    }
 
-                            .galeria .image05{
-                                    top: -200px;
-                                    position: relative;
-                                    left: 50px;
+                    .galeria .medida-mayor {
+                        width: 550px;
+                        height: auto;
+                    }
 
-                            }
+                    .galeria .form-study-trips .form6 {
+                        width: 300px;
+                    }
 
-                            .galeria .image15 {
-                                top: -40px;
+                    .galeria .form-study-trips .form7 {
+                        width: 150px;
+                    }
 
-                            }
+                    .galeria .rotate-8{
+                        transform: rotate(-8deg);
+                    }
 
-                            .galeria .image14 {
-                                left: 250px;
-                            }
+                    .galeria .rotate8{
+                        transform: rotate(8deg);
+                    }
 
-                            .galeria .image18{
-                                left: 250px;
-                            }
+                    .galeria .rotate10{
+                        transform: rotate(10deg);
+                    }
 
-                            .galeria .image18{
-                                left: 80px;
-                            }
+                    .galeria .rotate-10{
+                        transform: rotate(-10deg);
+                    }
+
+                    .galeria div {
+                        width: 50%;
+                        position: relative;
+                        z-index: 9999;
+                    }
+
+                    @media (min-width: 1650px) {
+
+                        .banner {
+                            height: 100vh;
+                        }
+
+                        .banner img {
+                            width: 260px;
+                        }
+
+                        .banner h1 {
+                            font-size: 90px;
+                            color: ${theme.primaryGreen};
+                            margin: 90px 0px;
+                            text-align: center;
+                            padding: 0;
+                        }
+
+                        .banner .corazon {
+                            width: 70px;
+                        }
+
+                        .galeria {
+                            width: 60%;
+                        }
+
+
+                        .galeria .image14{
+
+                            transform: rotate(-15deg);
+                            position: relative;
+
+                        }
+
+                        .galeria .form1 img {
+                            width: 550px;
+                        }
+                    .galeria .forma-absoluta1,
+                    .galeria .forma-absoluta2,
+                    .galeria .forma-absoluta3,
+                    .galeria .forma-absoluta4,
+                    .galeria .forma-absoluta5,
+                    .galeria .forma-absoluta6
+                    {
+
+                        position: absolute;
+                        top: 83%;
+                        left: 10%;
+                        z-index: 99;
+                        width: 200px;
+                    }
+
+                    .galeria .forma-absoluta2 {
+                        top: 45%;
+                        left: 60%;
+                        width: 250px;
+                    }
+
+                    .galeria .forma-absoluta3 {
+                        top: 35%;
+                        left: 40%;
+                        width: 200px;
+                    }
+
+                    .galeria .forma-absoluta4 {
+                        top: 35%;
+                        left: 90%;
+                        width: 200px;
+                    }
+
+                    .galeria .forma-absoluta5 {
+                        top: 9%;
+                        left: 45%;
+                        width: 250px;
+                    }
+
+
+                    .galeria .forma-absoluta6 {
+                        top: 18%;
+                        left: 35%;
+                        width: 300px;
+                        height: 60px;
+                    }
+
+
+                }
+
+
+                   @media (min-width: 1281px) and (max-width: 1650px) {
+
+
+                        .banner {
+                            height: 100vh;
+                        }
+
+                        .banner img {
+                            width: 260px;
+                        }
+
+                        .banner h1 {
+                            font-size: 80px;
+                            color: ${theme.primaryGreen};
+                            margin: 90px 0px;
+                            text-align: center;
+                            padding: 0;
+                        }
+
+                        .banner .corazon {
+                            width: 70px;
+                        }
+
+                        .galeria {
+                            width: 70%;
+                        }
+
+
+                        .galeria .image14{
+
+                            transform: rotate(-15deg);
+                            position: relative;
+
+
+                        }
+                    .galeria .forma-absoluta1,
+                    .galeria .forma-absoluta2,
+                    .galeria .forma-absoluta3,
+                    .galeria .forma-absoluta4,
+                    .galeria .forma-absoluta5,
+                    .galeria .forma-absoluta6
+                    {
+
+                        position: absolute;
+                        top: 83%;
+                        left: 10%;
+                        z-index: 99;
+                        width: 200px;
+                    }
+
+                    .galeria .forma-absoluta2 {
+                        top: 45%;
+                        left: 60%;
+                        width: 250px;
+                    }
+
+                    .galeria .forma-absoluta3 {
+                        top: 35%;
+                        left: 40%;
+                        width: 200px;
+                    }
+
+                    .galeria .forma-absoluta4 {
+                        top: 35%;
+                        left: 90%;
+                        width: 200px;
+                    }
+
+                    .galeria .forma-absoluta5 {
+                        top: 9%;
+                        left: 45%;
+                        width: 250px;
+                    }
+
+
+                    .galeria .forma-absoluta6 {
+                        top: 18%;
+                        left: 35%;
+                        width: 300px;
+                        height: 60px;
+                    }
+
+
                     }
 
                     /*
@@ -278,19 +505,117 @@ export default css.galeriaStyle`
 
                     @media (min-width: 1025px) and (max-width: 1280px) {
 
+
+
+                        .galeria .forma-absoluta1,
+                        .galeria .forma-absoluta2,
+                        .galeria .forma-absoluta3,
+                        .galeria .forma-absoluta4,
+                        .galeria .forma-absoluta5,
+                        .galeria .forma-absoluta6
+                        {
+
+                            position: absolute;
+                            top: 83%;
+                            left: 10%;
+                            z-index: 99;
+                            width: 200px;
+                        }
+
+                        .galeria .forma-absoluta2 {
+                            top: 45%;
+                            left: 60%;
+                            width: 250px;
+                        }
+
+                        .galeria .forma-absoluta3 {
+                            top: 35%;
+                            left: 40%;
+                            width: 200px;
+                        }
+
+                        .galeria .forma-absoluta4 {
+                            top: 35%;
+                            left: 90%;
+                            width: 200px;
+                        }
+
+                        .galeria .forma-absoluta5 {
+                            top: 9%;
+                            left: 45%;
+                            width: 250px;
+                        }
+
+
+                        .galeria .forma-absoluta6 {
+                            top: 17%;
+                            left: 35%;
+                            width: 250px;
+                            height: 50px;
+                        }
+
+                        .banner {
+                            height: 95vh;
+                            padding: 50px 0px;
+                            justify-content: center;
+                        }
+
+                        .banner img {
+                            width: 200px;
+                        }
+
+                        .banner h1 {
+                            font-size: 40px;
+                            color: ${theme.primaryGreen};
+                            margin: 50px 0px;
+                            text-align: center;
+                            padding: 0;
+                        }
+
+                        .banner .corazon {
+                            width: 50px;
+                        }
+
+                        .galeria {
+                            width: 100%;
+                        }
+
+
                         .galeria .image14{
 
                             transform: rotate(-15deg);
                             position: relative;
-                            top: 180px;
-                            left: -300px;
+
 
                         }
 
-                        .galeria .image15{
-                            top: 0;
+                        .galeria .image12 {
+                            display: none;
                         }
 
+
+
+                        .galeria .image16{
+
+                            position: relative;
+                            transform: translateX(-30%) rotate(-8deg);
+
+                        }
+
+                        .galeria .medida-mayor {
+                            width: 550px;
+                            height: auto;
+                        }
+
+                        .galeria .medida-standard {
+                            width: 450px;
+                            height: auto;
+                        }
+
+                        .galeria .medida-menor {
+                            width: 350px;
+                            height: auto;
+                        }
 
 
                     }
@@ -302,8 +627,67 @@ export default css.galeriaStyle`
 
                     @media (min-width: 768px) and (max-width: 1024px) {
 
+                        .banner {
+                            height: 100vh;
+                        }
+
+                        .banner img {
+                            width: 260px;
+                        }
+
+                        .banner h1 {
+                            font-size: 60px;
+                            color: ${theme.primaryGreen};
+                            margin: 90px 0px;
+                            text-align: center;
+                            padding: 0;
+                        }
+
+                        .banner .corazon {
+                            width: 70px;
+                        }
+
+                        .galeria {
+                            width: 80%;
+                        }
 
 
+                        .galeria .image14{
+
+                            transform: rotate(-15deg);
+                            position: relative;
+
+
+                        }
+
+
+
+                        .galeria .medida-mayor {
+                            width: 400px;
+                            height: auto;
+                        }
+
+                        .galeria .medida-standard {
+                            width: 300px;
+                            height: auto;
+                        }
+
+                        .galeria .medida-menor {
+                            width: 200px;
+                            height: auto;
+                        }
+
+                        .grid-triangle {
+                            width: 50%;
+                        }
+
+                        .galeria .form-study-trips .form6{
+                            width: 200px;
+                        }
+
+                        .galeria .form-study-trips .form7{
+                            width: 100px;
+                        }
 
                     }
 
@@ -325,9 +709,63 @@ export default css.galeriaStyle`
                     @media (min-width: 481px) and (max-width: 767px) {
 
 
+                        .banner {
+                            height: 100vh;
+                        }
+
+                        .banner img {
+                            width: 250px;
+                        }
+
+                        .banner h1 {
+                            font-size: 40px;
+                            color: ${theme.primaryGreen};
+                            margin: 90px 0px;
+                            text-align: center;
+                            padding: 0;
+                        }
+
+                        .banner .corazon {
+                            width: 50px;
+                        }
+
+                        .galeria {
+                            width: 80%;
+                        }
+
+
+                        .galeria .image14{
+
+                            transform: rotate(-15deg);
+                            position: relative;
+
+
+                        }
 
 
 
+                        .galeria .medida-mayor {
+                            width: 350px;
+                            height: auto;
+                        }
+
+                        .galeria .medida-standard {
+                            width: 250px;
+                            height: auto;
+                        }
+
+                        .galeria .medida-menor {
+                            width: 150px;
+                            height: auto;
+                        }
+
+                        .galeria .form-study-trips .form6 {
+                            width: 200px;
+                        }
+
+                        .galeria .form-study-trips .form7 {
+                            width: 100px;
+                        }
                     }
 
                     /*
@@ -337,65 +775,73 @@ export default css.galeriaStyle`
 
                     @media (min-width: 320px) and (max-width: 480px) {
 
-                        .galeria{
+                        .banner {
+                            height: 100vh;
+                        }
+
+                        .banner img {
+                            width: 250px;
+                        }
+
+                        .banner h1 {
+                            font-size: 30px;
+                            color: ${theme.primaryGreen};
+                            margin: 90px 0px;
+                            text-align: center;
+                            padding: 0;
+                        }
+
+                        .banner .corazon {
+                            width: 50px;
+                        }
+
+                        .galeria {
                             width: 100%;
                         }
 
-                        .galeria .image01{ transform: rotate(-10deg) scale(0.9); }
 
-                        .galeria .image02{ transform: rotate(10deg) scale(0.6) translateX(-150px); }
+                        .galeria .image14{
 
-                        .galeria .image03{ transform: rotate(-6deg) scale(0.7) translateX(-50px) translateY(-120px); }
-
-                        .galeria .image04{ transform: rotate(10deg) scale(0.9) translate(-50px,-80px); }
-
-                        .galeria .image05{ transform: rotate(10deg) scale(0.9); }
-
-                        .galeria .image06{ transform: rotate(-6deg) scale(0.9); }
-
-                        .galeria .image06{ transform: rotate(-6deg) scale(0.9) translateX(-40px); }
-
-                        .galeria .image13{ transform: rotate(-5deg) translateX(-100px); }
-
-                        .galeria .image16{ transform: rotate(-8deg) scale(0.6) translateX(-80px) translateY(100px); }
-
-                        .galeria .image19{ transform: scale(1.2) translateX(30px); }
-
-                        .galeria .image15{ transform: rotate(8deg) translate(-150px, 150px); }
-
-                        .galeria .form3{
+                            transform: rotate(-15deg);
                             position: relative;
-                            z-index: 99;
-                        }
 
-                        .form1{
-                            display: none;
-                        }
 
-                        .galeria .form3 img{
-                            transform: translate(-30px,60px);
-                        }
-
-                        .galeria .form-camps{
-                                position: relative;
-                                z-index: 999;
-                        }
-
-                        .galeria .green-space{
-                            flex-direction: column;
-                            transform: translateX(100px);
-                        }
-
-                        .galeria .form3 img{
-                            transform: translate(-30px,-60px);
-                        }
-
-                        .galeria .form4 img{
-                            visibility: hidden;
                         }
 
 
 
+                        .galeria .medida-mayor {
+                            width: 350px;
+                            height: auto;
+                        }
+
+                        .galeria .medida-standard {
+                            width: 250px;
+                            height: auto;
+                        }
+
+                        .galeria .medida-menor {
+                            width: 150px;
+                            height: auto;
+                        }
+
+                        .galeria .form-study-trips .form6 {
+                            width: 200px;
+                        }
+
+                        .galeria .form-study-trips .form7 {
+                            width: 100px;
+                        }
+
+
+                        .galeria div {
+                            width: 100%;
+
+                        }
+
+                        .galeria .rotate10{
+                            transform: rotate(2deg);
+                        }
 
 
 

@@ -4,7 +4,7 @@ import animations from '../styles/animations'
 import quienesSomosStyle from '../styles/quienes-somos'
 import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
-
+import { Parallax } from 'react-scroll-parallax'
 
 export default class extends React.Component {
 
@@ -42,14 +42,24 @@ export default class extends React.Component {
 
             </section>
 
+
+
+
             <section className='mision-vision'>
 
+                {/* <Parallax
+                    offsetYMax={100}
+                    offsetYMin={-100}
+                    className="hemi-left"
+                    slowerScrollRate
+                > */}
+                    <div className='circulo1'></div>
+                {/* </Parallax> */}
 
 
-                <div className='circulo1'></div>
+                    <div className='circulo2'></div>
 
 
-                <div className='circulo2'></div>
 
                 <div className='contenido'>
                     <div className='item'>

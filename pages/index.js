@@ -582,7 +582,7 @@ const Home = () => {
 
 
                 <Link href='/quienes-somos'>
-                    <a >
+                    <a className='conoce-staff'>
                         <h3 className='hover-text'><strong>CONOCÉ</strong> AL STAFF</h3>
 
                     </a>

@@ -72,11 +72,11 @@ export default () => {
         <h1>Learning English Together</h1>
 
         <p>
-          Si desea estudiar en St. Thomas u obtener información sobre alguno de nuestros servicios , escríbanos un correo electrónico a <a href='mailto:instistthomas@gmail.com'><span className='cursiva'>instistthomas@gmail.com</span></a>
+          Si desea estudiar en St. Thomas u obtener información sobre alguno de nuestros servicios , escríbanos un correo electrónico a <a href='mailto:instistthomas@gmail.com'><span className='cursiva'><stong>instistthomas@gmail.com</stong></span></a>
         </p>
 
         {/* <div className='linea-green'></div> */}
-        <h3>TAMBIÉN PUEDES ENCONTRARNOS EN <a target='blank_' href='https://www.instagram.com/institutost.thomas/'>Instagram</a> Y  <a target='blank_' href='https://www.facebook.com/pages/Instituto-de-Ingl%C3%A9s-St-Thomas/395813450541322'>Facebook</a></h3>
+        <h3>TAMBIÉN PUEDES ENCONTRARNOS EN <a target='blank_' href='https://www.instagram.com/institutost.thomas/'><strong>Instagram</strong></a> Y  <a target='blank_' href='https://www.facebook.com/pages/Instituto-de-Ingl%C3%A9s-St-Thomas/395813450541322'><strong>Facebook</strong></a></h3>
         {/* <div className='linea-green'></div> */}
       </section>
 

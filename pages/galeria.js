@@ -2,7 +2,6 @@ import { Layout } from '../components/Layout'
 import { Banner } from '../components/Banner'
 import galeriaStyle from '../styles/galeria'
 import Fade from 'react-reveal/Fade'
-import Zoom from 'react-reveal/Zoom'
 
 
 export default class extends React.Component {
@@ -23,265 +22,396 @@ export default class extends React.Component {
                 </div>
 
                 <div className='galeria'>
-                    <Zoom duration={1500}>
-                    <div>
-                        <img width='350px' className='image01' src='../../static/imgs/galeria/01teachers.png' alt='teachers' />
+
+
+
+
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+                        <img className='medida-standard image01' src='../../static/imgs/galeria/01teachers.png' alt='teachers' />
 
                     </div>
-                    </Zoom>
+                </Fade>
 
-                    <Zoom duration={1500}>
-                    <div>
-                        <img width='550px' className='image02' src='../../static/imgs/galeria/02teachers-mesa-de-trabajo.png' alt='teachers mesa de trabajo' />
-
-                    </div>
-                    </Zoom>
-
-                    <Zoom duration={1500}>
-                    <div className='form1'>
-
-                        <img width='auto' className='' src='../../static/imgs/galeria/form1.png' alt='aulas 1' />
+                <Fade duration={1500}>
+                    <div className='image-container'>
+                        <img className='medida-mayor image02' src='../../static/imgs/galeria/02teachers-mesa-de-trabajo.png' alt='teachers mesa de trabajo' />
 
                     </div>
+                </Fade>
 
-                    </Zoom>
+                <Fade duration={1500}>
+                        <div className='image-container'>
 
-                    <Zoom duration={1500}>
-                        <div>
-
-                            <img width='450px' className='image03' src='../../static/imgs/galeria/03aulas-aula.png' alt='aulas 1' />
+                        <img className='medida-standard image03' src='../../static/imgs/galeria/03aulas-aula.png' alt='aulas 1' />
 
                         </div>
 
-                    </Zoom>
+                </Fade>
 
                     <Fade duration={1500}>
-                        <div>
+                        <div className='image-container'>
 
-                            <img width='450px' className='image04' src='../../static/imgs/galeria/04aulas-aula.png' alt='aulas 2' />
+                            <img className='medida-standard image04' src='../../static/imgs/galeria/04aulas-aula.png' alt='aulas 2' />
 
                         </div>
 
                     </Fade>
 
                     <Fade duration={1500}>
-                    <div className='grid-three'>
+                    <div className='grid-three image-container'>
 
-                        <img width='450px' className='image05' src='../../static/imgs/galeria/05aulas-aula.png' />
-
-                        </div>
-
-                    </Fade>
-
-                    <Fade duration={1500}>
-                    <div className='grid-three'>
-
-                            <img width='450px' className='image06' src='../../static/imgs/galeria/06aulas-aula.png' />
+                        <img className='medida-standard image05' src='../../static/imgs/galeria/05aulas-aula.png' />
 
                         </div>
 
                     </Fade>
 
                     <Fade duration={1500}>
-                        <div className='grid-three'>
+                    <div className='grid-three image-container'>
 
-                            <img width='450px' className='image07' src='../../static/imgs/galeria/07aulas-aula.png' />
+                            <img className='medida-standard image06' src='../../static/imgs/galeria/06aulas-aula.png' />
 
                         </div>
 
                     </Fade>
 
-                    <Zoom duration={1500}>
-                        <div className=''>
+                    <Fade duration={1500}>
+                        <div className='grid-three image-container'>
 
-                            <img width='450px' className='image08' src='../../static/imgs/galeria/08students.png' />
-
-                        </div>
-
-                    </Zoom>
-
-                    <Zoom duration={1500}>
-                        <div className=''>
-
-                            <img width='450px' className='image09' src='../../static/imgs/galeria/09students.png' />
-
+                            <img className='medida-standard image07' src='../../static/imgs/galeria/07aulas-aula.png' />
 
                         </div>
 
-                    </Zoom>
+                    </Fade>
 
-                    <Zoom duration={1500}>
-                        <div className='grid-three form2'>
+                <Fade duration={1500}>
+                        <div className='image-container'>
 
-                            <img width='450px' className='' src='../../static/imgs/galeria/students-22.png' />
-
-                        </div>
-
-                    </Zoom>
-
-                    <Zoom duration={1500}>
-                        <div className='grid-three'>
-
-                            <img width='450px' className='image10' src='../../static/imgs/galeria/10students.png' />
+                            <img className='medida-standard image08' src='../../static/imgs/galeria/08students.png' />
 
                         </div>
 
-                    </Zoom>
+                </Fade>
 
-                    <Zoom duration={1500}>
-                        <div className='grid-three'>
+                <Fade duration={1500}>
+                        <div className='image-container'>
 
-                            <img width='450px' className='image11' src='../../static/imgs/galeria/11students.png' />
+                            <img className='medida-standard image09' src='../../static/imgs/galeria/09students.png' />
+
 
                         </div>
 
-                    </Zoom>
+                </Fade>
 
+                <Fade duration={1500}>
+                        <div className='grid-three form2 image-container'>
 
-
-
-
-
-                    <Zoom duration={1500}>
-                        <div className=''>
-
-                            <img height='450px' className='image12' src='../../static/imgs/galeria/13students.png' />
+                            <img className='medida-standards ' src='../../static/imgs/galeria/students-22.png' />
 
                         </div>
 
-                    </Zoom>
+                </Fade>
 
-                <div className='grid-triangle'>
+                <Fade duration={1500}>
+                        <div className='grid-three image-container'>
 
-
-                    <Zoom duration={1500}>
-                        <div className='grid-triangle-item'>
-
-                            <img width='450px' className='image13' src='../../static/imgs/galeria/12students.png' />
+                            <img className='medida-standard image10' src='../../static/imgs/galeria/10students.png' />
 
                         </div>
 
-                    </Zoom>
+                </Fade>
 
-                    <Zoom duration={1500}>
-                        <div className='grid-triangle-item'>
+                <Fade duration={1500}>
+                        <div className='grid-three image-container'>
 
-                            <img width='450px' className='image14' src='../../static/imgs/galeria/14students.png' />
-
-                        </div>
-
-                    </Zoom>
-
-                    <Zoom duration={1500}>
-                        <div className='grid-triangle-item'>
-
-                            <img width='450px' className='image15' src='../../static/imgs/galeria/15students.png' />
+                            <img className='medida-standard image11' src='../../static/imgs/galeria/11students.png' />
 
                         </div>
 
-                    </Zoom>
+                </Fade>
 
 
-                </div>
 
-                <Zoom duration={1500}>
-                    <div className=''>
 
-                        <img width='450px' className='image16' src='../../static/imgs/galeria/16students.png' />
+
+
+                    <Fade duration={1500}>
+                        <div className='image-container'>
+
+                        <img  className='image12 medida-standard' src='../../static/imgs/galeria/13students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                {/* <div className='grid-triangle'> */}
+
+
+                    <Fade duration={1500}>
+                        <div className='grid-triangle-item image-container'>
+
+                            <img className='medida-standard image13' src='../../static/imgs/galeria/12students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='grid-triangle-item image-container' >
+
+                            <img className='medida-standard image14' src='../../static/imgs/galeria/14students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='grid-triangle-item image-container'>
+
+                            <img className='medida-standard image15' src='../../static/imgs/galeria/15students.png' />
+
+                        </div>
+
+                    </Fade>
+
+
+                {/* </div> */}
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='medida-standard image16' src='../../static/imgs/galeria/16students.png' />
 
                     </div>
 
-                </Zoom>
+                </Fade>
 
-                <Zoom duration={1500}>
-                    <div className=''>
+                <Fade duration={1500}>
+                    <div className='image-container'>
 
-                        <img width='450px' className='image17' src='../../static/imgs/galeria/17students.png' />
-
-                    </div>
-
-                </Zoom>
-
-                <Zoom duration={1500}>
-                    <div className='grid-three'>
-
-                        <img width='450px' className='image18' src='../../static/imgs/galeria/18students.png' />
+                        <img className='medida-standard image17' src='../../static/imgs/galeria/17students.png' />
 
                     </div>
 
-                </Zoom>
+                </Fade>
 
-                <Zoom duration={1500}>
-                    <div className='grid-three'>
+                <Fade duration={1500}>
+                    <div className='grid-three image-container'>
 
-                        <img width='450px' className='image19' src='../../static/imgs/galeria/19students.png' />
-
-                    </div>
-
-                </Zoom>
-
-                <Zoom duration={1500}>
-                    <div className='grid-three'>
-
-                        <img width='450px' className='image20' src='../../static/imgs/galeria/20students.png' />
+                        <img className='medida-standard image18' src='../../static/imgs/galeria/18students.png' />
 
                     </div>
 
-                </Zoom>
+                </Fade>
 
-                <Zoom duration={1500}>
-                    <div className=''>
+                <Fade duration={1500}>
+                    <div className='grid-three image-container'>
 
-                        <img width='450px' className='image21' src='../../static/imgs/galeria/21students.png' />
-
-                    </div>
-
-                </Zoom>
-
-                <Zoom duration={1500}>
-                    <div className='form-camps'>
-
-                        <img width='450px' className='' src='../../static/imgs/galeria/form2.png' />
+                        <img className='medida-standard image19' src='../../static/imgs/galeria/19students.png' />
 
                     </div>
 
-                </Zoom>
+                </Fade>
 
-                <Zoom duration={1500}>
-                    <div className='form3'>
+                <Fade duration={1500}>
+                    <div className='grid-three image-container'>
 
-                        <img width='450px' className='' src='../../static/imgs/galeria/form3.gif' />
+                        <img className='medida-standard image20' src='../../static/imgs/galeria/20students.png' />
 
                     </div>
 
-                </Zoom>
+                </Fade>
 
-                <div className='green-space'>
+                <Fade duration={1500}>
+                    <div className='image-container'>
 
-                    <Zoom duration={1500}>
-                        <div className='form4'>
+                        <img className='medida-standard image21' src='../../static/imgs/galeria/21students.png' />
 
-                            <img width='450px' className='' src='../../static/imgs/galeria/form4.png' />
+                    </div>
 
-                        </div>
-
-                    </Zoom>
-
-                    <Zoom duration={1500}>
-                        <div className='form5'>
-
-                            <img width='450px' className='' src='../../static/imgs/galeria/form5.png' />
-
-                        </div>
-
-                    </Zoom>
+                </Fade>
 
 
+                <Fade duration={1500}>
+                    <div className='form3 image-container'>
 
-                </div>
+                        <img className='medida-mayor ' src='../../static/imgs/animados/girando.gif' />
+
+                    </div>
+
+                </Fade>
+
+
+                <Fade duration={1500}>
+                    <div className='form4 image-container'>
+
+                        <img className='medida-mayor rotate10' src='../../static/imgs/galeria/form4.png' />
+
+                    </div>
+
+                </Fade>
 
 
 
+                <Fade duration={1500}>
+                    <div className='form5 image-container'>
+
+                        <img className='medida-standard rotate-10' src='../../static/imgs/galeria/form5.png' />
+
+                    </div>
+
+                </Fade>
+
+
+                <Fade duration={1500}>
+                    <div className='image-container form-study-trips'>
+
+                        <img className='medida-standard form6' src='../../static/imgs/galeria/form6.png' />
+                        <img className='medida-standard form7' src='../../static/imgs/galeria/form7.png' />
+
+                    </div>
+
+                </Fade>
+
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/27students.png' />
+
+                    </div>
+
+                </Fade>
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/28students.png' />
+
+                    </div>
+
+                </Fade>
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/29students.png' />
+
+                    </div>
+
+                </Fade>
+
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/30students.png' />
+
+                    </div>
+
+                </Fade>
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/31students.png' />
+
+                    </div>
+
+                </Fade>
+
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/32students.png' />
+
+                    </div>
+
+                </Fade>
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/33students.png' />
+
+                    </div>
+
+                </Fade>
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/34students.png' />
+
+                    </div>
+
+                </Fade>
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/35students.png' />
+
+                    </div>
+
+                </Fade>
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/36students.png' />
+
+                    </div>
+
+                </Fade>
+
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/37students.png' />
+
+                    </div>
+
+                </Fade>
+
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/38students.png' />
+
+                    </div>
+
+                </Fade>
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='medida-standard ' src='../../static/imgs/galeria/39students.png' />
+
+                    </div>
+
+                </Fade>
+
+                <Fade duration={1500}>
+                    <div className='image-container'>
+
+                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/40students.png' />
+
+                    </div>
+
+                </Fade>
+
+                <img className='forma-absoluta1' src='../../static/imgs/galeria/form8.png' />
+                <img className='forma-absoluta2' src='../../static/imgs/galeria/immersion-camps-32.png' />
+                <img className='forma-absoluta3' src='../../static/imgs/galeria/students-20.png' />
+                <img className='forma-absoluta4' src='../../static/imgs/galeria/students-21.png' />
+                <img className='forma-absoluta5' src='../../static/imgs/galeria/aulas-09.png' />
+                <img className='forma-absoluta6' src='../../static/imgs/galeria/form9.png' />
 
 
                 </div>

@@ -114,6 +114,9 @@ export default css.styles`
                                 flex: 1 0 auto;
                                 min-height: 100vh;
                                 padding: 0px;
+                                width: 100vw;
+                                height: auto;
+                                overflow: hidden;
                             }
 
                             .footer-content{
@@ -227,6 +230,9 @@ export default css.styles`
                                 flex: 1 0 auto;
                                 min-height: 100vh;
                                 padding: 0px;
+                                width: 100vw;
+                                height: auto;
+                                overflow: hidden;
                             }
 
                             .footer-content{
@@ -279,8 +285,56 @@ export default css.styles`
                     */
 
                     @media (min-width: 768px) and (max-width: 1024px) {
-                        .menu-mobile { display: none }
-                        .menu-logo{ display: none; }
+
+
+                            .close-menu{
+                                position: absolute;
+                                top:0;
+                                left:0;
+                                right: 0;
+                                width: 100%;
+                                text-align: right;
+                                font-size: 50px;
+                                color: ${theme.textoGray};
+                                padding: 30px;
+
+
+                            }
+
+
+
+                            .menu-mobile {
+
+                                background: ${theme.background};
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                bottom: 0;
+                                height: 100vh;
+                                width: 100vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                z-index: 99999;
+                                flex-direction: column;
+                                list-style: none;
+                                font-size: 30px;
+                                line-height: 60px;
+                                font-family: ${ theme.font_regular};
+                                transform: translateX(-100%);
+                                opacity: 1;
+
+
+                            }
+
+                            .menu-logo{ display: block; position: absolute; top: 0; color: #fff; font-size: 25px;
+                                    height: 100%;
+                                    width: auto;
+                                    display: flex;
+                                    align-items: center;
+                                    left: 30px;
+                            }
+                            ul.menu { display: none; }
                             nav{
                                     display: flex;
                                     justify-content: center;
@@ -289,11 +343,24 @@ export default css.styles`
                                     flex-wrap: wrap;
                                     min-height: 60px;
                                     align-items: center;
+                                    width: 100%;
+                                    position: fixed;
+                                    z-index: 99999999;
 
                             }
 
                             nav .logo{
                                 padding: 10px;
+                            }
+
+
+                            .main{
+                                flex: 1 0 auto;
+                                min-height: 100vh;
+                                padding: 0px;
+                                width: 100vw;
+                                height: auto;
+                                overflow: hidden;
                             }
 
                             footer{
@@ -309,29 +376,6 @@ export default css.styles`
                                 align-items: center;
                                 position: relative;
                                 padding: 50px 0px 50px;
-                            }
-
-                            ul.menu{
-                                display: flex;
-                                order: 1;
-                                justify-content: center;
-                                flex-direction: row;
-                                color: ${theme.texto};
-                                padding: 0;
-                                list-style: none;
-                                width: 80%;
-                                justify-content: flex-end;
-                                font-family: 'Lora', serif;
-                            }
-                            ul.menu li:not(:last-child){
-
-                                    padding-right: 2em;
-                            }
-
-                            .main{
-                                flex: 1 0 auto;
-                                min-height: 100vh;
-                                padding: 0px;
                             }
 
                             .footer-content{
@@ -405,8 +449,54 @@ export default css.styles`
                     */
 
                     @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-                            .menu-mobile { display: none; }
-                            .menu-logo{ display: none; }
+                            .close-menu{
+                                position: absolute;
+                                top:0;
+                                left:0;
+                                right: 0;
+                                width: 100%;
+                                text-align: right;
+                                font-size: 50px;
+                                color: ${theme.textoGray};
+                                padding: 30px;
+
+
+                            }
+
+
+
+                            .menu-mobile {
+
+                                background: ${theme.background};
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                bottom: 0;
+                                height: 100vh;
+                                width: 100vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                z-index: 99999;
+                                flex-direction: column;
+                                list-style: none;
+                                font-size: 30px;
+                                line-height: 60px;
+                                font-family: ${ theme.font_regular};
+                                transform: translateX(-100%);
+                                opacity: 1;
+
+
+                            }
+
+                            .menu-logo{ display: block; position: absolute; top: 0; color: #fff; font-size: 25px;
+                                    height: 100%;
+                                    width: auto;
+                                    display: flex;
+                                    align-items: center;
+                                    left: 30px;
+                            }
+                            ul.menu { display: none; }
                             nav{
                                     display: flex;
                                     justify-content: center;
@@ -415,10 +505,24 @@ export default css.styles`
                                     flex-wrap: wrap;
                                     min-height: 60px;
                                     align-items: center;
+                                    width: 100%;
+                                    position: fixed;
+                                    z-index: 99999999;
+
                             }
 
                             nav .logo{
                                 padding: 10px;
+                            }
+
+
+                            .main{
+                                flex: 1 0 auto;
+                                min-height: 100vh;
+                                padding: 0px;
+                                width: 100vw;
+                                height: auto;
+                                overflow: hidden;
                             }
 
                             footer{
@@ -434,29 +538,6 @@ export default css.styles`
                                 align-items: center;
                                 position: relative;
                                 padding: 50px 0px 50px;
-                            }
-
-                            ul.menu{
-                                display: flex;
-                                order: 1;
-                                justify-content: center;
-                                flex-direction: row;
-                                color: ${theme.texto};
-                                padding: 0;
-                                list-style: none;
-                                width: 80%;
-                                justify-content: flex-end;
-                                font-family: 'Lora', serif;
-                            }
-                            ul.menu li:not(:last-child){
-
-                                    padding-right: 2em;
-                            }
-
-                            .main{
-                                flex: 1 0 auto;
-                                min-height: 100vh;
-                                padding: 0px;
                             }
 
                             .footer-content{
@@ -609,6 +690,9 @@ export default css.styles`
                                 padding: 0px;
                                 position: relative;
                                 top: 60px;
+                                width: 100vw;
+                                height: auto;
+                                overflow: hidden;
                             }
 
                             .footer-content{
@@ -707,6 +791,9 @@ export default css.styles`
 
                             .main{
                                 overflow-x: hidden;
+                                width: 100vw;
+                                height: auto;
+                                overflow: hidden;
                             }
 
 
@@ -811,6 +898,9 @@ export default css.styles`
                                 flex: 1 0 auto;
                                 min-height: 100vh;
                                 padding: 0px;
+                                width: 100vw;
+                                height: auto;
+                                overflow: hidden;
                             }
 
                             .footer-content{
