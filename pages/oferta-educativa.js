@@ -1,6 +1,7 @@
 import {Layout} from '../components/Layout'
 import {Banner} from '../components/Banner'
 import ofertaEducativaStyle from '../styles/oferta-educativa'
+import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
 
 export default class extends React.Component {
 
@@ -46,7 +47,19 @@ export default class extends React.Component {
             </section>
 
             <section className='oferta-educativa-background'>
+                <ParallaxBanner
+                    className="your-class"
+                    layers={[
+                        {
+                            image: '../static/imgs/recurso1.png',
+                            amount: 0.15,
+                        },
 
+                    ]}
+                    style={{
+                        height: '80vh',
+                    }}
+                ></ParallaxBanner>
             </section>
 
             <section className='oferta-educativa'>
@@ -97,7 +110,19 @@ export default class extends React.Component {
             </section>
 
             <section className='traduccion-background'>
+                <ParallaxBanner
+                    className="your-class"
+                    layers={[
+                        {
+                            image: '../static/imgs/recurso2.png',
+                            amount: 0.1,
+                        },
 
+                    ]}
+                    style={{
+                        height: '80vh',
+                    }}
+                ></ParallaxBanner>
             </section>
 
             <section className='traduccion'>

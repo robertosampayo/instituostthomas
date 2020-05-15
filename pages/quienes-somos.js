@@ -4,15 +4,33 @@ import animations from '../styles/animations'
 import quienesSomosStyle from '../styles/quienes-somos'
 import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
-import { Parallax } from 'react-scroll-parallax'
+import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
+import React, { useState, useEffect, useRef } from 'react'
+import MediaQuery from 'react-responsive'
 
-export default class extends React.Component {
+const quienesSomos = () => {
 
 
-    render() {
+
+        // const [mouseOn, setMouseOn] = useState(false)
+        const [showStaff1, setShowStaff1] = useState(false)
+        const [showStaff2, setShowStaff2] = useState(false)
+        const [showStaff3, setShowStaff3] = useState(false)
+        const [showStaff4, setShowStaff4] = useState(false)
+        const [showStaff5, setShowStaff5] = useState(false)
+
+        const showText = (staff) => {
+
+
+            setMouseOn(true)
+        }
+
+        const hideText = () => {
+
+            setMouseOn(false)
+        }
 
         return (<Layout>
-
 
 
             <div className='banner'>
@@ -39,27 +57,41 @@ export default class extends React.Component {
             </div>
 
             <section className='mision-vision-background'>
+<ParallaxBanner
+    className="your-class"
+    layers={[
+        {
+            image: '../static/imgs/instituto-fachada.png',
+            amount: 0.15,
+        },
+
+    ]}
+    style={{
+        height: '90vh',
+    }}
+></ParallaxBanner>
+
 
             </section>
 
 
 
-
             <section className='mision-vision'>
 
-                {/* <Parallax
-                    offsetYMax={100}
-                    offsetYMin={-100}
-                    className="hemi-left"
-                    slowerScrollRate
-                > */}
-                    <div className='circulo1'></div>
-                {/* </Parallax> */}
+                <div className="circulo1-parallax">
+                    <Parallax x={[-20, 20]} >
+                        <div className='circulo1'></div>
 
+                    </Parallax>
 
-                    <div className='circulo2'></div>
+                </div>
 
+                <div className="circulo2-parallax">
+                    <Parallax x={[100, -100]} >
 
+                        <div className='circulo2'></div>
+                    </Parallax>
+                </div>
 
                 <div className='contenido'>
                     <div className='item'>
@@ -78,7 +110,7 @@ export default class extends React.Component {
 
 
                     </div>
-                    <div className='item'>
+                    <div className='item item-vision'>
                         <h2>Visión</h2>
                         <div className='linea-black'></div>
                             <Fade duration={1500}>
@@ -101,6 +133,7 @@ export default class extends React.Component {
                     </div>
 
                 </div>
+
 
 
 
@@ -134,7 +167,7 @@ export default class extends React.Component {
                     <div className='texto'>
                         <h1>María Carolina Baracco</h1>
                         <h3>Fundadora</h3>
-                        <p className='sub-texto'>Profesora de Inglés General y para Fines Específicos, Teacher of Business English LCCI y Directora del Instituto St. Thomas. </p>
+                        <p className='sub-texto'> <strong>Profesora de Inglés General y para Fines Específicos, Teacher of Business English LCCI y Directora del Instituto St. Thomas.</strong> </p>
                         <div className='linea-black'></div>
                         <p>
                             El idioma Inglés fue desde siempre mi pasión. Elegí hacer de esta pasión mi profesión: enseñar a comunicarnos en este mundo global. Y fue así que en 1988, luego de haberme graduado como Profesora de Inglés, comencé este emprendimiento: el Instituto de Inglés St. Thomas, con unos pocos alumnos y mucho entusiasmo.
@@ -163,10 +196,14 @@ export default class extends React.Component {
 
                         </div>
                     </div>
-                    <div className='item staff1'>
-                        <div className='shadow-box'></div>
-                        <div className='texto'>
-                            <h2>Graciela Malpassi</h2>
+                    <div className='item staff1'
+                        onMouseOver={(e) => { e.preventDefault(); setShowStaff1(true); }}
+                        onMouseLeave={(e) => { e.preventDefault(); setShowStaff1(false); }}
+                    >
+                        <div className='shadow-box show-staff' ></div>
+                        <div className={showStaff1 ? 'texto show-staff fade-in-bottom' : 'texto show-staff'}>
+
+                            <h2 className='italic'>Graciela Malpassi</h2>
                             <div className='linea-larga'></div>
                             <p>
                                 Profesora de Inglés General y para Fines Específicos y Traductora Literaria y Técnico-Científica en Inglés.
@@ -175,53 +212,147 @@ export default class extends React.Component {
                         </div>
 
                     </div>
-                    <div className='item staff2 '>
-                        <div className='shadow-box'></div>
+
+                    <MediaQuery maxDeviceWidth={480}>
                         <div className='texto'>
-                            <h2>Natalia Valentini</h2>
+
+                            <h2 className='italic'>Graciela Malpassi</h2>
                             <div className='linea-larga'></div>
                             <p>
                                 Profesora de Inglés General y para Fines Específicos y Traductora Literaria y Técnico-Científica en Inglés.
                             </p>
 
                         </div>
-                    </div>
-                    <div className='item staff3'>
-                        <div className='shadow-box'></div>
-                        <div className='texto'>
-                            <h2>María Eugenia Pellegrin</h2>
-                            <div className='linea-larga'></div>
-                            <p >
-                                Profesora de Inglés General y para Fines Específicos y Traductora Literaria y Técnico-Científica en Inglés.
-                            </p>
 
-                        </div>
-                    </div>
-                    <div className='item staff4'>
-                        <div className='shadow-box'></div>
-                        <div className='texto'>
-                            <h2>María Delia Manila</h2>
+
+                    </MediaQuery>
+
+                    <div className='item staff2'
+                        onMouseOver={(e) => { e.preventDefault(); setShowStaff2(true);  }}
+                        onMouseLeave={(e) => { e.preventDefault(); setShowStaff2(false);  }}
+                    >
+                        <div className='shadow-box show-staff'></div>
+                        <div className={showStaff2 ? 'texto show-staff fade-in-bottom' : 'texto show-staff'}>
+                            <h2 className='italic'>Natalia Valentini</h2>
                             <div className='linea-larga'></div>
                             <p>
-                                Profesora de Inglés General y para Fines Específicos y Traductora Literaria y Técnico-Científica en Inglés.
+                                Profesora de Inglés General y para Fines Específicos, Traductora Pública Nacional y Licenciada en Lengua y Literatura Inglesa.
                             </p>
-
 
                         </div>
                     </div>
-                    <div className='item staff5'>
-                        <div className='shadow-box'></div>
+
+                    <MediaQuery maxDeviceWidth={480}>
                         <div className='texto'>
-                            <h2>Nanci <br />  Rius</h2>
+
+                            <h2 className='italic'>Natalia Valentini</h2>
                             <div className='linea-larga'></div>
                             <p>
-                                Profesora de Inglés General y para Fines Específicos y Traductora Literaria y Técnico-Científica en Inglés.
+                                Profesora de Inglés General y para Fines Específicos, Traductora Pública Nacional y Licenciada en Lengua y Literatura Inglesa.
+                            </p>
+
+                        </div>
+
+
+                    </MediaQuery>
+
+
+
+
+                    <div className='item staff3'
+                        onMouseOver={(e) => { e.preventDefault(); setShowStaff3(true);  }}
+                        onMouseLeave={(e) => { e.preventDefault(); setShowStaff3(false);  }}
+                    >
+                        <div className='shadow-box show-staff'></div>
+                        <div className={showStaff3 ? 'texto show-staff fade-in-bottom' : 'texto show-staff'}>
+                            <h2 className='italic'>María Eugenia Pellegrin</h2>
+                            <div className='linea-larga'></div>
+                            <p>
+                                Traductora Literaria y Técnico-Científica en Inglés; Diploma en Capacitación en Inglés de Negocios para Adultos.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <MediaQuery maxDeviceWidth={480}>
+                        <div className='texto'>
+
+                            <h2 className='italic'>María Eugenia Pellegrin</h2>
+                            <div className='linea-larga'></div>
+                            <p>
+                                Traductora Literaria y Técnico-Científica en Inglés; Diploma en Capacitación en Inglés de Negocios para Adultos.
+                            </p>
+
+                        </div>
+
+
+                    </MediaQuery>
+
+
+
+
+
+                    <div className='item staff4'
+                        onMouseOver={(e) => { e.preventDefault(); setShowStaff4(true);  }}
+                        onMouseLeave={(e) => { e.preventDefault(); setShowStaff4(false);  }}
+                    >
+                        <div className='shadow-box show-staff'></div>
+                        <div className={showStaff4 ? 'texto show-staff fade-in-bottom' : 'texto show-staff'}>
+                            <h2 className='italic'>María Delia Manila</h2>
+                            <div className='linea-larga'></div>
+                            <p>
+                                Profesora de Inglés General y Traductora Literaria y Técnico-Científica en Inglés.
                             </p>
 
 
                         </div>
                     </div>
 
+
+                    <MediaQuery maxDeviceWidth={480}>
+                        <div className='texto'>
+
+                            <h2 className='italic'>María Delia Manila</h2>
+                            <div className='linea-larga'></div>
+                            <p>
+                                Profesora de Inglés General y Traductora Literaria y Técnico-Científica en Inglés.
+                            </p>
+
+                        </div>
+
+
+                    </MediaQuery>
+
+
+
+                    <div className='item staff5'
+                        onMouseOver={(e) => { e.preventDefault(); setShowStaff5(true);  }}
+                        onMouseLeave={(e) => { e.preventDefault(); setShowStaff5(false);  }}
+                    >
+                        <div className='shadow-box show-staff'></div>
+                        <div className={showStaff5 ? 'texto show-staff fade-in-bottom' : 'texto show-staff'}>
+                            <h2 className='italic'>Nanci <br />  Rius</h2>
+                            <div className='linea-larga'></div>
+                            <p>
+                                Profesora de Inglés General, con amplia experiencia en la Enseñanza en Nivel Inicial y Primario.
+                            </p>
+
+
+                        </div>
+                    </div>
+                    <MediaQuery maxDeviceWidth={480}>
+                        <div className='texto'>
+
+                            <h2 className='italic'>Nanci  Rius</h2>
+                            <div className='linea-larga'></div>
+                            <p>
+                                Profesora de Inglés General, con amplia experiencia en la Enseñanza en Nivel Inicial y Primario.
+                            </p>
+
+                        </div>
+
+
+                    </MediaQuery>
 
                 </div>
             </section>
@@ -236,5 +367,8 @@ export default class extends React.Component {
                 {quienesSomosStyle}
             </style>
         </Layout>)
-    }
+
 }
+
+
+export default quienesSomos;

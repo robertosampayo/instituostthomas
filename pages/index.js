@@ -370,21 +370,21 @@ const Home = () => {
 
                                     <div className='servicio uno'>
                                             <img src='../static/imgs/book.png' />
-                                            <span>OFERTA EDUCATIVA</span>
+                                            <span>OFERTA <br /> EDUCATIVA</span>
 
                                     </div>
                                     <div className='servicio dos'>
                                             <img src='../static/imgs/Avion.png' />
-                                            <span>VIAJES DE ESTUDIO</span>
+                                            <span>VIAJES <br /> DE ESTUDIO</span>
                                     </div>
                                     <div className='servicio tres'>
                                             <img src='../static/imgs/compu.png' />
-                                            <span>SERVICIO DE TRADUCCIÓN</span>
+                                            <span>SERVICIO <br /> DE TRADUCCIÓN</span>
 
                                     </div>
                                     <div className='servicio cuatro'>
                                         <img src='../static/imgs/woods.png' />
-                                        <span>IMMERSION CAMPS</span>
+                                        <span>IMMERSION <br />CAMPS</span>
 
                                     </div>
 
@@ -399,19 +399,19 @@ const Home = () => {
                     <ul>
                         <li className='servicio1'>
                             <img src='../static/imgs/animados/libro.gif' />
-                                <span>OFERTA <br /><strong>EDUCATIVA</strong></span>
+                                <span><strong>OFERTA</strong><br />EDUCATIVA</span>
                         </li>
                         <li className='servicio2'>
                                 <img src='../static/imgs/animados/Avion2.gif' />
-                                <span>VIAJES <br /><strong>DE ESTUDIO</strong></span>
+                                <span><strong>VIAJES</strong><br />DE ESTUDIO</span>
                         </li>
                         <li className='servicio3'>
                             <img src='../static/imgs/animados/compu2.gif' />
-                                <span>SERVICIO <br /><strong>DE TRADUCCIÓN</strong></span>
+                                <span><strong>SERVICIO</strong><br />DE TRADUCCIÓN</span>
                         </li>
                         <li className='servicio4'>
                             <img src='../static/imgs/animados/Arboles.gif' />
-                                <span>IMMERSION <br /><strong>CAMPS</strong></span>
+                                <span><strong>IMMERSION</strong><br />CAMPS</span>
                         </li>
                     </ul>
                 </MediaQuery>

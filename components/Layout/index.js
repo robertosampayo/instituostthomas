@@ -154,6 +154,7 @@ export const Layout = ({title, children}) => {
                     .fade-in-bottom {
                         -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
                                 animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                                visibility: visible!important;
                     }
 
                     @keyframes showIn {
@@ -206,8 +207,20 @@ export const Layout = ({title, children}) => {
                         visibility: hidden!important;
                     }
 
+                    .simple-hide{
+                        visibility: hidden;
+                    }
+
                     .show{
                         visibility: visible!important;
+                    }
+
+                    .show-on-hover:hover > div{
+                        visibility: visible;
+                    }
+
+                    .show-hover:hover {
+                        visibility: visible;
                     }
 
 
@@ -233,7 +246,7 @@ export const Layout = ({title, children}) => {
 
                     .linea-black{
                         height: 2.5px;
-                        background: ${theme.textoGray};
+                        background: ${theme.primaryGreen};
                         width: 100%;
                         margin-bottom: 20px;
                     }
@@ -250,7 +263,7 @@ export const Layout = ({title, children}) => {
 
                     .linea-larga-black{
                         height: 2.5px;
-                        background: ${theme.textoGray};
+                        background: ${theme.primaryGreen};
                         width: 100%;
                         margin-bottom: 20px;
                         margin: 0 auto;

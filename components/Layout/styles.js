@@ -150,7 +150,7 @@ export default css.styles`
                             .footer-info li{
                                 list-style: none;
                                 margin: 10px 0;
-                                font-size: 20px;
+                                font-size: 16px;
                             }
 
                             .footer-info .svg-redes{
@@ -158,7 +158,7 @@ export default css.styles`
                             }
 
                             .footer-info li h2 {
-                                font-size: 50px;
+                                font-size: 45px;
                             }
 
                             .footer-info li svg:not(:last-child){

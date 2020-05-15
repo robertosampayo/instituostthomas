@@ -31,7 +31,7 @@ export default css.contactoStyle`
                 .info h1{
                     padding: 40px 0px;
                     color: ${theme.primaryGreen};
-                    font-size: 70px;
+                    font-size: ${theme.tituloDesktop};
                 }
                 .info h3{
                     font-size: 18px;
@@ -127,6 +127,8 @@ export default css.contactoStyle`
                     border-style: solid;
                     border-width: 2px;
                     border-color: ${theme.primaryGreen};
+                    font-size: ${theme.font_regular};
+                    font-weight: 600;
                 }
 
                 #formulario button:hover{
@@ -213,6 +215,7 @@ export default css.contactoStyle`
                     }
                     main, .info{
                         width: 100%;
+                        padding: 50px 0 0;
                     }
 
                     .info h1{
@@ -224,9 +227,17 @@ export default css.contactoStyle`
                         font-size: 20px;
                     }
 
+                    .info img{
+                        width: 200px;
+                    }
+
                     .info h3{
-                        width: 75%;
+                        width: 80%;
                         font-size: 20px;
+                    }
+
+                    #formulario {
+                        padding: 50px 0 70px 0;
                     }
 
                     #formulario button{

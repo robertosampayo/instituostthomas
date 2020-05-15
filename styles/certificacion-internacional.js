@@ -27,16 +27,16 @@ export default css.certificacionInternacionalStyle`
                 .banner h1{
 
                     width: 100%;
-                    font-size: 60px;
+                    font-size: 80px;
                     color: ${theme.textoGray};
                     padding: 0 0 10px 0;
 
 
                 }
                 .banner p {
-                    width: 100%;
-                    font-size: 18px;
-                    line-height: 1.3;
+                    width: 75%;
+                    font-size: 20px;
+                    line-height: 1.6;
                     color: ${theme.textoGray}
                 }
 
@@ -59,6 +59,8 @@ export default css.certificacionInternacionalStyle`
                 .comminsoon h3{
                     font-family: ${theme.font_montserrat};
                     font-weight: 600;
+                    letter-spacing: 4px;
+                    padding: 20px 20px 0;
 
 
                 }
@@ -73,6 +75,7 @@ export default css.certificacionInternacionalStyle`
                     flex-direction: column;
                     justify-content: center;
                     text-align: center;
+                    align-items: flex-start;
                 }
 
                 .comminsoon img{
@@ -83,12 +86,21 @@ export default css.certificacionInternacionalStyle`
 
                 }
 
+                .comminsoon img {
+                    left: 0%;
+                    width: 30%;
+                }
+                .comminsoon h3{
+                    font-size: ${theme.comminsoonSize};
+                }
+
+
+                .comminsoon h1{
+                    font-size: ${theme.tituloDesktop1500};
+                    font-weight: 300;
+                }
+
                 @media (min-width: 1650px) {
-
-                    .comminsoon {
-                        height: 750px;
-                    }
-
 
                     .banner h1 {
                         font-size: 100px;
@@ -99,45 +111,57 @@ export default css.certificacionInternacionalStyle`
                         font-size: 20px;
                     }
 
+                    .comminsoon {
+                        height: 90vh
+                    }
+
                     .comminsoon img {
                         left: -10%;
-                        width: 30%;
+                        width: 40%;
                     }
+
+
                     .comminsoon h3{
                         font-size: ${theme.comminsoonSize};
                     }
 
 
                     .comminsoon h1{
-                        font-size: ${theme.tituloDesktop};
                         font-weight: 300;
+                    }
+
+                    .contacto .contenedor img{
+                        width: 180px;
                     }
                 }
 
                 @media (min-width: 1281px) and (max-width: 1650px) {
 
                     .banner {
-                        height: 700px;
-                    }
-
-                    .comminsoon {
                         height: 90vh;
+                    }
+                    .comminsoon {
+                        height: 90vh
                     }
 
                     .comminsoon img {
                         left: -10%;
-                        width: 30%;
+                        width: 40%;
                     }
+
+
                     .comminsoon h3{
                         font-size: ${theme.comminsoonSize};
                     }
 
 
                     .comminsoon h1{
-                        font-size: ${theme.tituloDesktop};
                         font-weight: 300;
                     }
 
+                    .contacto .contenedor img{
+                        width: 180px;
+                    }
 
 
 
@@ -150,6 +174,13 @@ export default css.certificacionInternacionalStyle`
 
                 @media (min-width: 1025px) and (max-width: 1280px) {
 
+                    .banner h1 {
+                        font-size: 60px;
+                    }
+
+                    .banner p {
+                        font-size: 18px;
+                    }
 
                     .comminsoon {
                         height: 100vh;
@@ -157,11 +188,12 @@ export default css.certificacionInternacionalStyle`
 
                     .comminsoon img{
                         width: 40%;
+                        left: -10%;
                     }
 
                     .comminsoon .contenido h1{
-                        width: 80%;
-                        margin: 0 auto;
+                        width: auto;
+                        margin: 0;
                         font-size: 50px;
                         font-weight: 300;
                     }
@@ -266,6 +298,20 @@ export default css.certificacionInternacionalStyle`
                             height: auto;
                         }
 
+                        .banner h1{
+                            font-size: 40px;
+                        }
+
+                        .banner p {
+                            width: 100%;
+                            font-size: 18px;
+                            text-align: center;
+                        }
+
+                        .banner .linea-larga-black{
+                            width: 100%;
+                        }
+
                         .banner-texto{
                             flex-direction: column;
                             width: 90%;
@@ -278,6 +324,17 @@ export default css.certificacionInternacionalStyle`
                             flex-direction: column;
                         }
 
+                        .comminsoon h3 {
+                            font-size: 20px;
+                            margin: 0 auto;
+                        }
+
+                        .comminsoon h1{
+                            font-size: 40px;
+                            font-weight: 300;
+                            margin: 0 auto;
+                        }
+
                         .comminsoon .contenido {
                             width: 100%;
                             margin-top: 50px;
@@ -286,7 +343,8 @@ export default css.certificacionInternacionalStyle`
                         .comminsoon img{
                             position: absolute;
                             bottom: 0;
-                            width: 70%;
+                            left: -30%;
+                            width: 90%;
                         }
 
                         .comminsoon {

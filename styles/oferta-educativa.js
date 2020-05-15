@@ -58,17 +58,17 @@ export default css.ofertaEducativaStyle`
                 }
 
 
-                .oferta-educativa-background {
-                    height: 350px;
-                    background: url('../static/imgs/recurso1.png');
-                    background-size: cover;
-                }
+                // .oferta-educativa-background {
+                //     height: 350px;
+                //     background: url('../static/imgs/recurso1.png');
+                //     background-size: cover;
+                // }
 
-                .traduccion-background {
-                    height: 350px;
-                    background: url('../static/imgs/recurso2.png');
-                    background-size: cover;
-                }
+                // .traduccion-background {
+                //     height: 350px;
+                //     background: url('../static/imgs/recurso2.png');
+                //     background-size: cover;
+                // }
 
                 .traduccion-contenido{
 
@@ -177,6 +177,7 @@ export default css.ofertaEducativaStyle`
 
                 .horario-texto h2{
                     color: ${theme.primaryGreen};
+                    padding: 0 0 10px;
                 }
 
                 .horario-texto .linea-black{
@@ -187,13 +188,14 @@ export default css.ofertaEducativaStyle`
                     color: ${theme.primaryGray};
                 }
 
-                .linea-black{
+                .linea-black, .linea-larga-black{
                     background: ${theme.primaryGreen};
                 }
 
 
                 .linea-larga{
                     margin-bottom: 50px;
+                    border-color: ${theme.primaryGreen};
                 }
 
                 .linea{ width: 120px;}
@@ -393,11 +395,11 @@ export default css.ofertaEducativaStyle`
                         }
 
                         .traduccion-background{
-                            height: 850px;
+                            height: auto;
                         }
 
                         .oferta-educativa-background{
-                            height: 550px;
+                            height: auto;
                         }
 
                         .actividades-texto p {
@@ -540,11 +542,15 @@ export default css.ofertaEducativaStyle`
                             flex-direction: row;
                             justify-content: center;
                             align-items: center;
-                            width: 80%;
+                            width: 70%;
+                        }
+
+                        .horario-atencion p{
+                            width: 90%;
                         }
 
                         .horario-atencion .horario-texto{
-                            padding: 20px;
+                            padding: 20px 20px 20px 50px;
                         }
 
 
@@ -603,20 +609,20 @@ export default css.ofertaEducativaStyle`
                         }
 
                         .traduccion .traduccion-texto p{
-                            font-size: 20px;
-                            line-height: 1;
+                            font-size: 25px;
+                            line-height: 1.3;
                         }
 
                         .traduccion .traduccion-texto h3{
-                            font-size: 40px;
+                            font-size: 55px;
                         }
 
                         .traduccion-background{
-                            height: 850px;
+                            height: auto;
                         }
 
                         .oferta-educativa-background{
-                            height: 550px;
+                            height: auto;
                         }
 
                         .actividades-texto p {
@@ -725,11 +731,11 @@ export default css.ofertaEducativaStyle`
                         }
 
                         .oferta-educativa-background{
-                            height: 450px;
+                            height: auto;
                         }
 
                         .traduccion-background{
-                            height: 450px;
+                            height: auto;
                         }
 
                         .traduccion{
@@ -794,8 +800,8 @@ export default css.ofertaEducativaStyle`
 
 
                         .oferta-educativa ul li img{
-                            height: 150px;
-                            width: 250px;
+                            height: auto;
+                            width: 300px;
                         }
 
                         .oferta-educativa ul{
@@ -1118,7 +1124,7 @@ export default css.ofertaEducativaStyle`
                         }
 
                         .oferta-educativa-background {
-                                height: 350px;
+                                height: auto;
                                 background: url('../static/imgs/recurso1.png');
                                 background-size: cover;
                             }
@@ -1253,12 +1259,13 @@ export default css.ofertaEducativaStyle`
                     @media (min-width: 320px) and (max-width: 480px) {
 
                         h2 {
-                            font-size: 40px;
-                            text-align: left;
+                            font-size: 35px;
+                            text-align: center;
                         }
 
                         p {
                             font-size: 16px;
+                            text-align: center;
                         }
 
                         .banner h1{ font-size: 40px; width: auto;}
@@ -1319,17 +1326,20 @@ export default css.ofertaEducativaStyle`
                             margin-bottom: 20px;
                         }
 
+                        .circulo2 {
+                            top: 20px;
+                        }
 
                         .circulo2{
                             width: 150px;
                             height: 150px;
-                            left: -18%;
+                            left: -30%;
                             top: 30%;
 
                         }
 
                         .oferta-educativa-background {
-                                height: 350px;
+                                height: auto;
                                 background: url('../static/imgs/recurso1.png');
                                 background-size: cover;
                             }
@@ -1347,7 +1357,8 @@ export default css.ofertaEducativaStyle`
                             }
 
                             .oferta-educativa .texto h3 {
-                                font-size: 40px;
+                                font-size: 30px;
+                                text-align: center;
                             }
 
                             .oferta-educativa .texto p {
@@ -1427,13 +1438,20 @@ export default css.ofertaEducativaStyle`
                                 width: 100%;
                                 justify-content: center;
                                 align-items: center;
+                                padding: 20px 0;
                             }
 
                             .traduccion .traduccion-texto {
                                 padding: 0;
                                 width: 100%;
                             }
-}
+
+                            .traduccion .traduccion-texto h3 {
+
+                                text-align: center;
+                            }
+
+
 
                             .actividades .actividades-contenido{
                                 padding: 0 0 50px;
@@ -1448,7 +1466,8 @@ export default css.ofertaEducativaStyle`
                             }
 
                             .actividades .actividades-texto h3 {
-                                font-size: 35px;
+                                font-size: 30px;
+                                text-align: center;
                             }
 
                             .actividades .actividades-texto {

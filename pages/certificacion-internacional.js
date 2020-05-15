@@ -3,6 +3,7 @@ import { Banner } from '../components/Banner'
 import animations from '../styles/animations'
 import certificacionInternacionalStyle from '../styles/certificacion-internacional'
 
+
 export default class extends React.Component {
 
 

@@ -778,7 +778,7 @@ export default css.galeriaStyle`
                         }
 
                         .banner img {
-                            width: 250px;
+                            width: 200px;
                         }
 
                         .banner h1 {

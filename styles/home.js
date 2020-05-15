@@ -365,7 +365,7 @@ export default css.homeStyle`
                 }
 
                 .explora ul  span {
-                    width: 80%;
+                    width: 86%;
                     padding: 20px 0px;
                     font-family: ${theme.font_montserrat};
                     font-weight: 600;
@@ -446,15 +446,16 @@ export default css.homeStyle`
                 }
 
                 .equipo h3{
-                    font-family: ${theme.font_montserrat};
+
+                    font-family: 'Montserrat', sans-serif;
                     font-weight: 400;
-                    color: ${theme.primaryGreen};
+                    color: #53764c;
                     border-style: solid;
-                    width: 350px;
+                    width: 220px;
                     margin: 0 auto;
                     border-width: 1.5px 0px 1.5px;
-                    padding: ${theme.paddingButton};
-                    font-size: ${theme.fontSizeButton};
+                    padding: 6px 0;
+                    font-size: 22px;
 
                 }
 
@@ -578,6 +579,8 @@ export default css.homeStyle`
                 .comminsoon h3{
                     font-family: ${theme.font_montserrat};
                     font-weight: 600;
+                    letter-spacing: 4px;
+                    padding: 20px 20px 0;
 
 
                 }
@@ -592,6 +595,7 @@ export default css.homeStyle`
                     flex-direction: column;
                     justify-content: center;
                     text-align: center;
+                    align-items: flex-start;
                 }
 
                 .comminsoon img{
@@ -673,16 +677,17 @@ export default css.homeStyle`
                     padding: 40px 0px;
                     font-family: ${theme.font_regular};
                     color: ${theme.primaryGray};
-                    font-size: 75px;
+                    font-size: ${theme.tituloDesktop1500};
                 }
 
                 .contacto .contenedor h3 {
-                    color: ${theme.primaryGreen};
-                    border-style: solid;
-                    padding: ${theme.paddingButton};
-                    border-width: 2px 0;
-                    font-size: ${theme.fontSizeButton};
                     font-family: ${theme.font_montserrat};
+                    color: ${theme.primaryGreen};
+                    font-weight: 500;
+                    border-style: solid;
+                    border-width: 1px 0;
+                    padding: ${theme.paddingButton};
+                    font-size: ${theme.fontSizeButton};
                 }
 
                 .contacto .contenedor p{
@@ -863,18 +868,14 @@ export default css.homeStyle`
 
                     .explora h1{
                         border-width: 0px 0px 2px;
+                        font-size: ${theme.tituloDesktop1500};
                         padding: 50px 50px 12px;
-                        font-size: ${theme.tituloDesktop};
-                    }
-
-                    .equipo h1{
-                        font-size: ${theme.tituloDesktop};
-                        padding: 50px 250px 12px;
                     }
 
                     .equipo ul{
                         width: 55%;
                     }
+
 
                     .equipo ul li{
                         margin: 0 20px 0 0;
@@ -940,15 +941,16 @@ export default css.homeStyle`
 
                     .comminsoon img {
                         left: 0%;
-                        width: 30%;
+                        width: 40%;
                     }
+
+
                     .comminsoon h3{
                         font-size: ${theme.comminsoonSize};
                     }
 
 
                     .comminsoon h1{
-                        font-size: ${theme.tituloDesktop};
                         font-weight: 300;
                     }
 
@@ -956,6 +958,11 @@ export default css.homeStyle`
                         width: 180px;
                     }
 
+                    .explora h1, .equipo h1, .comminsoon h1 {
+
+                        font-size: ${theme.tituloDesktop1500};
+
+                    }
 
                 }
 
@@ -1678,20 +1685,36 @@ export default css.homeStyle`
 
                     }
 
-                    .comminsoon {
-                        flex-direction: column;
-                    }
+                        .comminsoon {
+                            flex-direction: column;
+                        }
 
-                    .comminsoon .contenido {
-                        width: 100%;
-                        margin-top: 50px;
-                    }
+                        .comminsoon h3 {
+                            font-size: 20px;
+                            margin: 0 auto;
+                        }
 
-                    .comminsoon img{
-                        position: absolute;
-                        bottom: 0;
-                        width: 70%;
-                    }
+                        .comminsoon h1{
+                            font-size: 40px;
+                            font-weight: 300;
+                            margin: 0 auto;
+                        }
+
+                        .comminsoon .contenido {
+                            width: 100%;
+                            margin-top: 50px;
+                        }
+
+                        .comminsoon img{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0%;
+                            width: 90%;
+                        }
+
+                        .comminsoon {
+                            height: 100vh;
+                        }
 
                     .contacto .contenedor {
                         width: 80%;
@@ -1709,9 +1732,7 @@ export default css.homeStyle`
                         height: auto;
                     }
 
-                    .comminsoon {
-                        height: 100vh;
-                    }
+
 
 
 
