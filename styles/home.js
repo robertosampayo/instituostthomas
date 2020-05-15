@@ -455,7 +455,7 @@ export default css.homeStyle`
                     margin: 0 auto;
                     border-width: 1.5px 0px 1.5px;
                     padding: 6px 0;
-                    font-size: 22px;
+                    font-size: 25px;
 
                 }
 
