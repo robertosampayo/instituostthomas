@@ -505,7 +505,12 @@ export default css.homeStyle`
                     justify-content: center;
                 }
 
-
+                .equipo ul li .over {
+                    position: absolute;
+                    transform: scale(1.1);
+                    opacity: 0;
+                    transform: scale(0.9);
+                }
 
 
 

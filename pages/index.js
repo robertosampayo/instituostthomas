@@ -166,15 +166,19 @@ const Home = () => {
 
         }
 
-        const showName = (e) =>{
-           let span = e.target.parentElement.querySelector('span')
-           gsapTeamHover.to(span, {duration: 0.1, css: { opacity: 1, transform: 'translateY(0%)' } ,  })
-        }
+    const showName = (e) => {
+        let span = e.target.parentElement.querySelector('span')
+        let over = e.target.parentElement.querySelector('.over')
+        gsapTeamHover.to(span, { duration: 0.1, css: { opacity: 1, transform: 'translateY(0%)' }, })
+        gsapTeamHover.to(over, { duration: 0.1, css: { opacity: 1, transform: 'scale(1.1)' }, }, '-=0.1')
+    }
 
-        const hideName = (e) =>{
-           let span = e.target.parentElement.querySelector('span')
-           gsapTeamLeave.to(span, {duration: 0.1, css: { opacity: 0, transform: 'translateY(5%)' } ,})
-        }
+    const hideName = (e) => {
+        let span = e.target.parentElement.querySelector('span')
+        let over = e.target.parentElement.querySelector('.over')
+        gsapTeamLeave.to(span, { duration: 0.1, css: { opacity: 0, transform: 'translateY(5%)' }, })
+        gsapTeamLeave.to(over, { duration: 0.1, css: { opacity: 0, transform: 'scale(0.9)' }, }, '-=0.1')
+    }
 
 
         useEffect(() => {
@@ -369,21 +373,21 @@ const Home = () => {
 
 
                                     <div className='servicio uno'>
-                                            <img src='../static/imgs/book.png' />
+                                            <img src='../static/imgs/animados/libro.gif' />
                                             <span>OFERTA <br /> EDUCATIVA</span>
 
                                     </div>
                                     <div className='servicio dos'>
-                                            <img src='../static/imgs/Avion.png' />
+                                            <img src='../static/imgs/animados/Avion2.gif' />
                                             <span>VIAJES <br /> DE ESTUDIO</span>
                                     </div>
                                     <div className='servicio tres'>
-                                            <img src='../static/imgs/compu.png' />
+                                            <img src='../static/imgs/animados/compu2.gif' />
                                             <span>SERVICIO <br /> DE TRADUCCIÓN</span>
 
                                     </div>
                                     <div className='servicio cuatro'>
-                                        <img src='../static/imgs/woods.png' />
+                                        <img src='../static/imgs/animados/Arboles.gif' />
                                         <span>IMMERSION <br />CAMPS</span>
 
                                     </div>
@@ -467,7 +471,8 @@ const Home = () => {
                         <li className='team servicio1' >
                             <Link href='/quienes-somos'>
                                 <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)} >
-                                    <img src='../static/imgs/equipo1.png' />
+                                    <img src='../static/imgs/staff/caro.png' />
+                                    <img className='over' src='../static/imgs/staff/OVER.png' />
                                     <span>Caro</span>
 
                                 </a>
@@ -476,7 +481,8 @@ const Home = () => {
                         <li className='team servicio2' >
                             <Link href='/quienes-somos'>
                                 <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
-                                    <img src='../static/imgs/equipo2.png' />
+                                        <img src='../static/imgs/staff/gra.png' />
+                                    <img className='over' src='../static/imgs/staff/OVER.png' />
                                     <span>Gra</span>
 
                                 </a>
@@ -485,7 +491,8 @@ const Home = () => {
                         <li className='team servicio3' >
                             <Link href='/quienes-somos'>
                                 <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
-                                    <img src='../static/imgs/equipo3.png' />
+                                        <img src='../static/imgs/staff/nati.png' />
+                                    <img className='over' src='../static/imgs/staff/OVER.png' />
                                     <span>Nati</span>
                                 </a>
                             </Link>
@@ -493,7 +500,8 @@ const Home = () => {
                         <li className='team servicio4' >
                             <Link href='/quienes-somos'>
                                 <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
-                                    <img src='../static/imgs/equipo4.png' />
+                                        <img src='../static/imgs/staff/mauge.png' />
+                                    <img className='over' src='../static/imgs/staff/OVER.png' />
                                     <span>Mauge</span>
 
                                 </a>
@@ -502,7 +510,8 @@ const Home = () => {
                         <li className='team servicio4' >
                             <Link href='/quienes-somos'>
                                 <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
-                                    <img src='../static/imgs/equipo5.png' />
+                                        <img src='../static/imgs/staff/maride.png' />
+                                    <img className='over' src='../static/imgs/staff/OVER.png' />
                                     <span>Maridé</span>
 
                                 </a>
@@ -512,7 +521,7 @@ const Home = () => {
                         <li className='team servicio4' >
                             <Link href='/quienes-somos'>
                                 <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
-                                    <img src='../static/imgs/equipo6.png' />
+                                        <img src='../static/imgs/staff/nancy.png' />
                                     <span>Nancy</span>
 
                                 </a>
@@ -532,7 +541,7 @@ const Home = () => {
                                     <div className='team servicio1' >
                                         <Link href='/quienes-somos'>
                                             <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)} >
-                                                <img src='../static/imgs/equipo1.png' />
+                                                <img src='../static/imgs/staff/caro.png' />
                                                 <h2>Caro</h2>
 
                                             </a>
@@ -541,7 +550,7 @@ const Home = () => {
                                     <div className='team servicio2' >
                                         <Link href='/quienes-somos'>
                                             <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
-                                                <img src='../static/imgs/equipo2.png' />
+                                                <img src='../static/imgs/staff/gra.png' />
                                                 <h2>Gra</h2>
 
                                             </a>
@@ -550,7 +559,7 @@ const Home = () => {
                                     <div className='team servicio3' >
                                         <Link href='/quienes-somos'>
                                             <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
-                                                <img src='../static/imgs/equipo3.png' />
+                                                <img src='../static/imgs/staff/nati.png' />
                                                 <h2>Nati</h2>
                                             </a>
                                         </Link>
@@ -558,7 +567,7 @@ const Home = () => {
                                     <div className='team servicio4' >
                                         <Link href='/quienes-somos'>
                                             <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
-                                                <img src='../static/imgs/equipo4.png' />
+                                                <img src='../static/imgs/staff/mauge.png' />
                                                 <h2>Mauge</h2>
 
                                             </a>
@@ -567,7 +576,7 @@ const Home = () => {
                                     <div className='team servicio4' >
                                         <Link href='/quienes-somos'>
                                             <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
-                                                <img src='../static/imgs/equipo5.png' />
+                                                <img src='../static/imgs/staff/maride.png' />
                                                 <h2>Maridé</h2>
 
                                             </a>
@@ -577,7 +586,7 @@ const Home = () => {
                                     <div className='team servicio4' >
                                         <Link href='/quienes-somos'>
                                             <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
-                                                <img src='../static/imgs/equipo6.png' />
+                                                <img src='../static/imgs/staff/nancy.png' />
                                                 <h2>Nancy</h2>
 
                                             </a>
