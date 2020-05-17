@@ -217,7 +217,7 @@ export default css.galeriaStyle`
                         }
 
                         .galeria {
-                            width: 60%;
+                            width: 55%;
                         }
 
 

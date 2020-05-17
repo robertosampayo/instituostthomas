@@ -42,7 +42,6 @@ const Home = () => {
                 if (window !== null){
 
                     window.setTimeout(function(){
-                        console.log(swiper.slides)
                         if (swiper.slides && swiper !== null) {
                             swiper.slideNext()
                         }
@@ -197,7 +196,7 @@ const Home = () => {
 
 
 
-        return <Layout>
+        return <Layout title='Instituto de ingles St. Thomas'>
         <section className='home'>
             {/* <MediaQuery minDeviceWidth={480}> */}
 
@@ -443,10 +442,7 @@ const Home = () => {
                             image: '../../static/imgs/girl-write.png',
                             amount: 0.3,
                         },
-                        // {
-                        //     image: '../../static/imgs/girl-write.png',
-                        //     amount: 0.1,
-                        // },
+
                     ]}
                     style={{
                         height: '70vh',
@@ -623,7 +619,6 @@ const Home = () => {
                     </div>
 
                     <div className='people'>
-                        {/* <Swiper {...params}> */}
                             <div className='slide1 slides-gallery1'><img style={{  transform: "rotate(-10deg)"   }} src='../static/imgs/galeria/02teachers-mesa-de-trabajo2.png' /></div>
                             <div className='slide2 slides-gallery1'><img style={{  transform: "rotate(15deg)"   }} src='../static/imgs/galeria/08students.png' /></div>
                             <div className='slide3 slides-gallery1'><img style={{  transform: "rotate(-10deg)"   }} src='../static/imgs/galeria/23students.png' /></div>
@@ -631,7 +626,6 @@ const Home = () => {
                             <div className='slide1 slides-gallery2'><img style={{  transform: "rotate(-5deg) translateY(40px)"   }} src='../static/imgs/galeria/24students.png' /></div>
                             <div className='slide2 slides-gallery2'><img style={{  transform: "rotate(15deg) scale(0.8)"   }} src='../static/imgs/galeria/25students.png' /></div>
                             <div className='slide3 slides-gallery2'><img style={{  transform: "rotate(-5deg) scale(0.8)"   }} src='../static/imgs/galeria/26students.png' /></div>
-                        {/* </Swiper> */}
 
                     </div>
 
@@ -659,7 +653,7 @@ const Home = () => {
 
                 <section className='contacto'>
                     <div className='contenedor'>
-                        <img src='../../static/imgs/animados/carta.gif'></img>
+                        <img src='../../static/imgs/animados/carta2.gif'></img>
                         <h2>Learning English Together</h2>
                         <p>Si desea estudiar en St. Thomas u obtener información sobre alguno de nuestros servicios, puede contactarse con nosotros.</p>
                         <Link href='/contacto'>

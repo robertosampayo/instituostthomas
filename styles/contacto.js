@@ -31,7 +31,7 @@ export default css.contactoStyle`
                 .info h1{
                     padding: 40px 0px;
                     color: ${theme.primaryGreen};
-                    font-size: ${theme.tituloDesktop};
+                    font-size: ${theme.tituloDesktop1500};
                 }
                 .info h3{
                     font-size: 18px;
@@ -87,6 +87,7 @@ export default css.contactoStyle`
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    margin: 20px 0 0 0;
                 }
 
                 #formulario textarea {

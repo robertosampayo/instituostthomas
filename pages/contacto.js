@@ -74,7 +74,7 @@ export default () => {
         <h1 className='text-focus-in'>Learning English Together</h1>
 
         <p className='text-focus-in'>
-          Si desea estudiar en St. Thomas u obtener información sobre alguno de nuestros servicios , escríbanos un correo electrónico a <a href='mailto:instistthomas@gmail.com'><span className='cursiva'><stong>instistthomas@gmail.com</stong></span></a>
+          Si desea estudiar en St. Thomas u obtener información sobre alguno de nuestros servicios , escríbanos un correo electrónico a <a href='mailto:instistthomas@gmail.com'><span className='cursiva'><strong>instistthomas@gmail.com</strong></span></a>
         </p>
 
         {/* <div className='linea-green'></div> */}

@@ -41,13 +41,13 @@ function MyApp({ Component, pageProps, router }) {
   return (
       <div>
 
-        <Container>
+
             {/* <Cargador /> */}
               {/* <div className='cortina1' ref={cortina1}></div>
               <div className='cortina2' ref={cortina2}></div>
               <div className='cortina3' ref={cortina3}></div> */}
 
-            <PageTransition key={router.route} timeout={1000}
+        <PageTransition key={router.pathname} timeout={1000}
             classNames="page-transition"
             // loadingComponent={<Cargador />}
             // loadingDelay={500}
@@ -57,9 +57,9 @@ function MyApp({ Component, pageProps, router }) {
             // }}
             loadingClassNames="loading-indicator"
             >
-              <ParallaxProvider>
+            <ParallaxProvider key={router.route + '-2' }>
 
-                  <Component {...pageProps} key={router.pathname} />
+                  <Component {...pageProps} key={router.route} />
               </ParallaxProvider>
 
             </PageTransition>
@@ -119,7 +119,7 @@ function MyApp({ Component, pageProps, router }) {
 
             `}</style>
 
-        </Container>
+
 
       </div>
 

@@ -40,7 +40,7 @@ export const Layout = ({title, children}) => {
 
                 <Head>
                     <meta name='viewport' content='width=device-width, initial-scale=1' />
-                    <title>{title}</title>
+                    {title && <title >{title}</title>}
                 </Head>
 
                 <header>
@@ -322,6 +322,8 @@ export const Layout = ({title, children}) => {
                         z-index: 1;
                         left: 10%;
                     }
+
+
 
                      @media (min-width: 320px) and (max-width: 480px) {
 

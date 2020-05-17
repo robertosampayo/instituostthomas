@@ -52,12 +52,13 @@ export default css.quienesSomosStyle`
                         font-size: 100px;
                         color: ${theme.textoGray};
                         padding: 0;
-                        border-width: 0 0 2px;
+                        border-width: 0 0 2.5px;
                         border-style: solid;
                         border-color: ${theme.primaryGreen};
                         line-height: 1;
                         font-family: ${theme.font_regular_important};
                         width: 45%;
+                        font-style: initial;
                     }
 
                     .banner p { width: 60%;
@@ -415,7 +416,7 @@ export default css.quienesSomosStyle`
 
                     .banner h1{
                         border-style: solid;
-                        border-width: 0px 0px 2px;
+                        border-width: 0px 0px 2.5px;
                         border-color: ${theme.primaryGreen};
                         font-size: 130px;
                         padding: 0;
@@ -608,7 +609,7 @@ export default css.quienesSomosStyle`
 
                     .banner h1{
                         border-style: solid;
-                        border-width: 0px 0px 2px;
+                        border-width: 0px 0px 2.5px;
                         border-color: ${theme.primaryGreen};
                         font-size: ${theme.tituloBig1500};
                         padding: 0 0 20px;

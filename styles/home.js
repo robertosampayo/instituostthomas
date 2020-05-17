@@ -364,6 +364,7 @@ export default css.homeStyle`
 
                 .explora ul li img {
                     width: 150px;
+                    margin: 0 0 20px;
                 }
 
                 .explora ul  span {
@@ -631,12 +632,12 @@ export default css.homeStyle`
                 }
 
                 .slides-gallery1{
-                    animation: carrusel 16s linear infinite;
+                    animation: carrusel 28s linear infinite;
                 }
 
                 .slides-gallery2{
-                    animation: carrusel2 16s linear infinite;
-                    animation-delay: 8s;
+                    animation: carrusel2 28s linear infinite;
+                    animation-delay: 14s;
                 }
 
                 .slider-container{
@@ -988,6 +989,10 @@ export default css.homeStyle`
                 @media (min-width: 1025px) and (max-width: 1280px) {
 
 
+                    .banner, .banner2, .banner3 {
+                        background-position-x: 55%;
+                    }
+
                     .info{
                         height: auto;
                         padding: 0px 0px 150px;
@@ -1017,7 +1022,7 @@ export default css.homeStyle`
 
 
                     .info h3{
-                            width: 40%;
+                            width: 70%;
 
                     }
 
@@ -1113,9 +1118,9 @@ export default css.homeStyle`
 
                     .comminsoon .contenido h1{
                         width: 80%;
-                        margin: 0 auto;
                         font-size: 50px;
                         font-weight: 300;
+                        display: flex;
                     }
 
 
@@ -1146,16 +1151,17 @@ export default css.homeStyle`
 
                 @media (min-width: 768px) and (max-width: 1024px) {
 
+                    .banner, .banner2, .banner3 {
+                        background-position-x: 55%;
+                    }
+
+
                     .swiper-container{
                         width: 80%;
                     }
                     .info{
                         height: auto;
                         padding: 0px 0px 100px;
-                    }
-
-                    .info h3{
-                        margin: 100px 0px;
                     }
 
                     .info ul{
@@ -1169,7 +1175,7 @@ export default css.homeStyle`
                     }
 
                     .info ul li .contenido h2{
-                        font-size: 30px;
+                        font-size: 25px;
                     }
 
                     .info ul li .contenido p{
@@ -1178,7 +1184,8 @@ export default css.homeStyle`
 
 
                     .info h3{
-                            width: 40%;
+                            margin: 100px 0px;
+                            width: 80%;
 
                     }
 
@@ -1259,7 +1266,13 @@ export default css.homeStyle`
 
                     .comminsoon .contenido h1{
                         width: 80%;
-                        margin: 0 auto;
+                        font-size: 50px;
+                        font-weight: 300;
+                        display: flex;
+                    }
+
+                    .comminsoon h3 {
+                        font-size: 30px;
                     }
 
                     .momentos .content{
@@ -1319,6 +1332,12 @@ export default css.homeStyle`
                     .banner-container .cortina-tres {
                         left: 75%;
                     }
+
+
+                    .banner, .banner2, .banner3 {
+                        background-position-x: 55%;
+                    }
+
                     .info{
                         height: auto;
                         padding: 0px 0px 100px;
@@ -1356,8 +1375,9 @@ export default css.homeStyle`
 
 
                     .info h3{
-                            width: 80%;
-
+                        width: 80%;
+                        font-size: 14px;
+                        letter-spacing: initial;
                     }
 
                     .info ul {
@@ -1443,6 +1463,15 @@ export default css.homeStyle`
                         width: 200px;
                     }
 
+                    .explora ul li a{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 20px;
+
+                    }
+
 
                     .momentos {
                         height: auto;
@@ -1493,6 +1522,19 @@ export default css.homeStyle`
                     }
 
                     .comminsoon .contenido, .comminsoon .logo {
+                        width: 100%;
+                    }
+
+                    .comminsoon .contenido h1{
+                        width: 80%;
+                        font-size: 50px;
+                        font-weight: 300;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .comminsoon h3 {
+                        font-size: 30px;
                         width: 100%;
                     }
 
