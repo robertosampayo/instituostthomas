@@ -140,6 +140,10 @@ export default css.certificacionInternacionalStyle`
                     .banner {
                         height: 90vh;
                     }
+
+                    .banner h1 {
+                        font-size: ${theme.tituloDesktop1500};
+                    }
                     .comminsoon {
                         height: 90vh
                     }
@@ -175,11 +179,11 @@ export default css.certificacionInternacionalStyle`
                 @media (min-width: 1025px) and (max-width: 1280px) {
 
                     .banner h1 {
-                        font-size: 60px;
+                        font-size: 50px;
                     }
 
                     .banner p {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
 
                     .comminsoon {

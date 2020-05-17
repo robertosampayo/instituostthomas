@@ -92,6 +92,13 @@ export default css.ofertaEducativaStyle`
                     color: ${theme.primaryGreen};
                     font-size: 40px;
                 }
+
+                .traduccion h2 {
+                    color: ${theme.textoGray};
+                }
+
+
+
                 .traduccion .linea-black {
                     background: ${theme.primaryGreen};
                 }
@@ -163,6 +170,10 @@ export default css.ofertaEducativaStyle`
                 .actividades-titulo{
                     width: 80%;
                     margin: 0 auto;
+                }
+
+                .oferta-educativa h2 {
+                    color: ${theme.textoGray};
                 }
 
                 .oferta-educativa .texto h3{
@@ -371,6 +382,10 @@ export default css.ofertaEducativaStyle`
                         .traduccion{
                             height: auto;
                             padding: 100px 0;
+                        }
+
+                        .traduccion h2 {
+                            color: ${theme.textoGray};
                         }
 
                         .traduccion-contenido {
@@ -692,8 +707,8 @@ export default css.ofertaEducativaStyle`
                             margin: 0 0 10px 0;
                         }
 
-                        .banner h1{ font-size: 60px; width: auto; padding: 0 0 30px;}
-                        .banner p { width: auto; }
+                        .banner h1{ font-size: 50px; width: auto; padding: 0 0 30px;}
+                        .banner p { width: auto; font-size: 16px; }
 
                         .banner {
                             height: 600px;

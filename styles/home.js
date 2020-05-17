@@ -998,9 +998,6 @@ export default css.homeStyle`
                         padding: 0px 0px 150px;
                     }
 
-                    .info h3{
-                        margin: 100px 0px;
-                    }
 
                     .info ul{
                         width: 80%;
@@ -1022,7 +1019,9 @@ export default css.homeStyle`
 
 
                     .info h3{
-                            width: 70%;
+                        margin: 100px 0px;
+                        font-size: 18px;
+                        width: 50%;
 
                     }
 
@@ -1040,6 +1039,10 @@ export default css.homeStyle`
 
                         background-size: 120% 120%;
 
+                    }
+
+                    .info .imagen1, .info .imagen2, .info .imagen3 {
+                        height: 200px;
                     }
 
                     .equipo{
@@ -1634,7 +1637,7 @@ export default css.homeStyle`
 
                     .info h3{
                         width: 80%;
-                        font-size: 10px;
+                        font-size: 8px;
                     }
 
 
