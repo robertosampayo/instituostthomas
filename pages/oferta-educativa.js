@@ -2,6 +2,8 @@ import {Layout} from '../components/Layout'
 import {Banner} from '../components/Banner'
 import ofertaEducativaStyle from '../styles/oferta-educativa'
 import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
+import animations from '../styles/animations'
+
 
 export default class extends React.Component {
 
@@ -13,11 +15,11 @@ export default class extends React.Component {
             <div className='banner'>
                 <div className='banner-texto'>
                     <div className='banner-titulo'>
-                        <h1>¿Por qué elegir <br /> estudiar en <br /> St. Thomas?</h1>
-                        <div className='linea-larga-black'></div>
+                        <h1 className='text-focus-in'>¿Por qué elegir <br /> estudiar en <br /> St. Thomas?</h1>
+                        <div className='linea-larga-black text-focus-in'></div>
 
                     </div>
-                    <p>
+                    <p className='text-focus-in'>
                         Porque ponemos especial atención y <br /> dedicación en forjar la integridad del alumno. <br /><br /> Porque enseñamos a desarrollar las<br /> habilidades blandas o <span className='italic strong'>soft skills</span>. <br /> <br /> Porque nuestro equipo de trabajo realiza una <br /> continua capacitación profesional.
                     </p>
 
@@ -62,7 +64,7 @@ export default class extends React.Component {
                 ></ParallaxBanner>
             </section>
 
-            <section className='oferta-educativa'>
+            <section className='oferta-educativa' id='oferta-educativa' name='oferta-educativa'>
 
 
                 <h2>Oferta Educativa
@@ -125,7 +127,7 @@ export default class extends React.Component {
                 ></ParallaxBanner>
             </section>
 
-            <section className='traduccion'>
+            <section className='traduccion' id='traduccion' name='traduccion'>
 
                 <h2>Servicio de traducción</h2>
                 <div className='linea-black'></div>
@@ -150,7 +152,7 @@ export default class extends React.Component {
                 </div>
             </section>
 
-            <section className='actividades'>
+            <section className='actividades' id='actividades' name='actividades'>
                 <div className='actividades-titulo'>
                     <h2>Otras actividades</h2>
                     <div className='linea-larga'></div>
@@ -188,6 +190,7 @@ export default class extends React.Component {
 
             </section>
 
+            <style jsx>{animations}</ style>
             <style jsx>{ofertaEducativaStyle}</ style>
         </Layout>)
 

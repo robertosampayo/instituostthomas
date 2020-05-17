@@ -145,7 +145,10 @@ export const Layout = ({title, children}) => {
                     a{
                         text-decoration: none;
                         color: #fff;
+
                     }
+
+
 
                     .hover-text:hover{
 
@@ -187,7 +190,6 @@ export const Layout = ({title, children}) => {
                             opacity: 1;
                         }
                     }
-
 
 
 

@@ -55,6 +55,44 @@ export default css.styles`
                     padding: 15px 0;
                 }
 
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+
+                    }
+
+                    ul.menu li{
+                        position: relative;
+                    }
+
+                    ul.menu li a{
+                         display: inline-block;
+                        padding: 0px 0px 10px 0;
+                        position: relative;
+                        transform: translateY(5px);
+                    }
+
+                    ul.menu li a:after {
+                        background: none repeat scroll 0 0 transparent;
+                        bottom: 0;
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        left: 50%;
+                        position: absolute;
+                        background: #fff;
+                        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                        width: 0;
+                    }
+
+                    ul.menu li a:hover:after {
+                        width: 100%;
+                        left: 0;
+                    }
+
+                    ul.menu li:not(:last-child) {
+                        padding-right: 2em;
+                    }
 
 
                 @media (min-width: 1281px) {
@@ -105,10 +143,7 @@ export default css.styles`
                                 justify-content: flex-end;
                                 font-family: 'Lora', serif;
                             }
-                            ul.menu li:not(:last-child){
 
-                                    padding-right: 2em;
-                            }
 
                             .main{
                                 flex: 1 0 auto;

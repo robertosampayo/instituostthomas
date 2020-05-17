@@ -2,7 +2,8 @@ import { Layout } from '../components/Layout'
 import { Banner } from '../components/Banner'
 import galeriaStyle from '../styles/galeria'
 import Fade from 'react-reveal/Fade'
-
+import MediaQuery from 'react-responsive'
+import animations from '../styles/animations'
 
 export default class extends React.Component {
 
@@ -11,74 +12,435 @@ export default class extends React.Component {
 
         return (<Layout>
 
-                <div className='banner'>
-                    <img className='logo' src='../../static/imgs/logo-quienes-somos.png' />
-                    <h1>
-                        We create moments <br />
-                        We work with people
-                    </h1>
-                    <img className='corazon' src='../../static/imgs/corazon.png' />
+            <div className='banner'>
+                <img className='logo text-focus-in' src='../../static/imgs/logo-quienes-somos.png' />
+                <h1 className='text-focus-in'>
+                    We create moments <br />
+                    We work with people
+                </h1>
+                <img className='corazon' src='../../static/imgs/corazon.png' />
 
-                </div>
+            </div>
 
-                <div className='galeria'>
-
-
-
+            <div className='galeria'>
+                <MediaQuery minDeviceWidth={480}>
 
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
-                        <img className='medida-standard image01' src='../../static/imgs/galeria/01teachers.png' alt='teachers' />
+
+                    <div className='dream-team'>
+                        <div className='column-left'>
+                            <Fade duration={1500}>
+                                <div className='image-container our-team'>
+                                    <img className='medida-standard image01' src='../../static/imgs/galeria/01teachers.png' alt='teachers' />
+
+                                </div>
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='container-standard image-container'>
+
+                                    <img className='medida-standard image05' src='../../static/imgs/galeria/05aulas-aula.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='container-standard image-container'>
+
+                                    <img className='medida-standard image07' src='../../static/imgs/galeria/07aulas-aula.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='container-standard image-container'>
+
+                                    <img className='medida-standard image07' src='../../static/imgs/galeria/06aulas-aula.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container container-form'>
+
+                                    <img className='medida-mini ' src='../../static/imgs/galeria/students-22.png' />
+
+                                </div>
+
+                            </Fade>
+
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard' src='../../static/imgs/galeria/13students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='container-standard image-container'>
+
+                                    <img className='medida-standard' src='../../static/imgs/galeria/14students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='container-standard image-container'>
+
+                                    <img className='medida-standard' src='../../static/imgs/galeria/15students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='container-standard image-container'>
+
+                                    <img className='medida-standard' src='../../static/imgs/galeria/12students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='container-standard image-container'>
+
+                                    <img className='medida-standard' src='../../static/imgs/galeria/18students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='container-standard image-container'>
+
+                                    <img className='medida-standard' src='../../static/imgs/galeria/20students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='container-standard image-container'>
+
+                                    <img className='medida-standard' src='../../static/imgs/galeria/09students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='image-container container-form2'>
+                                    <img className='medida-standard form2' src='../../static/imgs/galeria/form2.png' />
+                                </div>
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='container-standard image-container'>
+
+                                    <img className='medida-standard' src='../../static/imgs/galeria/form5.png' />
+
+                                </div>
+
+                            </Fade>
+
+
+                        </div>
+
+
+
+
+                        <div className='column-right'>
+                            <Fade duration={1500}>
+                                <div className='image-container our-team'>
+                                    <img className='medida-mayor image02' src='../../static/imgs/galeria/02teachers-mesa-de-trabajo2.png' alt='teachers mesa de trabajo' />
+                                    <img className='form1 image02' src='../../static/imgs/galeria/form1.png' />
+                                </div>
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image04' src='../../static/imgs/galeria/03aulas-aula.png' alt='aulas 2' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image06' src='../../static/imgs/galeria/04aulas-aula.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image06' src='../../static/imgs/galeria/08students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard image06' src='../../static/imgs/galeria/10students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image06' src='../../static/imgs/galeria/11students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard students17' src='../../static/imgs/galeria/17students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image06' src='../../static/imgs/galeria/19students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image06' src='../../static/imgs/galeria/21students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard image06' src='../../static/imgs/galeria/16students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image06' src='../../static/imgs/galeria/form4.png' />
+
+                                </div>
+
+                            </Fade>
+
+
+                        </div>
+
+
 
                     </div>
-                </Fade>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
-                        <img className='medida-mayor image02' src='../../static/imgs/galeria/02teachers-mesa-de-trabajo.png' alt='teachers mesa de trabajo' />
+                    <div className='study-trips'>
+                        <div className='column-left'>
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+                                    <img className='medida-mini form2' src='../../static/imgs/galeria/form6.png' />
+                                </div>
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard-with-band image06 a-little-to-the-left' src='../../static/imgs/galeria/26students-2.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard-with-band image06 a-little-to-the-left' src='../../static/imgs/galeria/31students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard-with-band image06 a-little-to-the-left' src='../../static/imgs/galeria/29students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard image06' src='../../static/imgs/galeria/33students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard-with-band image06 a-little-to-the-right' src='../../static/imgs/galeria/36students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard image06' src='../../static/imgs/galeria/40students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='image-container form8'>
+
+                                    <img className='' src='../../static/imgs/galeria/form8.png' />
+
+                                </div>
+
+                            </Fade>
+                        </div>
+
+                        <div className='column-right'>
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image06' src='../../static/imgs/galeria/27students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard image06' src='../../static/imgs/galeria/28students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image06' src='../../static/imgs/galeria/30students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard image06' src='../../static/imgs/galeria/32students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image06' src='../../static/imgs/galeria/35students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard image06' src='../../static/imgs/galeria/34students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image06' src='../../static/imgs/galeria/37students.png' />
+
+                                </div>
+
+                            </Fade>
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-standard image06' src='../../static/imgs/galeria/39students.png' />
+
+                                </div>
+
+                            </Fade>
+
+                            <Fade duration={1500}>
+                                <div className='image-container'>
+
+                                    <img className='medida-mayor image06' src='../../static/imgs/galeria/38students.png' />
+
+                                </div>
+
+                            </Fade>
+                        </div>
 
                     </div>
-                </Fade>
+                </MediaQuery>
 
-                <Fade duration={1500}>
+
+                <MediaQuery maxDeviceWidth={480}>
+
+                    <Fade duration={1500}>
+                        <div className='image-container our-team'>
+                            <img className='medida-standard image01' src='../../static/imgs/galeria/01teachers.png' alt='teachers' />
+
+                        </div>
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='image-container our-team'>
+                            <img className='medida-mayor image02' src='../../static/imgs/galeria/02teachers-mesa-de-trabajo2.png' alt='teachers mesa de trabajo' />
+                            <img className='form1 image02' src='../../static/imgs/galeria/form1.png' />
+                        </div>
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='container-standard image-container'>
+
+                            <img className='medida-standard image05' src='../../static/imgs/galeria/05aulas-aula.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
                         <div className='image-container'>
 
-                        <img className='medida-standard image03' src='../../static/imgs/galeria/03aulas-aula.png' alt='aulas 1' />
-
-                        </div>
-
-                </Fade>
-
-                    <Fade duration={1500}>
-                        <div className='image-container'>
-
-                            <img className='medida-standard image04' src='../../static/imgs/galeria/04aulas-aula.png' alt='aulas 2' />
+                            <img className='medida-mayor image04' src='../../static/imgs/galeria/03aulas-aula.png' alt='aulas 2' />
 
                         </div>
 
                     </Fade>
 
                     <Fade duration={1500}>
-                    <div className='grid-three image-container'>
-
-                        <img className='medida-standard image05' src='../../static/imgs/galeria/05aulas-aula.png' />
-
-                        </div>
-
-                    </Fade>
-
-                    <Fade duration={1500}>
-                    <div className='grid-three image-container'>
-
-                            <img className='medida-standard image06' src='../../static/imgs/galeria/06aulas-aula.png' />
-
-                        </div>
-
-                    </Fade>
-
-                    <Fade duration={1500}>
-                        <div className='grid-three image-container'>
+                        <div className='container-standard image-container'>
 
                             <img className='medida-standard image07' src='../../static/imgs/galeria/07aulas-aula.png' />
 
@@ -86,339 +448,361 @@ export default class extends React.Component {
 
                     </Fade>
 
-                <Fade duration={1500}>
+                    <Fade duration={1500}>
                         <div className='image-container'>
 
-                            <img className='medida-standard image08' src='../../static/imgs/galeria/08students.png' />
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/04aulas-aula.png' />
 
                         </div>
 
-                </Fade>
+                    </Fade>
 
-                <Fade duration={1500}>
-                        <div className='image-container'>
+                    <Fade duration={1500}>
+                        <div className='container-standard image-container'>
 
-                            <img className='medida-standard image09' src='../../static/imgs/galeria/09students.png' />
-
-
-                        </div>
-
-                </Fade>
-
-                <Fade duration={1500}>
-                        <div className='grid-three form2 image-container'>
-
-                            <img className='medida-standards ' src='../../static/imgs/galeria/students-22.png' />
+                            <img className='medida-standard image07' src='../../static/imgs/galeria/06aulas-aula.png' />
 
                         </div>
 
-                </Fade>
-
-                <Fade duration={1500}>
-                        <div className='grid-three image-container'>
-
-                            <img className='medida-standard image10' src='../../static/imgs/galeria/10students.png' />
-
-                        </div>
-
-                </Fade>
-
-                <Fade duration={1500}>
-                        <div className='grid-three image-container'>
-
-                            <img className='medida-standard image11' src='../../static/imgs/galeria/11students.png' />
-
-                        </div>
-
-                </Fade>
-
-
-
-
-
+                    </Fade>
 
                     <Fade duration={1500}>
                         <div className='image-container'>
 
-                        <img  className='image12 medida-standard' src='../../static/imgs/galeria/13students.png' />
-
-                        </div>
-
-                    </Fade>
-
-                {/* <div className='grid-triangle'> */}
-
-
-                    <Fade duration={1500}>
-                        <div className='grid-triangle-item image-container'>
-
-                            <img className='medida-standard image13' src='../../static/imgs/galeria/12students.png' />
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/08students.png' />
 
                         </div>
 
                     </Fade>
 
                     <Fade duration={1500}>
-                        <div className='grid-triangle-item image-container' >
+                        <div className='image-container container-form'>
 
-                            <img className='medida-standard image14' src='../../static/imgs/galeria/14students.png' />
+                            <img className='medida-standard medida-form' src='../../static/imgs/galeria/students-22.png' />
 
                         </div>
 
                     </Fade>
 
                     <Fade duration={1500}>
-                        <div className='grid-triangle-item image-container'>
+                        <div className='image-container'>
 
-                            <img className='medida-standard image15' src='../../static/imgs/galeria/15students.png' />
+                            <img className='medida-standard image06' src='../../static/imgs/galeria/10students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='image-container'>
+
+                            <img className='medida-standard' src='../../static/imgs/galeria/13students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='container-standard image-container'>
+
+                            <img className='medida-standard' src='../../static/imgs/galeria/14students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='image-container'>
+
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/11students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='image-container'>
+
+                            <img className='medida-standard students17' src='../../static/imgs/galeria/17students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='container-standard image-container'>
+
+                            <img className='medida-standard' src='../../static/imgs/galeria/15students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='image-container'>
+
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/19students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='container-standard image-container'>
+
+                            <img className='medida-standard' src='../../static/imgs/galeria/12students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='image-container'>
+
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/21students.png' />
+
+                        </div>
+
+                    </Fade>
+
+                    <Fade duration={1500}>
+                        <div className='container-standard image-container'>
+
+                            <img className='medida-standard' src='../../static/imgs/galeria/18students.png' />
 
                         </div>
 
                     </Fade>
 
 
-                {/* </div> */}
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                        <img className='medida-standard image16' src='../../static/imgs/galeria/16students.png' />
+                            <img className='medida-standard image06' src='../../static/imgs/galeria/16students.png' />
 
-                    </div>
+                        </div>
 
-                </Fade>
+                    </Fade>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                    <Fade duration={1500}>
+                        <div className='container-standard image-container'>
 
-                        <img className='medida-standard image17' src='../../static/imgs/galeria/17students.png' />
+                            <img className='medida-standard' src='../../static/imgs/galeria/20students.png' />
 
-                    </div>
+                        </div>
 
-                </Fade>
+                    </Fade>
 
-                <Fade duration={1500}>
-                    <div className='grid-three image-container'>
+                    <Fade duration={1500}>
+                        <div className='container-standard image-container'>
 
-                        <img className='medida-standard image18' src='../../static/imgs/galeria/18students.png' />
+                            <img className='medida-standard' src='../../static/imgs/galeria/09students.png' />
 
-                    </div>
+                        </div>
 
-                </Fade>
+                    </Fade>
 
-                <Fade duration={1500}>
-                    <div className='grid-three image-container'>
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                        <img className='medida-standard image19' src='../../static/imgs/galeria/19students.png' />
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/form4.png' />
 
-                    </div>
+                        </div>
 
-                </Fade>
+                    </Fade>
 
-                <Fade duration={1500}>
-                    <div className='grid-three image-container'>
 
-                        <img className='medida-standard image20' src='../../static/imgs/galeria/20students.png' />
+                    <Fade duration={1500}>
+                        <div className='image-container container-form2'>
+                            <img className='medida-mayor form2' src='../../static/imgs/galeria/form2.png' />
+                        </div>
+                    </Fade>
 
-                    </div>
+                    <Fade duration={1500}>
+                        <div className='container-standard image-container'>
 
-                </Fade>
+                            <img className='medida-standard' src='../../static/imgs/galeria/form5.png' />
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                        </div>
 
-                        <img className='medida-standard image21' src='../../static/imgs/galeria/21students.png' />
+                    </Fade>
 
-                    </div>
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                </Fade>
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/form4.png' />
 
+                        </div>
 
-                <Fade duration={1500}>
-                    <div className='form3 image-container'>
+                    </Fade>
 
-                        <img className='medida-mayor ' src='../../static/imgs/animados/girando.gif' />
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                    </div>
+                            <img className='medida-form' src='../../static/imgs/galeria/form6.png' />
 
-                </Fade>
+                        </div>
 
+                    </Fade>
 
-                <Fade duration={1500}>
-                    <div className='form4 image-container'>
+                    {/* trips */}
 
-                        <img className='medida-mayor rotate10' src='../../static/imgs/galeria/form4.png' />
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                    </div>
+                            <img className='medida-standard-with-band image06 a-little-to-the-left' src='../../static/imgs/galeria/26students-2.png' />
 
-                </Fade>
+                        </div>
 
+                    </Fade>
 
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                <Fade duration={1500}>
-                    <div className='form5 image-container'>
+                            <img className='medida-standard-with-band image06 a-little-to-the-left' src='../../static/imgs/galeria/31students.png' />
 
-                        <img className='medida-standard rotate-10' src='../../static/imgs/galeria/form5.png' />
+                        </div>
 
-                    </div>
+                    </Fade>
 
-                </Fade>
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
+                            <img className='medida-standard-with-band image06 a-little-to-the-left' src='../../static/imgs/galeria/29students.png' />
 
-                <Fade duration={1500}>
-                    <div className='image-container form-study-trips'>
+                        </div>
 
-                        <img className='medida-standard form6' src='../../static/imgs/galeria/form6.png' />
-                        <img className='medida-standard form7' src='../../static/imgs/galeria/form7.png' />
+                    </Fade>
 
-                    </div>
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                </Fade>
+                            <img className='medida-standard image06' src='../../static/imgs/galeria/33students.png' />
 
+                        </div>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                    </Fade>
 
-                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/27students.png' />
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                    </div>
+                            <img className='medida-standard-with-band image06 a-little-to-the-right' src='../../static/imgs/galeria/36students.png' />
 
-                </Fade>
+                        </div>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                    </Fade>
 
-                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/28students.png' />
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                    </div>
+                            <img className='medida-standard image06' src='../../static/imgs/galeria/40students.png' />
 
-                </Fade>
+                        </div>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                    </Fade>
 
-                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/29students.png' />
 
-                    </div>
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                </Fade>
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/27students.png' />
 
+                        </div>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                    </Fade>
 
-                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/30students.png' />
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                    </div>
+                            <img className='medida-standard image06' src='../../static/imgs/galeria/28students.png' />
 
-                </Fade>
+                        </div>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                    </Fade>
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/31students.png' />
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/30students.png' />
 
-                    </div>
+                        </div>
 
-                </Fade>
+                    </Fade>
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
+                            <img className='medida-standard image06' src='../../static/imgs/galeria/32students.png' />
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                        </div>
 
-                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/32students.png' />
+                    </Fade>
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                    </div>
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/35students.png' />
 
-                </Fade>
+                        </div>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                    </Fade>
 
-                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/33students.png' />
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                    </div>
+                            <img className='medida-standard image06' src='../../static/imgs/galeria/34students.png' />
 
-                </Fade>
+                        </div>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                    </Fade>
 
-                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/34students.png' />
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                    </div>
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/37students.png' />
 
-                </Fade>
+                        </div>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                    </Fade>
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/35students.png' />
+                            <img className='medida-standard image06' src='../../static/imgs/galeria/39students.png' />
 
-                    </div>
+                        </div>
 
-                </Fade>
+                    </Fade>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                    <Fade duration={1500}>
+                        <div className='image-container'>
 
-                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/36students.png' />
+                            <img className='medida-mayor image06' src='../../static/imgs/galeria/38students.png' />
 
-                    </div>
+                        </div>
 
-                </Fade>
+                    </Fade>
 
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
 
-                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/37students.png' />
 
-                    </div>
 
-                </Fade>
 
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
 
-                        <img className='rotate8 medida-standard ' src='../../static/imgs/galeria/38students.png' />
 
-                    </div>
+                    <Fade duration={1500}>
+                        <div className='image-container form8'>
 
-                </Fade>
+                            <img className='' src='../../static/imgs/galeria/form8.png' />
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
+                        </div>
 
-                        <img className='medida-standard ' src='../../static/imgs/galeria/39students.png' />
+                    </Fade>
 
-                    </div>
+                </MediaQuery>
 
-                </Fade>
+            </div>
 
-                <Fade duration={1500}>
-                    <div className='image-container'>
-
-                        <img className='rotate-8 medida-standard ' src='../../static/imgs/galeria/40students.png' />
-
-                    </div>
-
-                </Fade>
-
-                <img className='forma-absoluta1' src='../../static/imgs/galeria/form8.png' />
-                <img className='forma-absoluta2' src='../../static/imgs/galeria/immersion-camps-32.png' />
-                <img className='forma-absoluta3' src='../../static/imgs/galeria/students-20.png' />
-                <img className='forma-absoluta4' src='../../static/imgs/galeria/students-21.png' />
-                <img className='forma-absoluta5' src='../../static/imgs/galeria/aulas-09.png' />
-
-
-                </div>
-
-
-            <style jsx>
-                {galeriaStyle}
-            </style>
+            <style jsx>{animations}</style>
+            <style jsx>{galeriaStyle}</style>
         </Layout>)
     }
 }

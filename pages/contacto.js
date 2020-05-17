@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Layout } from '../components/Layout'
 import contactoStyle from '../styles/contacto'
+import animations from '../styles/animations'
+
 
 export default () => {
   const [status, setStatus] = useState({
@@ -68,10 +70,10 @@ export default () => {
     <main>
 
       <section className='info'>
-        <img src='../../static/imgs/logo-stthomas.png'></img>
-        <h1>Learning English Together</h1>
+        <img className='text-focus-in' src='../../static/imgs/logo-stthomas.png'></img>
+        <h1 className='text-focus-in'>Learning English Together</h1>
 
-        <p>
+        <p className='text-focus-in'>
           Si desea estudiar en St. Thomas u obtener información sobre alguno de nuestros servicios , escríbanos un correo electrónico a <a href='mailto:instistthomas@gmail.com'><span className='cursiva'><stong>instistthomas@gmail.com</stong></span></a>
         </p>
 
@@ -110,25 +112,30 @@ export default () => {
             {!status.submitting
               ? !status.submitted
                 ? 'ENVIAR'
-                : 'Submitted'
-              : 'Submitting...'}
+                : 'Mensaje Enviado'
+              : 'Enviando...'}
           </button>
 
         </div>
       </form>
       {status.info.error && (
-        <div className="error">Error: {status.info.msg}</div>
+        <div className="error">Error: {status.info.msg} No se pudo enviar el mail, intente mas tarde</div>
       )}
       {!status.info.error && status.info.msg && (
-        <div className="success">{status.info.msg}</div>
+
+        <div className="success">
+          <p>
+          {status.info.msg}
+          <br />
+          Mensaje enviado
+          </p>
+        </div>
       )}
     </main>
 
 
-    <style jsx>
-      {contactoStyle}
-    </style>
-
+    <style jsx>{animations}</style>
+    <style jsx>{contactoStyle}</style>
 
   </Layout>
 )

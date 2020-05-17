@@ -161,11 +161,13 @@ export default css.homeStyle`
                     font-weight: 500;
                     font-size: 20px;
                     padding: 15px 0px;
-                    border-width: 2px 0px;
+                    border-width: 1px 0px;
+                    border-width: px 0px;
                     border-style: solid;
-                    width: 40%;
+                    width: 45%;
                     margin: 50px 0px;
                     line-height: 2;
+                    letter-spacing: 1pt;
 
                 }
 
@@ -366,11 +368,12 @@ export default css.homeStyle`
 
                 .explora ul  span {
                     width: 86%;
-                    padding: 20px 0px;
+                    padding: 18px 0px;
                     font-family: ${theme.font_montserrat};
                     font-weight: 600;
                     font-size: 20px;
                     color: ${theme.primaryGreen};
+                    letter-spacing: 1pt;
                 }
 
                 .explora .servicio {
@@ -451,7 +454,7 @@ export default css.homeStyle`
                     font-weight: 400;
                     color: #53764c;
                     border-style: solid;
-                    width: 220px;
+                    width: 250px;
                     margin: 0 auto;
                     border-width: 1.5px 0px 1.5px;
                     padding: 6px 0;
@@ -802,7 +805,7 @@ export default css.homeStyle`
                     }
 
                     .explora ul{
-                        width: 60%;
+                        width: 65%;
                     }
 
 
@@ -858,9 +861,7 @@ export default css.homeStyle`
                         width: 200px;
                     }
 
-                    .explora ul{
-                        width; 55%;
-                    }
+
 
                     .explora ul li{
                         margin: 0 20px 0 0;
@@ -872,9 +873,7 @@ export default css.homeStyle`
                         padding: 50px 50px 12px;
                     }
 
-                    .equipo ul{
-                        width: 55%;
-                    }
+
 
 
                     .equipo ul li{
@@ -886,13 +885,23 @@ export default css.homeStyle`
                         width: 40%;
                     }
 
+                    .equipo h1 {
+                        padding: 50px 280px 12px;
+                    }
+
+                    .equipo ul {
+                        width: 70%;
+                    }
+
                     .info  {
-                        height: 1200px;
+                        height: 1050px;
                     }
 
                     .explora, .equipo, .momentos, .comminsoon, .contacto{
                         height: 90vh;
                     }
+
+
 
                     .info ul{
                         width: 80%;
@@ -920,8 +929,13 @@ export default css.homeStyle`
                     }
 
                     .explora ul{
-                        width: 60%;
+                        width: 70%;
                     }
+
+                    .momentos .content {
+                        width: 70%;
+                    }
+
                     .momentos .content .texto {
                         width: 50%;
                         padding: 0 50px 0 0;

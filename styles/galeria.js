@@ -31,7 +31,7 @@ export default css.galeriaStyle`
 
 
                     .galeria{
-                        width: 80%;
+                        width: 100%;
                         margin: 0 auto;
                         display: flex;
                         flex-direction: row;
@@ -43,287 +43,125 @@ export default css.galeriaStyle`
                     }
 
                     .galeria .image-container {
-                        height: auto;
-                        display: flex;
-                        justify-content: center;
+                        justify-content: flex-start;
                         align-items: center;
-                    }
-
-                    .galeria img{
-                        padding: 20px;
-                        position: relative;
-                        z-index: 99999;
-                    }
-
-                    .galeria .forma-absoluta1,
-                    .galeria .forma-absoluta2,
-                    .galeria .forma-absoluta3,
-                    .galeria .forma-absoluta4,
-                    .galeria .forma-absoluta5,
-                    .galeria .forma-absoluta6
-                    {
-
-                        position: absolute;
-                        top: 83%;
-                        left: 10%;
-                        z-index: 99;
-                        width: 100px;
-                    }
-
-                    .galeria .forma-absoluta2 {
-                        top: 45%;
-                        left: 60%;
-                        width: 150px;
-                    }
-
-                    .galeria .forma-absoluta3 {
-                        top: 35%;
-                        left: 40%;
-                        width: 100px;
-                    }
-
-                    .galeria .forma-absoluta4 {
-                        top: 35%;
-                        left: 90%;
-                        width: 100px;
-                    }
-
-                    .galeria .forma-absoluta5 {
-                        top: 9%;
-                        left: 45%;
-                        width: 150px;
-                    }
-
-
-                    .galeria .forma-absoluta6 {
-                        top: 17%;
-                        left: 35%;
-                        width: 150px;
-                        height: 50px;
-                    }
-
-
-                    .galeria .image01{
-                        transform: rotate(-10deg);
-                    }
-
-                    .galeria .image02{
-                        animation-fill-mode: initial;
-                        transform: rotate(1deg);
-                    }
-
-                    .galeria .image03{
-                        transform: rotate(-6deg);
-                        position: relative;
-                    }
-
-                    .galeria .image04{
-                        animation-fill-mode: initial;
-                        transform: rotate(10deg);
-                    }
-
-                    .galeria .image05{
-                        animation-fill-mode: initial;
-                        transform: rotate(0deg);
-                    }
-
-                    .galeria .image06{
-                        transform: rotate(-6deg);
-                    }
-
-                    .galeria .image07{
-                        transform: rotate(-4deg);
-                    }
-
-                    .galeria .image08{
-                        animation-fill-mode: initial;
-                        transform: rotate(10deg);
-                    }
-
-
-                    .galeria .image09{
-                        transform: rotate(-6deg);
-                    }
-
-                    .galeria .form1 {
-                        position: relative;
-                        z-index: 999;
-                    }
-
-                    .galeria .form1 img{
-                        transform: rotate(-10deg);
-                        position: relative;
-                        width: 400px;
-
-                    }
-
-                    .galeria .form2 img{
-                        transform: rotate(10deg);
-                        position: relative;
-
-
-                    }
-
-                    .galeria .image10{
-                            transform: rotate(-10deg);
-                            position: relative;
-
-                            z-index: 9999999;
-                    }
-
-                    .galeria .image11{
-                        transform: rotate(10deg);
-                    }
-
-                    .galeria .image12{
-                        transform: rotate(10deg);
-                    }
-
-                    .grid-three img{
-                        width: 300px;
-                        height: 250px;
-
-                    }
-
-
-
-                    .grid-triangle {
                         display: flex;
-                        flex-wrap: wrap;
-                        width: 60%;
-                        height: 400px;
+                        flex-direction: column;
+                        padding: 0 0 20px;
                     }
 
-                    .grid-triangle .grid-triangle-item img{
-                        width: 300px;
-                    }
+                    .galeria .column-left, .galeria .column-right  {
 
-
-                    .galeria .image13{
-
-                        transform: rotate(-5deg);
-                        position: relative;
-
-                    }
-
-                    .galeria .image14{
-                        transform: rotate(-15deg);
-                        position: relative;
-
-                    }
-
-                    .galeria .image15{
-                        transform: rotate(8deg);
-                        position: relative;
-
-                    }
-
-                    .galeria .image16{
-                        transform: rotate(-8deg);
-                        position: relative;
-
-                    }
-
-                    .galeria .image17{
-                        transform: rotate(-8deg);
-                        position: relative;
-
-                    }
-
-                    .galeria .image18{
-                        transform: rotate(-8deg);
-                        position: relative;
-
-                    }
-
-                    .galeria .image19{
-                        position: relative;
-                        transform: scale(1.2);
-
-                    }
-
-                    .galeria .image20{
-                        transform: rotate(-8deg);
-                        position: relative;
-
-                    }
-
-                    .galeria .image21{
-                        transform: rotate(-6deg);
-                    }
-
-                    .galeria .form2{
-                        transform: rotate(10deg);
-                        position: relative;
-
-                    }
-
-                    .galeria .form2{
-                        transform: rotate(10deg);
-                        position: relative;
-                    }
-
-
-                    .galeria .form-camps img{
-                        transform: rotate(10deg);
-                        position: relative;
-
-                    }
-
-
-
-
-                    .galeria .green-space{
                         width: 50%;
+                        position: relative;
+                        z-index: 9999;
                         display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 100%;
                     }
 
+                    .galeria .medida-mayor {
+                        width: 430px;
+                        height: auto;
+                    }
 
                     .galeria .medida-standard {
-                        width: 450px;
+                        width: 280px;
                         height: auto;
                     }
 
+                    .galeria .medida-standard-with-band {
+                        width: 300px;
+                        height: auto;
+                    }
 
                     .galeria .medida-menor {
                         width: 250px;
                         height: auto;
                     }
 
-                    .galeria .medida-mayor {
-                        width: 550px;
+                    .galeria .medida-mini {
+                        width: 200px;
                         height: auto;
                     }
 
-                    .galeria .form-study-trips .form6 {
-                        width: 300px;
+                    .galeria .form1 {
+                        width: 80%;
+                        height: auto;
                     }
 
-                    .galeria .form-study-trips .form7 {
+                    .galeria .our-team {
+                        height: 400px;
+                        margin-bottom: 20px;
+                    }
+
+                    .galeria .container-standard {
+                        padding: 0 0 20px;
+                    }
+
+                    .galeria .image01{
+                        transform: translate(-5%,-10%);
+                    }
+
+                    .galeria .image02 {
+                        padding: 0 0 20px;
+                    }
+
+                    .galeria .students17{
+                        transform: translateY(-5%);
+                    }
+
+                    .galeria .container-form{
+                        padding: 20px 0 40px;
+                    }
+
+                    .galeria .container-form2 {
+                        padding: 20px 0 40px;
+                    }
+
+                    .galeria .form8 img{
+                        transform: rotate(-100deg);
+                        height: auto;
                         width: 150px;
                     }
 
-                    .galeria .rotate-8{
-                        transform: rotate(-8deg);
-                    }
 
-                    .galeria .rotate8{
-                        transform: rotate(8deg);
-                    }
-
-                    .galeria .rotate10{
-                        transform: rotate(10deg);
-                    }
-
-                    .galeria .rotate-10{
-                        transform: rotate(-10deg);
-                    }
-
-                    .galeria div {
-                        width: 50%;
+                    .a-little-to-the-left{
                         position: relative;
-                        z-index: 9999;
+                        left: -5%;
                     }
+
+                    .a-little-to-the-right{
+                        position: relative;
+                        left: 5%;
+                    }
+
+                    .a-little-to-the-top{
+                        position: relative;
+                        left: -5%;
+                    }
+
+                    .study-trips{
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+
+                    .dream-team{
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        width: 100%;
+                    }
+
+
+
 
                     @media (min-width: 1650px) {
 
@@ -348,66 +186,8 @@ export default css.galeriaStyle`
                         }
 
                         .galeria {
-                            width: 60%;
+                            width: 50%;
                         }
-
-
-                        .galeria .image14{
-
-                            transform: rotate(-15deg);
-                            position: relative;
-
-                        }
-
-                        .galeria .form1 img {
-                            width: 550px;
-                        }
-                    .galeria .forma-absoluta1,
-                    .galeria .forma-absoluta2,
-                    .galeria .forma-absoluta3,
-                    .galeria .forma-absoluta4,
-                    .galeria .forma-absoluta5,
-                    .galeria .forma-absoluta6
-                    {
-
-                        position: absolute;
-                        top: 83%;
-                        left: 10%;
-                        z-index: 99;
-                        width: 200px;
-                    }
-
-                    .galeria .forma-absoluta2 {
-                        top: 45%;
-                        left: 60%;
-                        width: 250px;
-                    }
-
-                    .galeria .forma-absoluta3 {
-                        top: 35%;
-                        left: 40%;
-                        width: 200px;
-                    }
-
-                    .galeria .forma-absoluta4 {
-                        top: 35%;
-                        left: 90%;
-                        width: 200px;
-                    }
-
-                    .galeria .forma-absoluta5 {
-                        top: 9%;
-                        left: 45%;
-                        width: 250px;
-                    }
-
-
-                    .galeria .forma-absoluta6 {
-                        top: 18%;
-                        left: 35%;
-                        width: 300px;
-                        height: 60px;
-                    }
 
 
                 }
@@ -437,63 +217,10 @@ export default css.galeriaStyle`
                         }
 
                         .galeria {
-                            width: 70%;
+                            width: 60%;
                         }
 
 
-                        .galeria .image14{
-
-                            transform: rotate(-15deg);
-                            position: relative;
-
-
-                        }
-                    .galeria .forma-absoluta1,
-                    .galeria .forma-absoluta2,
-                    .galeria .forma-absoluta3,
-                    .galeria .forma-absoluta4,
-                    .galeria .forma-absoluta5,
-                    .galeria .forma-absoluta6
-                    {
-
-                        position: absolute;
-                        top: 83%;
-                        left: 10%;
-                        z-index: 99;
-                        width: 200px;
-                    }
-
-                    .galeria .forma-absoluta2 {
-                        top: 45%;
-                        left: 60%;
-                        width: 250px;
-                    }
-
-                    .galeria .forma-absoluta3 {
-                        top: 35%;
-                        left: 40%;
-                        width: 200px;
-                    }
-
-                    .galeria .forma-absoluta4 {
-                        top: 35%;
-                        left: 90%;
-                        width: 200px;
-                    }
-
-                    .galeria .forma-absoluta5 {
-                        top: 9%;
-                        left: 45%;
-                        width: 250px;
-                    }
-
-
-                    .galeria .forma-absoluta6 {
-                        top: 18%;
-                        left: 35%;
-                        width: 300px;
-                        height: 60px;
-                    }
 
 
                     }
@@ -506,53 +233,6 @@ export default css.galeriaStyle`
                     @media (min-width: 1025px) and (max-width: 1280px) {
 
 
-
-                        .galeria .forma-absoluta1,
-                        .galeria .forma-absoluta2,
-                        .galeria .forma-absoluta3,
-                        .galeria .forma-absoluta4,
-                        .galeria .forma-absoluta5,
-                        .galeria .forma-absoluta6
-                        {
-
-                            position: absolute;
-                            top: 83%;
-                            left: 10%;
-                            z-index: 99;
-                            width: 200px;
-                        }
-
-                        .galeria .forma-absoluta2 {
-                            top: 45%;
-                            left: 60%;
-                            width: 250px;
-                        }
-
-                        .galeria .forma-absoluta3 {
-                            top: 35%;
-                            left: 40%;
-                            width: 200px;
-                        }
-
-                        .galeria .forma-absoluta4 {
-                            top: 35%;
-                            left: 90%;
-                            width: 200px;
-                        }
-
-                        .galeria .forma-absoluta5 {
-                            top: 9%;
-                            left: 45%;
-                            width: 250px;
-                        }
-
-
-                        .galeria .forma-absoluta6 {
-                            top: 17%;
-                            left: 35%;
-                            width: 250px;
-                            height: 50px;
-                        }
 
                         .banner {
                             height: 95vh;
@@ -577,43 +257,9 @@ export default css.galeriaStyle`
                         }
 
                         .galeria {
-                            width: 100%;
+                            width: 70%;
                         }
 
-
-                        .galeria .image14{
-
-                            transform: rotate(-15deg);
-                            position: relative;
-
-
-                        }
-
-
-
-
-
-                        .galeria .image16{
-
-                            position: relative;
-                            transform: rotate(-8deg);
-
-                        }
-
-                        .galeria .medida-mayor {
-                            width: 550px;
-                            height: auto;
-                        }
-
-                        .galeria .medida-standard {
-                            width: 450px;
-                            height: auto;
-                        }
-
-                        .galeria .medida-menor {
-                            width: 350px;
-                            height: auto;
-                        }
 
 
                     }
@@ -646,46 +292,44 @@ export default css.galeriaStyle`
                         }
 
                         .galeria {
-                            width: 80%;
+                            width: 75%;
                         }
-
-
-                        .galeria .image14{
-
-                            transform: rotate(-15deg);
-                            position: relative;
-
-
-                        }
-
-
-
                         .galeria .medida-mayor {
-                            width: 400px;
-                            height: auto;
-                        }
-
-                        .galeria .medida-standard {
                             width: 300px;
                             height: auto;
                         }
 
-                        .galeria .medida-menor {
+                        .galeria .medida-standard {
                             width: 200px;
                             height: auto;
                         }
 
-                        .grid-triangle {
-                            width: 50%;
+                        .galeria .medida-menor {
+                            width: 150px;
+                            height: auto;
                         }
 
-                        .galeria .form-study-trips .form6{
+                        .galeria .medida-mini {
+                            width: 150px;
+                            height: auto;
+                        }
+
+                        .galeria .medida-standard-with-band {
                             width: 200px;
+                            height: auto;
                         }
 
-                        .galeria .form-study-trips .form7{
+
+                        .galeria .our-team {
+                            height: 300px;
+                        }
+
+                        .galeria .form8 img {
+                            transform: rotate(-100deg) translateX(-25%);
                             width: 100px;
                         }
+
+
 
                     }
 
@@ -728,41 +372,48 @@ export default css.galeriaStyle`
                         }
 
                         .galeria {
-                            width: 80%;
-                        }
-
-
-                        .galeria .image14{
-
-                            transform: rotate(-15deg);
-                            position: relative;
-
-
+                            width: 85%;
                         }
 
 
 
                         .galeria .medida-mayor {
-                            width: 350px;
+                            width: 225px;
                             height: auto;
                         }
 
                         .galeria .medida-standard {
-                            width: 250px;
+                            width: 155px;
                             height: auto;
                         }
 
                         .galeria .medida-menor {
-                            width: 150px;
+                            width: 100px;
                             height: auto;
                         }
 
-                        .galeria .form-study-trips .form6 {
-                            width: 200px;
+                        .galeria .medida-mini {
+                            width: 100px;
+                            height: auto;
                         }
 
-                        .galeria .form-study-trips .form7 {
-                            width: 100px;
+                        .galeria .medida-standard-with-band {
+                            width: 180px;
+                            height: auto;
+                        }
+
+
+                        .galeria .our-team {
+                            height: 250px;
+                        }
+
+                        .galeria .form8 img {
+                            transform: rotate(-100deg) translateX(-25%);
+                            width: 60px;
+                        }
+
+                        .galeria image-container {
+                            padding: 0 0 35px;
                         }
                     }
 
@@ -797,52 +448,73 @@ export default css.galeriaStyle`
                             width: 100%;
                         }
 
+                        .galeria .our-team {
+                            height: auto;
+                            margin: 0;
+                        }
 
-                        .galeria .image14{
+                        .galeria .image-container {
 
-                            transform: rotate(-15deg);
-                            position: relative;
-
+                            justify-content: center;
+                            padding: 0px;
+                            margin: 0 0 50px;
+                            display: flex;
+                            flex-direction: column;
 
                         }
 
-
-
                         .galeria .medida-mayor {
-                            width: 350px;
+                            width: 300px;
                             height: auto;
                         }
 
                         .galeria .medida-standard {
-                            width: 250px;
+                            width: 300px;
                             height: auto;
                         }
 
                         .galeria .medida-menor {
-                            width: 150px;
+                            width: 300px;
                             height: auto;
                         }
 
-                        .galeria .form-study-trips .form6 {
+                        .galeria .medida-mini {
+                            width: 300px;
+                            height: auto;
+                        }
+
+                        .galeria .medida-form{
                             width: 200px;
+                            height: auto;
                         }
 
-                        .galeria .form-study-trips .form7 {
-                            width: 100px;
+                        .galeria .image02 {
+                            padding: 0;
+                            margin: 0px;
                         }
 
-
-                        .galeria div {
-                            width: 100%;
-
+                        .galeria .form1{
+                            margin: 50px 0 0;
                         }
 
-                        .galeria .rotate10{
-                            transform: rotate(2deg);
+                        .galeria .container-standard {
+                            padding: 0;
                         }
 
+                        .galeria .container-form2 {
+                            padding: 0;
+                        }
 
+                        .galeria .container-form {
+                            padding: 0;
+                        }
 
+                        .galeria .image01 {
+                            transform: translate(-5%,0%);
+                        }
 
+                        .galeria .students17 {
+                            transform: translate(5%,0%);
+                        }
                     }
 `

@@ -37,7 +37,7 @@ const quienesSomos = () => {
                 <div className='contenido' >
 
                     <div className='logo'>
-                        <img src='../../static/imgs/logo-quienes-somos.png' />
+                        <img className='text-focus-in' src='../../static/imgs/logo-quienes-somos.png' />
                     </div>
                     <div className='banner-texto text-focus-in'>
                         <div className='banner-titulo'>

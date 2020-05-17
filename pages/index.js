@@ -42,8 +42,9 @@ const Home = () => {
                 if (window !== null){
 
                     window.setTimeout(function(){
-                        if (swiper && swiper !== null) {
-                            swiper.slideNext(swiper.slides.length)
+                        console.log(swiper.slides)
+                        if (swiper.slides && swiper !== null) {
+                            swiper.slideNext()
                         }
 
                     }, 1700);
@@ -398,20 +399,36 @@ const Home = () => {
                 <MediaQuery minDeviceWidth={480}>
                     <ul>
                         <li className='servicio1'>
-                            <img src='../static/imgs/animados/libro.gif' />
-                                <span><strong>OFERTA</strong><br />EDUCATIVA</span>
+                                <Link href='/oferta-educativa#oferta-educativa' scroll={false}>
+                                    <a>
+                                        <img src='../static/imgs/animados/libro.gif' />
+                                        <span><strong>OFERTA</strong><br />EDUCATIVA</span>
+                                    </a>
+                                </Link>
                         </li>
                         <li className='servicio2'>
-                                <img src='../static/imgs/animados/Avion2.gif' />
-                                <span><strong>VIAJES</strong><br />DE ESTUDIO</span>
+                                <Link href='/oferta-educativa#actividades'>
+                                    <a>
+                                        <img src='../static/imgs/animados/Avion2.gif' />
+                                        <span><strong>VIAJES</strong><br />DE ESTUDIO</span>
+                                    </a>
+                                </Link>
                         </li>
                         <li className='servicio3'>
-                            <img src='../static/imgs/animados/compu2.gif' />
-                                <span><strong>SERVICIO</strong><br />DE TRADUCCIÓN</span>
+                                <Link href='/oferta-educativa#traduccion'>
+                                    <a>
+                                        <img src='../static/imgs/animados/compu2.gif' />
+                                        <span><strong>SERVICIO</strong><br />DE TRADUCCIÓN</span>
+                                    </a>
+                                </Link>
                         </li>
                         <li className='servicio4'>
-                            <img src='../static/imgs/animados/Arboles.gif' />
-                                <span><strong>IMMERSION</strong><br />CAMPS</span>
+                                <Link href='/oferta-educativa#actividades'>
+                                    <a>
+                                        <img src='../static/imgs/animados/Arboles.gif' />
+                                        <span><strong>IMMERSION</strong><br />CAMPS</span>
+                                    </a>
+                                </Link>
                         </li>
                     </ul>
                 </MediaQuery>
@@ -607,11 +624,11 @@ const Home = () => {
 
                     <div className='people'>
                         {/* <Swiper {...params}> */}
-                            <div className='slide1 slides-gallery1'><img style={{  transform: "rotate(-10deg)"   }} src='../static/imgs/galeria/02teachers-mesa-de-trabajo.png' /></div>
+                            <div className='slide1 slides-gallery1'><img style={{  transform: "rotate(-10deg)"   }} src='../static/imgs/galeria/02teachers-mesa-de-trabajo2.png' /></div>
                             <div className='slide2 slides-gallery1'><img style={{  transform: "rotate(15deg)"   }} src='../static/imgs/galeria/08students.png' /></div>
                             <div className='slide3 slides-gallery1'><img style={{  transform: "rotate(-10deg)"   }} src='../static/imgs/galeria/23students.png' /></div>
 
-                            <div className='slide1 slides-gallery2'><img style={{  transform: "rotate(-10deg) translateY(40px)"   }} src='../static/imgs/galeria/24students.png' /></div>
+                            <div className='slide1 slides-gallery2'><img style={{  transform: "rotate(-5deg) translateY(40px)"   }} src='../static/imgs/galeria/24students.png' /></div>
                             <div className='slide2 slides-gallery2'><img style={{  transform: "rotate(15deg) scale(0.8)"   }} src='../static/imgs/galeria/25students.png' /></div>
                             <div className='slide3 slides-gallery2'><img style={{  transform: "rotate(-5deg) scale(0.8)"   }} src='../static/imgs/galeria/26students.png' /></div>
                         {/* </Swiper> */}

@@ -14,29 +14,28 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 function MyApp({ Component, pageProps, router }) {
 
-  const [tl] = useState(new TimelineLite({}))
-  const [loadPage, setLoadPage] = useState(false)
-  let cortina1 = useRef();
-  let cortina2 = useRef();
-  let cortina3 = useRef();
+  // const [tl] = useState(new TimelineLite({}))
+  // let cortina1 = useRef();
+  // let cortina2 = useRef();
+  // let cortina3 = useRef();
 
 
-  useEffect(() => { setLoadPage(false); },[Component])
 
-  useEffect(() => {
+  // useEffect(() => {
 
-      console.log(router);
-      tl.to(cortina3.current, {duration: 1.5,  css:{left: '0%'}, ease: Power4.easeInOut})
-      tl.to(cortina2.current, {duration: 1.5,  css:{left: '0%'}, ease: Power4.easeInOut}, '-=1.3')
-      tl.to(cortina1.current, {duration: 1.5,  css:{left: '0%'}, ease: Power4.easeInOut}, '-=1.3')
+  //     tl.to(cortina3.current, {duration: 1.5,  css:{left: '0%'}, ease: Power4.easeInOut})
+  //     tl.to(cortina2.current, {duration: 1.5,  css:{left: '0%'}, ease: Power4.easeInOut}, '-=1.3')
+  //     tl.to(cortina1.current, {duration: 1.5,  css:{left: '0%'}, ease: Power4.easeInOut}, '-=1.3')
 
 
-      tl.to(cortina1.current, {duration: 1.5,  css:{left: '-120%'},  ease: Power4.easeInOut})
-      tl.to(cortina2.current, {duration: 1.5,  css:{left: '-120%'}, ease: Power4.easeInOut},'-=1.3')
-      tl.to(cortina3.current, {duration: 1.5,  css:{left: '-120%'},  ease: Power4.easeInOut},'-=1.3')
+  //     tl.to(cortina1.current, {duration: 1.5,  css:{left: '-120%'},  ease: Power4.easeInOut})
+  //     tl.to(cortina2.current, {duration: 1.5,  css:{left: '-120%'}, ease: Power4.easeInOut},'-=1.3')
+  //     tl.to(cortina3.current, {duration: 1.5,  css:{left: '-120%'},  ease: Power4.easeInOut},'-=1.3')
 
 
-  }, [Component])
+  // }, [Component])
+
+
 
 
   return (
@@ -44,11 +43,11 @@ function MyApp({ Component, pageProps, router }) {
 
         <Container>
             {/* <Cargador /> */}
-              <div className='cortina1' ref={cortina1}></div>
+              {/* <div className='cortina1' ref={cortina1}></div>
               <div className='cortina2' ref={cortina2}></div>
-              <div className='cortina3' ref={cortina3}></div>
+              <div className='cortina3' ref={cortina3}></div> */}
 
-            <PageTransition timeout={1000}
+            <PageTransition key={router.route} timeout={1000}
             classNames="page-transition"
             // loadingComponent={<Cargador />}
             // loadingDelay={500}
