@@ -744,6 +744,10 @@ export default css.homeStyle`
                         font-size: 70px;
                     }
 
+                    .banner-container .titulo1 h1 {
+                        width: 65%;
+                    }
+
                     .explora ul li img {
                         width: 200px;
                     }
@@ -857,6 +861,10 @@ export default css.homeStyle`
 
                     .titulo-banner img{
                         width: 100%;
+                    }
+
+                    .banner-container .titulo1 h1 {
+                        width: 65%;
                     }
 
                     .banner-container h1 {
@@ -996,6 +1004,10 @@ export default css.homeStyle`
 
                     .banner, .banner2, .banner3 {
                         background-position-x: 55%;
+                    }
+
+                    .banner-container .titulo1 h1 {
+                        width: 70%;
                     }
 
                     .info{
