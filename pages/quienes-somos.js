@@ -259,6 +259,7 @@ const quienesSomos = () => {
 
 
 
+
                     <div className='item staff3'
                         onMouseOver={(e) => { e.preventDefault(); setShowStaff3(true);  }}
                         onMouseLeave={(e) => { e.preventDefault(); setShowStaff3(false);  }}
@@ -273,7 +274,6 @@ const quienesSomos = () => {
 
                         </div>
                     </div>
-
                     <MediaQuery maxDeviceWidth={480}>
                         <div className='texto'>
 
@@ -307,8 +307,6 @@ const quienesSomos = () => {
 
                         </div>
                     </div>
-
-
                     <MediaQuery maxDeviceWidth={480}>
                         <div className='texto'>
 
@@ -322,6 +320,8 @@ const quienesSomos = () => {
 
 
                     </MediaQuery>
+
+
 
 
 
@@ -340,10 +340,11 @@ const quienesSomos = () => {
 
                         </div>
                     </div>
+
                     <MediaQuery maxDeviceWidth={480}>
                         <div className='texto'>
 
-                            <h2 className='italic'>Nanci  Rius</h2>
+                            <h2 className='italic'>Nanci <br />  Rius</h2>
                             <div className='linea-larga'></div>
                             <p>
                                 Profesora de Inglés General, con amplia experiencia en la Enseñanza en Nivel Inicial y Primario.
@@ -353,6 +354,7 @@ const quienesSomos = () => {
 
 
                     </MediaQuery>
+
 
                 </div>
             </section>

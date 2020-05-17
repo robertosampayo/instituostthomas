@@ -1700,9 +1700,9 @@ export default css.homeStyle`
                     }
 
                     .team-mobile .team h2{
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-100%);
+                        position: relative;
+                        color: ${theme.textoGray};
+                        margin: 20px 0;
                     }
 
                     .equipo h1{
