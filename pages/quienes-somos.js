@@ -8,7 +8,7 @@ import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
 import React, { useState, useEffect, useRef } from 'react'
 import MediaQuery from 'react-responsive'
 
-const quienesSomos = () => {
+const QuienesSomos = () => {
 
 
 
@@ -373,4 +373,4 @@ const quienesSomos = () => {
 }
 
 
-export default quienesSomos;
+export default QuienesSomos;

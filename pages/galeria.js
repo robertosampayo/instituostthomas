@@ -5,10 +5,8 @@ import Fade from 'react-reveal/Fade'
 import MediaQuery from 'react-responsive'
 import animations from '../styles/animations'
 
-export default class extends React.Component {
 
-
-    render() {
+    const Galeria = () => {
 
         return (<Layout>
 
@@ -804,5 +802,6 @@ export default class extends React.Component {
             <style jsx>{animations}</style>
             <style jsx>{galeriaStyle}</style>
         </Layout>)
-    }
 }
+
+export default Galeria;

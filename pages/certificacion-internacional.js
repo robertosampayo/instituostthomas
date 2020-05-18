@@ -4,10 +4,9 @@ import animations from '../styles/animations'
 import certificacionInternacionalStyle from '../styles/certificacion-internacional'
 
 
-export default class extends React.Component {
+const Certificacion = () => {
 
 
-    render() {
 
         return (<Layout>
 
@@ -63,4 +62,6 @@ export default class extends React.Component {
 
         </Layout>)
     }
-}
+
+
+export default Certificacion;

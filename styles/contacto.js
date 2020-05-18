@@ -224,7 +224,7 @@ export default css.contactoStyle`
                     }
 
                     .info p{
-                        width: 100%;
+                        width: 80%;
                         font-size: 20px;
                     }
 
@@ -234,7 +234,7 @@ export default css.contactoStyle`
 
                     .info h3{
                         width: 80%;
-                        font-size: 20px;
+                        font-size: 15px;
                     }
 
                     #formulario {

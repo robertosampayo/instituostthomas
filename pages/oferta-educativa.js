@@ -5,10 +5,9 @@ import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
 import animations from '../styles/animations'
 
 
-export default class extends React.Component {
+const OfertaEducativa = () => {
 
 
-    render() {
 
         return (<Layout>
 
@@ -82,7 +81,7 @@ export default class extends React.Component {
                     <li>
                         <img src='../static/imgs/oferta2.png' />
                         <div className='texto'>
-                            <h3>Tenns:</h3>
+                            <h3>Teens:</h3>
                             <p>Adolescentes desde 1° a 5° años.</p>
 
                         </div>
@@ -174,7 +173,7 @@ export default class extends React.Component {
                     <li>
                         <img src='../static/imgs/actividades2.png' />
                         <div className='actividades-texto'>
-                            <h3>Viajes de estudios a USA: Boston, <br /> Massachusetts</h3>
+                            <h3>Viajes de estudios a USA:<br /> Boston, Massachusetts</h3>
                             <div className='linea-larga-black'></div>
                             <p>
                                 Curso semi-intensivo de tres o cuatro semanas. 20 horas semanales. Alojamiento en campus. A solo 20 minutos del centro de Boston. Excelentes clases dadas por profesionales nativos experimentados.
@@ -195,4 +194,6 @@ export default class extends React.Component {
         </Layout>)
 
     }
-}
+
+
+export default OfertaEducativa;

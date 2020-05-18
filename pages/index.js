@@ -331,7 +331,9 @@ const Home = () => {
                                     <div className='contenido'>
                                         <span>OFERTA EDUCATIVA</span>
                                         <h2>¿Por qué elegir estudiar en St. Thomas?</h2>
-                                        <p>Preparamos alumnos para exámenes de Cambridge. Obtención de los certificados KET, PET, FCE, CAE y CPE.</p>
+                                        <p>Instituto St. Thomas es un centro
+                                            educativo que cuenta con años de
+                                            experiencia en la enseñanza del inglés.</p>
                                     </div>
 
 
@@ -521,7 +523,8 @@ const Home = () => {
                         <li className='team servicio4' >
                             <Link href='/quienes-somos'>
                                 <a onMouseEnter={(e) => showName(e)} onMouseLeave={(e) => hideName(e)}>
-                                        <img src='../static/imgs/staff/nancy.png' />
+                                    <img src='../static/imgs/staff/nancy.png' />
+                                    <img className='over' src='../static/imgs/staff/OVER.png' />
                                     <span>Nancy</span>
 
                                 </a>

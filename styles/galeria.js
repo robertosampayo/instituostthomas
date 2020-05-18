@@ -430,18 +430,21 @@ export default css.galeriaStyle`
 
                         .banner img {
                             width: 200px;
+                            margin: 0 0 30px;
                         }
 
                         .banner h1 {
-                            font-size: 30px;
+                            font-size: 50px;
                             color: ${theme.primaryGreen};
-                            margin: 90px 0px;
                             text-align: center;
                             padding: 0;
+                            margin: 0;
                         }
 
                         .banner .corazon {
                             width: 50px;
+                            position: relative;
+                            top: 60px;
                         }
 
                         .galeria {

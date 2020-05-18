@@ -927,7 +927,7 @@ export default css.homeStyle`
                     }
 
                     .info ul li .contenido {
-                        height: 400px;
+                        height: 380px;
                     }
 
                     .info .imagen1, .info .imagen2, .info .imagen3{
@@ -975,6 +975,8 @@ export default css.homeStyle`
 
                     .comminsoon h3{
                         font-size: ${theme.comminsoonSize};
+                        width: 62%;
+                        text-align: center;
                     }
 
 
@@ -1689,8 +1691,11 @@ export default css.homeStyle`
 
                     .explora h1 {
 
-                        padding: 50px 0px 12px;
-                        font-size: 25px;
+                        padding: 0px 0px 12px;
+                        font-size: 35px;
+                        width: 80%;
+                        position: relative;
+                        top: -20px;
                     }
                     .explora .servicio span {
                         font-size: 20px;
@@ -1718,8 +1723,8 @@ export default css.homeStyle`
                     }
 
                     .equipo h1{
-                        padding: 0;
-                        margin-top: 40px;
+                        margin-top: 50px;
+                        padding: 0 0 12px;
                     }
                     .equipo h3 {
                         width: 80%;

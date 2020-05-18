@@ -100,6 +100,11 @@ export default css.certificacionInternacionalStyle`
                     font-weight: 300;
                 }
 
+                .linea-larga-black {
+
+                    width: 65%;
+                }
+
                 @media (min-width: 1650px) {
 
                     .banner h1 {

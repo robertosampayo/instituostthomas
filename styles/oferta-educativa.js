@@ -1353,7 +1353,7 @@ export default css.ofertaEducativaStyle`
                             text-align: center;
                         }
                         .banner {
-                            background-position-x: 40%;
+                               background-position-x: 67%;
                             height: 90vh;
                         }
 

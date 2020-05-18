@@ -877,12 +877,16 @@ export default css.styles`
 
                             .menu-mobile li {
 
-                                margin: 0 70px;
+                                margin: 0 50px;
                                 text-align: center;
                                 margin-bottom: 10px;
-                                border-style: solid;
-                                border-width: 0 0 4px;
+                                border-width: 0 0 2px;
+                                line-height: 1;
+                                margin: 0 0 50px;
+                                width: 70%;
                                 border-color: ${theme.textoGray};
+                                position: relative;
+                                top: 40px;
 
                             }
 
