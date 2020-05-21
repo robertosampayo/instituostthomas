@@ -41,7 +41,7 @@ const QuienesSomos = () => {
                     </div>
                     <div className='banner-texto text-focus-in'>
                         <div className='banner-titulo'>
-                            <h1 className='text-focus-in'>Quienes Somos</h1>
+                            <h1 className='text-focus-in'>Quiénes Somos</h1>
 
                         </div>
                         <p className='text-focus-in'>

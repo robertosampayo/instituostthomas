@@ -54,9 +54,9 @@ export const Layout = ({title, children}) => {
                         <ul className='menu'>
                             <AnimatePresence>
 
-                                <li key={'quienes-somos'}><Link href='/quienes-somos'><a >Quienes Somos</a></Link></li>
+                                <li key={'quienes-somos'}><Link href='/quienes-somos'><a >Quiénes Somos</a></Link></li>
                                 <li key={'oferta-educativa'}><Link href='/oferta-educativa'><a>Oferta Educativa y Servicios</a></Link></li>
-                                <li key={'certificacion-internacional'}><Link href='/certificacion-internacional'><a >Certificacion Internacional</a></Link></li>
+                                <li key={'certificacion-internacional'}><Link href='/certificacion-internacional'><a >Certificación Internacional</a></Link></li>
                                 <li key={'galeria'}><Link href='/galeria'><a >Galería</a></Link></li>
                                 <li key={'contacto'}><Link href='/contacto'><a >Contacto</a></Link></li>
 
@@ -66,9 +66,9 @@ export const Layout = ({title, children}) => {
                             <ul className='menu-mobile' ref={menu}>
                                 <span className='close-menu' onClick={(e) => {e.preventDefault(); hideMenuMobile();}}><IoMdClose /></span>
                                 <li><Link href='/'><a>Inicio</a></Link></li>
-                                <li><Link href='/quienes-somos'><a>Quienes Somos</a></Link></li>
+                                <li><Link href='/quienes-somos'><a>Quiénes Somos</a></Link></li>
                                 <li><Link href='/oferta-educativa'><a >Oferta Educativa y Servicios</a></Link></li>
-                                <li><Link href='/certificacion-internacional'><a>Certificacion Internacional</a></Link></li>
+                                <li><Link href='/certificacion-internacional'><a>Certificación Internacional</a></Link></li>
                                 <li><Link href='/galeria'><a >Galería</a></Link></li>
                                 <li><Link href='/contacto'><a >Contacto</a></Link></li>
                             </ul>
