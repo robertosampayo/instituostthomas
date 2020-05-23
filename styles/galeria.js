@@ -429,12 +429,12 @@ export default css.galeriaStyle`
                         }
 
                         .banner img {
-                            width: 200px;
-                            margin: 0 0 30px;
+                            width: 150px;
+                            margin: 0 0 20px;
                         }
 
                         .banner h1 {
-                            font-size: 50px;
+                            font-size: 40px;
                             color: ${theme.primaryGreen};
                             text-align: center;
                             padding: 0;

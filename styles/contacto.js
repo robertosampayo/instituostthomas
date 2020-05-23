@@ -130,6 +130,7 @@ export default css.contactoStyle`
                     border-color: ${theme.primaryGreen};
                     font-size: ${theme.font_regular};
                     font-weight: 600;
+                    font-family: ${theme.font_montserrat};
                 }
 
                 #formulario button:hover{
@@ -243,7 +244,9 @@ export default css.contactoStyle`
 
                     #formulario button{
                         font-size: 20px;
-                        width 100%;
+                        width 65%;
+                        font-size: ${theme.font_montserrat};
+                        font-weight: 600;
                     }
 
 

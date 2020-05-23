@@ -329,38 +329,59 @@ export default css.certificacionInternacionalStyle`
                             text-align: center;
                         }
 
-                        .comminsoon {
-                            flex-direction: column;
-                        }
+                    .comminsoon {
+                        flex-direction: column;
+                    }
 
-                        .comminsoon h3 {
-                            font-size: 20px;
-                            margin: 0 auto;
-                        }
+                    .comminsoon h3 {
+                        font-size: 20px;
+                        margin: 0 auto;
+                    }
 
-                        .comminsoon h1{
-                            font-size: 40px;
-                            font-weight: 300;
-                            margin: 0 auto;
-                        }
+                    .comminsoon h1{
+                        font-size: 40px;
+                        font-weight: 300;
+                        margin: 0 auto;
+                    }
 
-                        .comminsoon .contenido {
-                            width: 100%;
-                            margin-top: 50px;
-                        }
+                    .comminsoon .contenido {
+                        width: 100%;
+                    }
 
-                        .comminsoon img{
-                            position: absolute;
-                            bottom: 0;
-                            left: -30%;
-                            width: 90%;
-                        }
+                    .comminsoon img{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0%;
+                        width: 80%;
+                        transform: translateX(-50%);
+                        left: 50%;
+                        top: 45%;
+                    }
 
-                        .comminsoon {
-                            height: 100vh;
-                        }
+                    .comminsoon {
+                        height: 100vh;
+                    }
 
+                    .contacto .contenedor {
+                        width: 80%;
+                    }
 
+                    .contacto .contenedor h2 {
+                        font-size: 50px;
+                    }
+
+                    .contacto .contenedor p {
+                        width: 100%;
+                    }
+
+                    .info, .equipo, .momentos, .contacto  {
+                        height: auto;
+                    }
+
+                    .comminsoon .contenido, .comminsoon .logo {
+                        width: 100%;
+                        height: 15%;
+                    }
 
                 }
 `

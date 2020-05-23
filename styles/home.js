@@ -389,7 +389,7 @@ export default css.homeStyle`
 
 
                 .servicios-mobile{
-                    width: 80%;
+                    width: 90%;
                     margin: 0 auto;
                 }
 
@@ -707,7 +707,13 @@ export default css.homeStyle`
                     font-size: ${theme.fontSizeP};
                 }
 
+                    .button.banner-arrow-prev.swiper-button-prev {
+                        right: 10%!important;
+                    }
 
+                    .button.banner-arrow-next.swiper-button-next {
+                        left: 10%!important;
+                    }
 
 
                 @keyframes carrusel {
@@ -1336,29 +1342,77 @@ export default css.homeStyle`
                         top: 0px;
                     }
 
-                    .banner-container h1{
-                        background: ${theme.backgroundSepiaTransparente};
-                        text-align: center;
+                    .swiper-titulo-container{
+
+                        position: absolute;
+                        z-index: 9999;
+                        align-items: center;
+                        height: 100vh;
+                        justify-content: center;
+
                     }
 
-                    .banner-container .cortina, .banner-container .cortina-dos, .banner-container .cortina-tres {
-                        width: 150%;
+                    .titulo-banner {
+                        width: 100vw;
+                        height: auto;
+                        align-items: center;
+                        text-align: center;
+                        position: relative;
+                        left: 0;
+
+                    }
+
+                    .titulo-banner h1{
+                        width: 70%;
+                        padding: 50px 0px;
+                        background: ${theme.backgroundSepiaTransparente};
+
+                    }
+
+
+                    .banner-container {
                         display: none;
                     }
 
-                    .banner-container .cortina-dos {
-                        left: 65%;
+
+                    .banner, .banner2, .banner3{
+
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
+
+                    .banner2, .banner3 {
+                        background-position-x: 50%;
+                    }
+
+                    .banner3{
+                        background-position-x: 70%;
+                    }
+
+                    .banner h1, .banner3 h1{
+                        background: ${theme.backgroundSepia};
+                        width: 60%;
+                        margin: 0 auto;
+                        padding: 20px;
+                        color: ${theme.primaryGreen};
+                        border-style: solid;
+                        border-color: ${theme.primaryGreen};
+
+                    }
+
+                    .swiper-slide.banner2 img{
+
+                        width: 350px;
+                        background: ${theme.backgroundSepia};
+                        padding: 20px;
+                        color: #53764c;
+                        border-style: solid;
+                        border-color: #53764c;
+
                     }
 
 
-                    .banner-container .cortina-tres {
-                        left: 75%;
-                    }
-
-
-                    .banner, .banner2, .banner3 {
-                        background-position-x: 55%;
-                    }
 
                     .info{
                         height: auto;
@@ -1636,7 +1690,7 @@ export default css.homeStyle`
 
                     .banner h1, .banner3 h1{
                         background: ${theme.backgroundSepia};
-                        width: 80%;
+                        width: 70%;
                         margin: 0 auto;
                         padding: 20px;
                         color: ${theme.primaryGreen};
@@ -1646,9 +1700,13 @@ export default css.homeStyle`
                     }
 
                     .banner2 img{
+
                         width: 250px;
                         background: ${theme.backgroundSepia};
                         padding: 20px;
+                        color: #53764c;
+                        border-style: solid;
+                        border-color: #53764c;
 
                     }
 
@@ -1699,10 +1757,16 @@ export default css.homeStyle`
                     }
                     .explora .servicio span {
                         font-size: 20px;
+                        color: ${theme.primaryGreen};
                     }
 
                     .team-mobile{
-                        width: 100%;
+                        width: 90%;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
                     }
 
                     .team-mobile .team{
@@ -1718,8 +1782,10 @@ export default css.homeStyle`
 
                     .team-mobile .team h2{
                         position: relative;
-                        color: ${theme.textoGray};
+                        color: ${theme.primaryGreen};
                         margin: 20px 0;
+                        font-family: ${theme.font_montserrat}
+                        font-weight: 600;
                     }
 
                     .equipo h1{
@@ -1766,36 +1832,38 @@ export default css.homeStyle`
 
                     }
 
-                        .comminsoon {
-                            flex-direction: column;
-                        }
+                    .comminsoon {
+                        flex-direction: column;
+                    }
 
-                        .comminsoon h3 {
-                            font-size: 20px;
-                            margin: 0 auto;
-                        }
+                    .comminsoon h3 {
+                        font-size: 20px;
+                        margin: 0 auto;
+                    }
 
-                        .comminsoon h1{
-                            font-size: 40px;
-                            font-weight: 300;
-                            margin: 0 auto;
-                        }
+                    .comminsoon h1{
+                        font-size: 40px;
+                        font-weight: 300;
+                        margin: 0 auto;
+                    }
 
-                        .comminsoon .contenido {
-                            width: 100%;
-                            margin-top: 50px;
-                        }
+                    .comminsoon .contenido {
+                        width: 100%;
+                    }
 
-                        .comminsoon img{
-                            position: absolute;
-                            bottom: 0;
-                            left: 0%;
-                            width: 90%;
-                        }
+                    .comminsoon img{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0%;
+                        width: 80%;
+                        transform: translateX(-50%);
+                        left: 50%;
+                        top: 45%;
+                    }
 
-                        .comminsoon {
-                            height: 100vh;
-                        }
+                    .comminsoon {
+                        height: 100vh;
+                    }
 
                     .contacto .contenedor {
                         width: 80%;
@@ -1813,7 +1881,10 @@ export default css.homeStyle`
                         height: auto;
                     }
 
-
+                    .comminsoon .contenido, .comminsoon .logo {
+                        width: 100%;
+                        height: 15%;
+                    }
 
 
 

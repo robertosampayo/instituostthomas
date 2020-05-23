@@ -426,9 +426,7 @@ export default css.quienesSomosStyle`
                         display: flex;
                     }
 
-                    .onlyMobile {
-                        display: none;
-                    }
+
 
                     .banner h1{
                         border-style: solid;
@@ -609,7 +607,9 @@ export default css.quienesSomosStyle`
                         font-size: 100px;
                     }
 
-
+                    .staff .onlyMobile {
+                        display: none;
+                    }
 
 
                 }
@@ -627,7 +627,7 @@ export default css.quienesSomosStyle`
                         display: flex;
                     }
 
-                    .onlyMobile {
+                    .staff .onlyMobile {
                         display: none;
                     }
 
@@ -724,6 +724,9 @@ export default css.quienesSomosStyle`
                     .staff .contenido{
                         width: ${theme.width1500};
                     }
+                    .linea{
+                        margin: 20px 0;
+                    }
 
                 }
 
@@ -744,7 +747,7 @@ export default css.quienesSomosStyle`
                             display: flex;
                         }
 
-                        .onlyMobile {
+                        .staff .onlyMobile {
                             display: none;
                         }
 
@@ -771,6 +774,14 @@ export default css.quienesSomosStyle`
 
                         .fundadora .contenido{
                             width: 70%;
+                        }
+
+                        .fundadora img {
+                            height: 450px;
+                        }
+
+                        .fundadora .cinta {
+                            transform: translateX(9em);
                         }
 
                         .mision-vision-background{
@@ -816,7 +827,7 @@ export default css.quienesSomosStyle`
                             display: flex;
                         }
 
-                        .onlyMobile {
+                        .staff .onlyMobile {
                             display: none;
                         }
 
@@ -833,7 +844,17 @@ export default css.quienesSomosStyle`
                             font-size: 40px;
                         }
 
+                        .fundadora img {
+                            height: 400px;
+                        }
 
+                        .fundadora .cinta {
+                            transform: translateX(8em);
+                        }
+
+                        .fundadora h1{
+                            font-size: 80px;
+                        }
                     }
 
                     /*
@@ -879,7 +900,7 @@ export default css.quienesSomosStyle`
                             height: 200px;
                         }
 
-                        .onlyMobile {
+                        .staff .onlyMobile {
                             display: none;
                         }
 
@@ -977,9 +998,25 @@ export default css.quienesSomosStyle`
                             padding: 0 0 50px;
                         }
 
+                        .staff .staff1{
+                            margin: 40px 0 0;
+                        }
 
+                        .fundadora .contenido {
+                            width: 80%;
+                            display: flex;
+                        }
+                        .fundadora .foto {
+                            justify-content: center;
+                        }
 
+                        .fundadora .cinta {
+                            transform: translateX(0);
+                        }
 
+                        .fundadora img{
+                            height: 450px;
+                        }
 
                     }
 

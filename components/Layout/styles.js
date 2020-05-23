@@ -836,7 +836,7 @@ export default css.styles`
                                 text-align: right;
                                 font-size: 50px;
                                 color: ${theme.textoGray};
-                                padding: 30px;
+                                padding: 25px;
 
 
                             }
@@ -882,11 +882,12 @@ export default css.styles`
                                 margin-bottom: 10px;
                                 border-width: 0 0 2px;
                                 line-height: 1;
-                                margin: 0 0 50px;
-                                width: 70%;
+                                margin: 0 0 35px;
+                                width: 85%;
                                 border-color: ${theme.textoGray};
                                 position: relative;
                                 top: 40px;
+                                font-size: 30px
 
                             }
 

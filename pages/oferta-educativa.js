@@ -177,8 +177,9 @@ const OfertaEducativa = () => {
                             <div className='linea-larga-black'></div>
                             <p>
                                 Curso semi-intensivo de tres o cuatro semanas. 20 horas semanales. Alojamiento en campus. A solo 20 minutos del centro de Boston. Excelentes clases dadas por profesionales nativos experimentados.
-                                Excursiones dentro y fuera de Boston.
-                                Divertidas actividades en y fuera del campus. Acompañados por docente del Instituto.
+                                <br /><br />
+                                Excursiones dentro y fuera de Boston. <br /><br />
+                                Divertidas actividades en y fuera del campus. Acompañados por docente del Instituto. <br /><br />
 
 
                             </p>

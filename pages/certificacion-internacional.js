@@ -32,10 +32,10 @@ const Certificacion = () => {
                 </div>
             </div>
 
-            <div className='comminsoon'>
+            <section className='comminsoon'>
                 <div className='logo'>
 
-                    <img className='slide-right' src='../../static/imgs/logo-certificacion.png' />
+                    <img className='' src='../../static/imgs/circulo-logo.png' />
                 </div>
 
                 <div className='contenido'>
@@ -48,7 +48,7 @@ const Certificacion = () => {
 
                 </div>
 
-            </div>
+            </section>
 
 
 

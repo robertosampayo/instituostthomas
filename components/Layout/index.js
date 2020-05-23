@@ -40,6 +40,7 @@ export const Layout = ({title, children}) => {
 
                 <Head>
                     <meta name='viewport' content='width=device-width, initial-scale=1' />
+                    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
                     {title && <title >{title}</title>}
                 </Head>
 
@@ -201,6 +202,10 @@ export const Layout = ({title, children}) => {
                         display: block!important;
                     }
 
+                    .onlyMobile {
+                        display: block;
+                    }
+
                     .hide-in-mobile-flex{
                         display: flex!important;
                     }
@@ -323,7 +328,37 @@ export const Layout = ({title, children}) => {
                         left: 10%;
                     }
 
+                    @media (min-width: 1281px) and (max-width: 1650px) {
 
+                            .onlyMobile {
+                                display: none;
+                            }
+                    }
+
+                    @media (min-width: 1025px) and (max-width: 1280px) {
+
+                            .onlyMobile {
+                                display: none;
+                            }
+                    }
+
+                    @media (min-width: 768px) and (max-width: 1024px) {
+
+                            .onlyMobile {
+                                display: none;
+                            }
+
+                    }
+
+                    @media (min-width: 481px) and (max-width: 767px) {
+
+                            .hide-in-mobile{
+                                display: none!important;
+                            }
+                            .hide-in-mobile-flex{
+                                display: none!important;
+                            }
+                    }
 
                      @media (min-width: 320px) and (max-width: 480px) {
 

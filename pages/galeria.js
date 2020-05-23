@@ -779,21 +779,16 @@ import animations from '../styles/animations'
                     </Fade>
 
 
-
-
-
-
-
-
-
                     <Fade duration={1500}>
-                        <div className='image-container form8'>
+                        <div className='image-container'>
 
-                            <img className='' src='../../static/imgs/galeria/form8.png' />
+                            <img className='medida-standard' src='../../static/imgs/animados/girando.gif' />
 
                         </div>
 
                     </Fade>
+
+
 
                 </MediaQuery>
 

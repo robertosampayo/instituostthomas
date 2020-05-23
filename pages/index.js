@@ -5,6 +5,9 @@ import Swiper from 'react-id-swiper'
 import { render } from 'react-dom'
 import { TimelineLite, Power4, CSSPlugin, gsap } from 'gsap'
 import { BsChevronRight } from 'react-icons/bs'
+
+import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa'
+import { theme } from '../styles/theme'
 import Link from 'next/link'
 import MediaQuery from 'react-responsive'
 import { ParallaxBanner  } from 'react-scroll-parallax'
@@ -50,6 +53,21 @@ const Home = () => {
                 }
         }
 
+        const goNextMobile = () => {
+
+
+
+            swiper.slideNext()
+
+        }
+
+        const goPrevMobile = () => {
+
+
+            swiper.slidePrev()
+
+
+        }
 
         const animateCortina = () => {
 
@@ -128,7 +146,17 @@ const Home = () => {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
             },
+            renderPrevButton: () =>
+                <FaChevronCircleLeft style={{ color: theme.primaryGreen, width: '50px' }}
+                    onClick={(e) => { e.preventDefault(); goPrevMobile() }}
+                    className="swiper-button-prev" size='60' />
+            ,
+            renderNextButton: () =>
 
+                <FaChevronCircleRight style={{ color: theme.primaryGreen, width: '50px' }}
+                    onClick={(e) => { e.preventDefault(); goNextMobile() }}
+                    className="swiper-button-next" size='60' />
+            ,
 
         }
 
@@ -157,12 +185,27 @@ const Home = () => {
                 el: '.swiper-pagination',
                 clickable: true
             },
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false
+            },
             loop: true,
             autoresize: true,
             navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
             },
+            renderPrevButton: () =>
+                <FaChevronCircleLeft style={{ color: theme.primaryGreen }}
+                onClick={(e) => { e.preventDefault(); goPrevMobile()}}
+                className="swiper-button-prev" size='45' />
+            ,
+            renderNextButton: () =>
+
+                <FaChevronCircleRight style={{ color: theme.primaryGreen }}
+                onClick={(e) => { e.preventDefault(); goNextMobile()}}
+                className="swiper-button-next" size='45' />
+            ,
 
         }
 
@@ -264,32 +307,34 @@ const Home = () => {
 
             {/* </MediaQuery> */}
 
-            <MediaQuery maxDeviceWidth={480}>
+            {/* <MediaQuery maxDeviceWidth={768}> */}
 
 
+                <div className='onlyMobile swiper-principal-mobile'>
 
-                <Swiper {...paramsBannerMobile} getSwiper={updateSwiper}>
-                        <section className='banner'>
+                    <Swiper {...paramsBannerMobile} getSwiper={updateSwiper}>
+                            <section className='banner banner-mobile'>
 
-                            <h1>Learning English Together</h1>
-                        </section>
+                                <h1>Learning English Together</h1>
+                            </section>
 
-                        <section className='banner2'>
-                            <img src='../static/imgs/logo-stthomas.png' />
-                        </section>
+                            <section className='banner2'>
+                                <img src='../static/imgs/logo-stthomas.png' />
+                            </section>
 
-                        <section className='banner3'>
-                            <h1>
-                                We create <br />
-                                moments. <br />
-                                We work <br />
-                                with people. <br />
-                            </h1>
-                        </section>
+                            <section className='banner3'>
+                                <h1>
+                                    We create <br />
+                                    moments. <br />
+                                    We work <br />
+                                    with people. <br />
+                                </h1>
+                            </section>
 
 
-                </Swiper>
-            </MediaQuery>
+                    </Swiper>
+                </div>
+            {/* </MediaQuery> */}
 
 
 
@@ -376,21 +421,21 @@ const Home = () => {
 
                                     <div className='servicio uno'>
                                             <img src='../static/imgs/animados/libro.gif' />
-                                            <span>OFERTA <br /> EDUCATIVA</span>
+                                            <span><strong>OFERTA</strong> <br /> EDUCATIVA</span>
 
                                     </div>
                                     <div className='servicio dos'>
                                             <img src='../static/imgs/animados/Avion2.gif' />
-                                            <span>VIAJES <br /> DE ESTUDIO</span>
+                                            <span><strong>VIAJES</strong> <br /> DE ESTUDIO</span>
                                     </div>
                                     <div className='servicio tres'>
                                             <img src='../static/imgs/animados/compu2.gif' />
-                                            <span>SERVICIO <br /> DE TRADUCCIÓN</span>
+                                            <span><strong>SERVICIO</strong> <br /> DE TRADUCCIÓN</span>
 
                                     </div>
                                     <div className='servicio cuatro'>
                                         <img src='../static/imgs/animados/Arboles.gif' />
-                                        <span>IMMERSION <br />CAMPS</span>
+                                        <span><strong>IMMERSION</strong> <br />CAMPS</span>
 
                                     </div>
 
@@ -648,7 +693,7 @@ const Home = () => {
             <section className='comminsoon'>
                 <div className='logo'>
 
-                    <img className='slide-right' src='../../static/imgs/logo-certificacion.png' />
+                    <img className='' src='../../static/imgs/circulo-logo.png' />
                 </div>
 
                 <div className='contenido'>
@@ -679,6 +724,17 @@ const Home = () => {
 
                 </section>
 
+                <style jsx>
+                    {`
+                            button#prev {
+                                right: 10%!important;
+                            }
+
+                            button#next {
+                                left: 10%!important;
+                            }
+                    `}
+                </style>
 
                 <style jsx>
                     {homeStyle}
