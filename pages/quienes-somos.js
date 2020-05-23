@@ -57,19 +57,19 @@ const QuienesSomos = () => {
             </div>
 
             <section className='mision-vision-background'>
-<ParallaxBanner
-    className="your-class"
-    layers={[
-        {
-            image: '../static/imgs/instituto-fachada.png',
-            amount: 0.15,
-        },
+                <ParallaxBanner
+                    className="your-class"
+                    layers={[
+                        {
+                            image: '../static/imgs/instituto-fachada.png',
+                            amount: 0.15,
+                        },
 
-    ]}
-    style={{
-        height: '90vh',
-    }}
-></ParallaxBanner>
+                    ]}
+                    style={{
+                        height: '90vh',
+                    }}
+                ></ParallaxBanner>
 
 
             </section>
@@ -214,7 +214,7 @@ const QuienesSomos = () => {
                     </div>
 
                     <MediaQuery maxDeviceWidth={480}>
-                        <div className='texto'>
+                        <div className='texto onlyMobile'>
 
                             <h2 className='italic'>Graciela Malpassi</h2>
                             <div className='linea-larga'></div>
@@ -243,7 +243,7 @@ const QuienesSomos = () => {
                     </div>
 
                     <MediaQuery maxDeviceWidth={480}>
-                        <div className='texto'>
+                        <div className='texto onlyMobile'>
 
                             <h2 className='italic'>Natalia Valentini</h2>
                             <div className='linea-larga'></div>
@@ -275,7 +275,7 @@ const QuienesSomos = () => {
                         </div>
                     </div>
                     <MediaQuery maxDeviceWidth={480}>
-                        <div className='texto'>
+                        <div className='texto onlyMobile'>
 
                             <h2 className='italic'>María Eugenia Pellegrin</h2>
                             <div className='linea-larga'></div>
@@ -308,7 +308,7 @@ const QuienesSomos = () => {
                         </div>
                     </div>
                     <MediaQuery maxDeviceWidth={480}>
-                        <div className='texto'>
+                        <div className='texto onlyMobile'>
 
                             <h2 className='italic'>María Delia Manila</h2>
                             <div className='linea-larga'></div>
@@ -342,7 +342,7 @@ const QuienesSomos = () => {
                     </div>
 
                     <MediaQuery maxDeviceWidth={480}>
-                        <div className='texto'>
+                        <div className='texto onlyMobile'>
 
                             <h2 className='italic'>Nanci <br />  Rius</h2>
                             <div className='linea-larga'></div>

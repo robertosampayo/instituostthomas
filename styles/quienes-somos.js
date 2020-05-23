@@ -10,63 +10,67 @@ export default css.quienesSomosStyle`
 
                 h3{ font-family: ${theme.font_italic}; font-size: 30px; }
 
-                    .banner{
-                        height: 90vh;
-                        background-image: url('../../static/imgs/quienes-somos-banner-blank.png');
-                        background-size: cover;
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-end;
-                    }
+                .onlyMobile {
+                    display: flex;
+                }
 
-                    .banner .contenido {
-                        width: 70%;
-                    }
+                .banner{
+                    height: 90vh;
+                    background-image: url('../../static/imgs/quienes-somos-banner-blank.png');
+                    background-size: cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
 
-                    .banner .logo{
-                        display: flex;
-                        width: 50%;
-                        justify-content: center;
-                        align-items: center;
-                        justify-content: flex-end;
-                    }
+                .banner .contenido {
+                    width: 70%;
+                }
 
-                    p { font-size: ${theme.textoSize1500}; }
+                .banner .logo{
+                    display: flex;
+                    width: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
 
-                    .banner .logo img{ width: 400px; height: 300px; margin-right: 50px;}
+                p { font-size: ${theme.textoSize1500}; }
 
-                    .banner .contenido { width: 60%; margin: 0 auto; display: flex;}
+                .banner .logo img{ width: 400px; height: 300px; margin-right: 50px;}
+
+                .banner .contenido { width: 60%; margin: 0 auto; display: flex;}
 
 
-                    .banner-texto{
-                        display: flex;
-                        justify-content: flex-end;
-                        flex-direction: column;
-                        width: 50%;
-                        padding: 20px;
+                .banner-texto{
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    width: 50%;
+                    padding: 20px;
 
-                    }
+                }
 
-                    .banner h1{
-                        width: 80%;
-                        font-size: 100px;
-                        color: ${theme.textoGray};
-                        padding: 0;
-                        border-width: 0 0 2.5px;
-                        border-style: solid;
-                        border-color: ${theme.primaryGreen};
-                        line-height: 1;
-                        font-family: ${theme.font_regular_important};
-                        width: 45%;
-                        font-style: initial;
-                    }
+                .banner h1{
+                    width: 80%;
+                    font-size: 100px;
+                    color: ${theme.textoGray};
+                    padding: 0;
+                    border-width: 0 0 2.5px;
+                    border-style: solid;
+                    border-color: ${theme.primaryGreen};
+                    line-height: 1;
+                    font-family: ${theme.font_regular_important};
+                    width: 45%;
+                    font-style: initial;
+                }
 
-                    .banner p { width: 60%;
-                        font-size: 20px;
-                       line-height: 30px;
-                        margin-top: 20px;
-                        color: ${theme.textoGray}
-                    }
+                .banner p { width: 60%;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-top: 20px;
+                    color: ${theme.textoGray}
+                }
 
 
                 .mision-vision-background{
@@ -414,6 +418,10 @@ export default css.quienesSomosStyle`
 
                     }
 
+                    .onlyMobile {
+                        display: none;
+                    }
+
                     .banner h1{
                         border-style: solid;
                         border-width: 0px 0px 2.5px;
@@ -607,6 +615,10 @@ export default css.quienesSomosStyle`
 
                     }
 
+                    .onlyMobile {
+                        display: none;
+                    }
+
                     .banner h1{
                         border-style: solid;
                         border-width: 0px 0px 2.5px;
@@ -716,6 +728,10 @@ export default css.quienesSomosStyle`
                             width: 50%;
                         }
 
+                        .onlyMobile {
+                            display: none;
+                        }
+
                         .banner p, .banner .banner-titulo{
                             width: 80%;
                         }
@@ -780,6 +796,10 @@ export default css.quienesSomosStyle`
                             width: 100%;
                         }
 
+                        .onlyMobile {
+                            display: none;
+                        }
+
                         .banner .logo img{
                             width: 250px;
                             height: 200px;
@@ -839,7 +859,9 @@ export default css.quienesSomosStyle`
                             height: 200px;
                         }
 
-
+                        .onlyMobile {
+                            display: none;
+                        }
 
                         .banner p{
                             width: 100%;
@@ -943,6 +965,7 @@ export default css.quienesSomosStyle`
                     */
 
                     @media (min-width: 320px) and (max-width: 480px) {
+
 
                         p{ font-size: 16px; text-align: center; }
 
