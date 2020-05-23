@@ -1226,6 +1226,7 @@ export default css.homeStyle`
                     .info h3{
                             margin: 100px 0px;
                             width: 80%;
+                            font-size: 18px;
 
                     }
 
@@ -1308,7 +1309,7 @@ export default css.homeStyle`
                     .comminsoon .contenido {
                         width: 100%;
                         align-items: center;
-                        transform: translateY(50%);
+                        transform: translateY(30%);
                     }
 
                     .comminsoon .contenido h1{
@@ -1618,7 +1619,7 @@ export default css.homeStyle`
                         padding: 50px 0 0;
                     }
 
-                    .comminsoon .contenido h1{
+                    .comminsoon .contenido h1{md
                         width: 80%;
                         margin: 0 auto;
                     }
@@ -1642,7 +1643,7 @@ export default css.homeStyle`
 
                     .comminsoon .contenido .contenido-contaiener {
                         width: 100%;
-                        transform: translateY(30%);
+                        transform: translateY(10%);
                     }
 
                     .momentos .content{
