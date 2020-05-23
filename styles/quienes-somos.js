@@ -14,6 +14,10 @@ export default css.quienesSomosStyle`
                     display: flex;
                 }
 
+                .onlyDesktop {
+                    display: none;
+                }
+
                 .banner{
                     height: 90vh;
                     background-image: url('../../static/imgs/quienes-somos-banner-blank.png');
@@ -418,6 +422,10 @@ export default css.quienesSomosStyle`
 
                     }
 
+                    .onlyDesktop {
+                        display: flex;
+                    }
+
                     .onlyMobile {
                         display: none;
                     }
@@ -615,6 +623,10 @@ export default css.quienesSomosStyle`
 
                     }
 
+                    .onlyDesktop {
+                        display: flex;
+                    }
+
                     .onlyMobile {
                         display: none;
                     }
@@ -728,6 +740,10 @@ export default css.quienesSomosStyle`
                             width: 50%;
                         }
 
+                        .onlyDesktop {
+                            display: flex;
+                        }
+
                         .onlyMobile {
                             display: none;
                         }
@@ -796,6 +812,10 @@ export default css.quienesSomosStyle`
                             width: 100%;
                         }
 
+                        .onlyDesktop {
+                            display: flex;
+                        }
+
                         .onlyMobile {
                             display: none;
                         }
@@ -861,6 +881,10 @@ export default css.quienesSomosStyle`
 
                         .onlyMobile {
                             display: none;
+                        }
+
+                        .onlyDesktop {
+                            display: flex;
                         }
 
                         .banner p{
@@ -971,6 +995,10 @@ export default css.quienesSomosStyle`
 
                         .banner {
                             height: 100vh
+                        }
+
+                        .onlyDesktop {
+                            display: none;
                         }
 
                         .banner .contenido{

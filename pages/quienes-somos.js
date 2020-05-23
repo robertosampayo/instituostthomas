@@ -196,7 +196,7 @@ const QuienesSomos = () => {
 
                         </div>
                     </div>
-                    <div className='item staff1'
+                    <div className='item staff1 onlyDesktop'
                         onMouseOver={(e) => { e.preventDefault(); setShowStaff1(true); }}
                         onMouseLeave={(e) => { e.preventDefault(); setShowStaff1(false); }}
                     >
@@ -227,7 +227,7 @@ const QuienesSomos = () => {
 
                     </MediaQuery>
 
-                    <div className='item staff2'
+                    <div className='item staff2 onlyDesktop'
                         onMouseOver={(e) => { e.preventDefault(); setShowStaff2(true);  }}
                         onMouseLeave={(e) => { e.preventDefault(); setShowStaff2(false);  }}
                     >
@@ -260,7 +260,7 @@ const QuienesSomos = () => {
 
 
 
-                    <div className='item staff3'
+                    <div className='item staff3 onlyDesktop'
                         onMouseOver={(e) => { e.preventDefault(); setShowStaff3(true);  }}
                         onMouseLeave={(e) => { e.preventDefault(); setShowStaff3(false);  }}
                     >
@@ -292,7 +292,7 @@ const QuienesSomos = () => {
 
 
 
-                    <div className='item staff4'
+                    <div className='item staff4 onlyDesktop'
                         onMouseOver={(e) => { e.preventDefault(); setShowStaff4(true);  }}
                         onMouseLeave={(e) => { e.preventDefault(); setShowStaff4(false);  }}
                     >
@@ -325,7 +325,7 @@ const QuienesSomos = () => {
 
 
 
-                    <div className='item staff5'
+                    <div className='item staff5 onlyDesktop'
                         onMouseOver={(e) => { e.preventDefault(); setShowStaff5(true);  }}
                         onMouseLeave={(e) => { e.preventDefault(); setShowStaff5(false);  }}
                     >
