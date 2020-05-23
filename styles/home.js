@@ -929,6 +929,10 @@ export default css.homeStyle`
                         height: 1050px;
                     }
 
+                    .info h3{
+                        width: 50%;
+
+                    }
                     .explora, .equipo, .momentos, .comminsoon, .contacto{
                         height: 90vh;
                     }
