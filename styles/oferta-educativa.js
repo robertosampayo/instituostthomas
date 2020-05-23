@@ -672,7 +672,7 @@ export default css.ofertaEducativaStyle`
                         }
 
                         .actividades .actividades-texto {
-                            height: 600px;
+                            height: 730px;
                         }
 
                         .actividades .actividades-texto h3 {
@@ -888,7 +888,7 @@ export default css.ofertaEducativaStyle`
                         }
 
                         .actividades .actividades-texto {
-                            height: 550px;
+                            height: 650px;
                         }
 
                         .actividades-contenido{
@@ -908,7 +908,7 @@ export default css.ofertaEducativaStyle`
                             font-size: 20px
                         }
                         .actividades .actividades-texto h3 {
-                            font-size: 35px;
+                            font-size: 30px;
                         }
 
                     }

@@ -81,7 +81,6 @@ export default css.certificacionInternacionalStyle`
                 .comminsoon img{
                     position: absolute;
                     bottom: 0;
-                    left: -10%;
                     width: 50%;
 
                 }
@@ -98,6 +97,13 @@ export default css.certificacionInternacionalStyle`
                 .comminsoon h1{
                     font-size: ${theme.tituloDesktop1500};
                     font-weight: 300;
+                }
+
+               .comminsoon .contenido .contenido-container{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                 }
 
                 .linea-larga-black {
@@ -121,7 +127,6 @@ export default css.certificacionInternacionalStyle`
                     }
 
                     .comminsoon img {
-                        left: -10%;
                         width: 40%;
                     }
 
@@ -154,7 +159,6 @@ export default css.certificacionInternacionalStyle`
                     }
 
                     .comminsoon img {
-                        left: -10%;
                         width: 40%;
                     }
 
@@ -197,7 +201,6 @@ export default css.certificacionInternacionalStyle`
 
                     .comminsoon img{
                         width: 40%;
-                        left: -10%;
                     }
 
                     .comminsoon .contenido h1{
@@ -222,7 +225,6 @@ export default css.certificacionInternacionalStyle`
                 @media (min-width: 768px) and (max-width: 1024px) {
 
                     .comminsoon img{
-                        left: -20%;
                     }
 
                 }
@@ -274,7 +276,6 @@ export default css.certificacionInternacionalStyle`
                     }
 
                     .comminsoon img{
-                        left: -20%;
                         width: 350px;
                     }
 

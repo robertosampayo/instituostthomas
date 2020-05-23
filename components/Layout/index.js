@@ -328,11 +328,18 @@ export const Layout = ({title, children}) => {
                         left: 10%;
                     }
 
+                    @media (min-width: 1650px) {
+                        .onlyMobile {
+                            display: none;
+                        }
+
+                    }
+
                     @media (min-width: 1281px) and (max-width: 1650px) {
 
-                            .onlyMobile {
-                                display: none;
-                            }
+                        .onlyMobile {
+                            display: none;
+                        }
                     }
 
                     @media (min-width: 1025px) and (max-width: 1280px) {
@@ -368,6 +375,10 @@ export const Layout = ({title, children}) => {
 
                             .hide-in-mobile-flex{
                                 display: none!important;
+                            }
+
+                            .onlyDesktop {
+                                display: none;
                             }
 
                      }

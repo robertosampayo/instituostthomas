@@ -35,16 +35,20 @@ const Certificacion = () => {
             <section className='comminsoon'>
                 <div className='logo'>
 
-                    <img className='' src='../../static/imgs/circulo-logo.png' />
+                    <img className='onlyMobile' src='../../static/imgs/circulo-logo.png' />
+                    <img className='onlyDesktop' src='../../static/imgs/logo-certificacion.png' />
                 </div>
 
                 <div className='contenido'>
-                    <h3>- COMING SOON -</h3>
-                    <h1>
-                        Algo nuevo <br />
-                        está por llegar <br />
-                        a St. Thomas <br />
-                    </h1>
+                    <div className='contenido-contaiener'>
+                        <h3>- COMING SOON -</h3>
+                        <h1>
+                            Algo nuevo <br />
+                            está por llegar <br />
+                            a St. Thomas <br />
+                        </h1>
+
+                    </div>
 
                 </div>
 

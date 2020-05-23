@@ -26,7 +26,7 @@ export const theme = {
     paddingButton: '5px 20px',
     fontSizeButton: '25px',
     fontSizeP: '20px',
-    comminsoonSize: '40px',
+    comminsoonSize: '35px',
     sectionsHeight: '80vh',
 
 

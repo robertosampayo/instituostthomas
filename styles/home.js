@@ -615,6 +615,13 @@ export default css.homeStyle`
 
                 }
 
+                .comminsoon .contenido .contenido-container{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                }
+
                 .content .people{
                     width: 100%;
                     height: 450px;
@@ -742,6 +749,8 @@ export default css.homeStyle`
                         width: 450px;
                     }
 
+
+
                     .titulo-banner img{
                         width: 100%;
                     }
@@ -843,6 +852,8 @@ export default css.homeStyle`
                     }
                     .comminsoon h3{
                         font-size: ${theme.comminsoonSize};
+                        margin: 0 0 0 30px;
+                        padding: 40px 20px 0;
                     }
 
 
@@ -981,8 +992,8 @@ export default css.homeStyle`
 
                     .comminsoon h3{
                         font-size: ${theme.comminsoonSize};
-                        width: 62%;
                         text-align: center;
+                        padding: 40px 20px 0;
                     }
 
 
