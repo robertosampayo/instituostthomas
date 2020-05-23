@@ -363,6 +363,10 @@ export default css.certificacionInternacionalStyle`
                         height: 100vh;
                     }
 
+                    .comminsoon .contenido .contenido-contaiener {
+                        width: 100%;
+                    }
+
                     .contacto .contenedor {
                         width: 80%;
                     }

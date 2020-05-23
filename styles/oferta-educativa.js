@@ -154,7 +154,7 @@ export default css.ofertaEducativaStyle`
                     background: ${theme.backgroundWhite};
                     color: ${theme.textoGray};
                     padding: 20px;
-                    height: 550px;
+                    height: 680px;
                     margin: 10px 0px;
 
                 }

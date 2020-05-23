@@ -304,7 +304,7 @@ export default css.homeStyle`
                     color: ${theme.background};
                 }
                 .info ul li .imagen {
-                    background-size: 100% 100%;
+                    background-size: cover;
                     transition: background-size 1s ease-in-out;
                     -moz-transition: background-size 1s ease-in-out;
                     -ms-transition: background-size 1s ease-in-out;
@@ -423,6 +423,7 @@ export default css.homeStyle`
                     justify-content: justify-center;
                     padding: 0 0 100px;
                     height: ${theme.sectionsHeight};
+                    align-items: center;
 
                 }
 
@@ -1062,7 +1063,7 @@ export default css.homeStyle`
                     }
 
                     .info ul li .imagen {
-                        background-size: 100% 100%;
+                        background-size: cover;
                         transition: background-size 1s ease-in-out;
                         -moz-transition: background-size 1s ease-in-out;
                         -ms-transition: background-size 1s ease-in-out;
@@ -1156,7 +1157,7 @@ export default css.homeStyle`
                     }
 
                     .comminsoon .contenido h1{
-                        width: 80%;
+                        width: 100%;
                         font-size: 50px;
                         font-weight: 300;
                         display: flex;
@@ -1229,7 +1230,7 @@ export default css.homeStyle`
                     }
 
                     .info ul li .imagen {
-                        background-size: 100% 150%;
+                        background-size: cover;
                         transition: background-size 1s ease-in-out;
                         -moz-transition: background-size 1s ease-in-out;
                         -ms-transition: background-size 1s ease-in-out;
@@ -1296,6 +1297,7 @@ export default css.homeStyle`
 
                     .comminsoon {
                         height: 100vh;
+                        flex-direction: column;
                     }
 
                     .comminsoon img{
@@ -1303,15 +1305,28 @@ export default css.homeStyle`
                         width: 40%;
                     }
 
+                    .comminsoon .contenido {
+                        width: 100%;
+                        align-items: center;
+                        transform: translateY(50%);
+                    }
+
                     .comminsoon .contenido h1{
-                        width: 80%;
+                        width: 100%;
                         font-size: 50px;
                         font-weight: 300;
                         display: flex;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
                     }
 
                     .comminsoon h3 {
                         font-size: 30px;
+                    }
+
+                    .comminsoon .contenido .contenido-container {
+                        width: 100%;
                     }
 
                     .momentos .content{
@@ -1480,7 +1495,7 @@ export default css.homeStyle`
                     }
 
                     .info ul li .imagen {
-                        background-size: 100% 150%;
+                        background-size: cover;
                         transition: background-size 1s ease-in-out;
                         -moz-transition: background-size 1s ease-in-out;
                         -ms-transition: background-size 1s ease-in-out;
@@ -1625,6 +1640,11 @@ export default css.homeStyle`
                         width: 100%;
                     }
 
+                    .comminsoon .contenido .contenido-contaiener {
+                        width: 100%;
+                        transform: translateY(30%);
+                    }
+
                     .momentos .content{
                         width: 80%;
                     }
@@ -1761,7 +1781,7 @@ export default css.homeStyle`
                     .explora h1 {
 
                         padding: 0px 0px 12px;
-                        font-size: 35px;
+                        font-size: 30px;
                         width: 80%;
                         position: relative;
                         top: -20px;
@@ -1875,6 +1895,10 @@ export default css.homeStyle`
                     .comminsoon {
                         height: 100vh;
                     }
+                    .comminsoon .contenido .contenido-contaiener {
+                        width: 100%;
+                    }
+
 
                     .contacto .contenedor {
                         width: 80%;
