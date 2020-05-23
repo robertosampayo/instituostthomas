@@ -1162,7 +1162,6 @@ export default css.quienesSomosStyle`
                         .staff .item {
                             margin: 10px 10px 40px;
                             position: relative;
-                            height: auto;
                         }
 
                         .staff .staff-texto .texto {
@@ -1198,6 +1197,11 @@ export default css.quienesSomosStyle`
                         .staff .staff-texto .texto .linea{
                             width: 100%;
                         }
+
+                        .staff .staff1 {
+                            margin: 50px 10px 40px;
+                        }
+
 
                         :global(footer){
                             height: 500px;

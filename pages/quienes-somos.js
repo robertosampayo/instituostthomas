@@ -213,7 +213,8 @@ const QuienesSomos = () => {
 
                     </div>
 
-                    <MediaQuery maxDeviceWidth={480}>
+                    {/* <MediaQuery maxDeviceWidth={480}> */}
+                        <div className='item staff1 onlyMobile'></div>
                         <div className='texto onlyMobile'>
 
                             <h2 className='italic'>Graciela Malpassi</h2>
@@ -225,7 +226,7 @@ const QuienesSomos = () => {
                         </div>
 
 
-                    </MediaQuery>
+                    {/* </MediaQuery> */}
 
                     <div className='item staff2 onlyDesktop'
                         onMouseOver={(e) => { e.preventDefault(); setShowStaff2(true);  }}
@@ -242,19 +243,21 @@ const QuienesSomos = () => {
                         </div>
                     </div>
 
-                    <MediaQuery maxDeviceWidth={480}>
-                        <div className='texto onlyMobile'>
+                    {/* <MediaQuery maxDeviceWidth={480}> */}
+                        <div className='item staff2 onlyMobile'></div>
+                            <div className='texto onlyMobile'>
 
-                            <h2 className='italic'>Natalia Valentini</h2>
-                            <div className='linea-larga'></div>
-                            <p>
-                                Profesora de Inglés General y para Fines Específicos, Traductora Pública Nacional y Licenciada en Lengua y Literatura Inglesa.
-                            </p>
+                                <h2 className='italic'>Natalia Valentini</h2>
+                                <div className='linea-larga'></div>
+                                <p>
+                                    Profesora de Inglés General y para Fines Específicos, Traductora Pública Nacional y Licenciada en Lengua y Literatura Inglesa.
+                                </p>
 
-                        </div>
+                            </div>
 
 
-                    </MediaQuery>
+
+                    {/* </MediaQuery> */}
 
 
 
@@ -274,7 +277,9 @@ const QuienesSomos = () => {
 
                         </div>
                     </div>
-                    <MediaQuery maxDeviceWidth={480}>
+
+                    {/* <MediaQuery maxDeviceWidth={480}> */}
+                        <div className='item staff3 onlyMobile'></div>
                         <div className='texto onlyMobile'>
 
                             <h2 className='italic'>María Eugenia Pellegrin</h2>
@@ -286,7 +291,7 @@ const QuienesSomos = () => {
                         </div>
 
 
-                    </MediaQuery>
+                    {/* </MediaQuery> */}
 
 
 
@@ -307,7 +312,10 @@ const QuienesSomos = () => {
 
                         </div>
                     </div>
-                    <MediaQuery maxDeviceWidth={480}>
+
+                    {/* <MediaQuery maxDeviceWidth={480}> */}
+
+                        <div className='item staff4 onlyMobile'></div>
                         <div className='texto onlyMobile'>
 
                             <h2 className='italic'>María Delia Manila</h2>
@@ -319,7 +327,7 @@ const QuienesSomos = () => {
                         </div>
 
 
-                    </MediaQuery>
+                    {/* </MediaQuery> */}
 
 
 
@@ -341,7 +349,8 @@ const QuienesSomos = () => {
                         </div>
                     </div>
 
-                    <MediaQuery maxDeviceWidth={480}>
+                    {/* <MediaQuery maxDeviceWidth={480}> */}
+                        <div className='item staff5 onlyMobile'></div>
                         <div className='texto onlyMobile'>
 
                             <h2 className='italic'>Nanci <br />  Rius</h2>
@@ -353,7 +362,7 @@ const QuienesSomos = () => {
                         </div>
 
 
-                    </MediaQuery>
+                    {/* </MediaQuery> */}
 
 
                 </div>
