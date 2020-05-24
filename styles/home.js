@@ -1837,6 +1837,10 @@ export default css.homeStyle`
                         font-size: 20px;
                     }
 
+                    .equipo .conoce-staff {
+                        width: 100%;
+                    }
+
                     .momentos h1{
                         width: 100%;
 
