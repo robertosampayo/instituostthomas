@@ -91,7 +91,7 @@ export const Layout = ({title, children}) => {
                         <ul className='footer-info'>
                             <li><h2>Learning English Together</h2></li>
                             <li className='svg-redes'>
-                                <a target='blank_' href='#' ><SvgWP /></a>
+                                <a target='blank_' href='https://api.whatsapp.com/send?phone=5493462514817' ><SvgWP /></a>
                                 <a target='blank_' href='https://www.facebook.com/pages/Instituto-de-Ingl%C3%A9s-St-Thomas/395813450541322' ><SvgFB /></a>
                                 <a target='blank_' href='https://www.instagram.com/institutost.thomas/' ><SvgInsta /></a>
 
