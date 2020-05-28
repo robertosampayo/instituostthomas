@@ -1821,7 +1821,7 @@ export default css.homeStyle`
                         color: ${theme.textoGray};
                         margin: 20px 0;
                         font-family: ${theme.font_regular}
-                        font-weight: 600;
+                        font-style: italic;
                     }
 
                     .equipo h1{
