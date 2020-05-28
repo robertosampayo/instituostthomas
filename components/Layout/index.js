@@ -40,7 +40,7 @@ export const Layout = ({title, children}) => {
 
                 <Head>
                     <meta name='viewport' content='width=device-width, initial-scale=1' />
-                    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+                    <link rel="shortcut icon" type="image/x-icon" href="/static/imgs/favicon.ico" />
                     {title && <title >{title}</title>}
                 </Head>
 
