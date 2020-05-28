@@ -1115,7 +1115,7 @@ export default css.ofertaEducativaStyle`
 
                         .banner h1{ font-size: 60px; width: auto;}
                         .banner h1{ font-size: 60px; width: auto;}
-                        .banner p { font-size: 20px; width: auto; margin-top: 0px; }
+                        .banner p { font-size: 18px; width: 100%; margin-top: 0px; }
                         .banner-texto{
                             width: 100%;
                             padding: 20px;
@@ -1345,7 +1345,14 @@ export default css.ofertaEducativaStyle`
                         }
 
                         .banner h1{ font-size: 40px; width: auto;}
-                        .banner p { font-size: 16px; width: auto; margin-top: 0px; line-height: 20px;}
+                        .banner p {
+                            font-size: 15px;
+                            width: 100%;
+                            margin-top: 0px;
+                            line-height: 27px;
+                            margin: 0 auto;
+
+                        }
                         .banner-texto{
                             width: 100%;
                             padding: 80px 20px;
@@ -1447,7 +1454,10 @@ export default css.ofertaEducativaStyle`
                             }
 
                             .oferta-educativa .texto p {
-                                font-size: 20px;
+                                width: 100%;
+                                font-size: 17px;
+                                margin: 0 auto;
+                                padding: 0;
                             }
 
                             .oferta-educativa ul li{
@@ -1475,8 +1485,9 @@ export default css.ofertaEducativaStyle`
                             }
 
                             .oferta-educativa ul li .texto{
-                                padding: 20px;
+                                padding: 20px 10px;
                                 width: 100%;
+
                             }
 
                             .oferta-educativa ul{

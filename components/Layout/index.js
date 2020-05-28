@@ -96,7 +96,7 @@ export const Layout = ({title, children}) => {
                                 <a target='blank_' href='https://www.instagram.com/institutost.thomas/' ><SvgInsta /></a>
 
                             </li>
-                            <li>Dirección: Cabral 194, Venado Tuerto, CP:2600, Santa Fe, Argentina</li>
+                            <li>Dirección: Cabral 194, Venado Tuerto, CP: 2600, Santa Fe, Argentina.</li>
 
                         </ul>
 

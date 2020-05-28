@@ -40,12 +40,14 @@ const Home = () => {
 
         const goNext = () => {
 
+            animateCortina()
+            if (window !== null){
 
-                animateCortina()
-                if (window !== null){
+                window.setTimeout(function(){
+                    if (swiper !== null) {
 
-                    window.setTimeout(function(){
-                        if (swiper.slides && swiper !== null) {
+
+                        console.log('Holadasdsd');
                             swiper.slideNext()
                         }
 
@@ -307,7 +309,7 @@ const Home = () => {
 
             {/* </MediaQuery> */}
 
-            {/* <MediaQuery maxDeviceWidth={768}> */}
+            <MediaQuery maxDeviceWidth={768}>
 
 
                 <div className='onlyMobile swiper-principal-mobile'>
@@ -334,7 +336,7 @@ const Home = () => {
 
                     </Swiper>
                 </div>
-            {/* </MediaQuery> */}
+            </MediaQuery>
 
 
 

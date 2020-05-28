@@ -1818,9 +1818,9 @@ export default css.homeStyle`
 
                     .team-mobile .team h2{
                         position: relative;
-                        color: ${theme.primaryGreen};
+                        color: ${theme.textoGray};
                         margin: 20px 0;
-                        font-family: ${theme.font_montserrat}
+                        font-family: ${theme.font_regular}
                         font-weight: 600;
                     }
 
