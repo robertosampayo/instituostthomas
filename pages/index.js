@@ -9,8 +9,10 @@ import { BsChevronRight } from 'react-icons/bs'
 import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa'
 import { theme } from '../styles/theme'
 import Link from 'next/link'
-import MediaQuery from 'react-responsive'
+import MediaQuery, { useMediaQuery } from 'react-responsive'
 import { ParallaxBanner  } from 'react-scroll-parallax'
+import { SwiperBanner } from '../components/SwiperBanner'
+
 
 const Home = () => {
 
@@ -47,12 +49,21 @@ const Home = () => {
                     if (swiper !== null) {
 
 
-                        console.log('Holadasdsd');
                             swiper.slideNext()
                         }
 
                     }, 1700);
                 }
+        }
+
+        const Tablet = ({ children }) => {
+            const isTablet = useMediaQuery({ maxHeight: 1366, maxWidth: 1024 })
+            return isTablet ? children : null
+        }
+
+        const Mobile = ({ children }) => {
+            const isMobile = useMediaQuery({ maxWidth: 1025 })
+            return isMobile ? children : null
         }
 
         const goNextMobile = () => {
@@ -309,10 +320,11 @@ const Home = () => {
 
             {/* </MediaQuery> */}
 
-            <MediaQuery maxDeviceWidth={768}>
+            {/* <MediaQuery maxDeviceWidth={1025}> */}
+            {/* <Mobile> */}
 
 
-                <div className='onlyMobile swiper-principal-mobile'>
+                {/* <div className='onlyMobile swiper-principal-mobile'>
 
                     <Swiper {...paramsBannerMobile} getSwiper={updateSwiper}>
                             <section className='banner banner-mobile'>
@@ -335,8 +347,12 @@ const Home = () => {
 
 
                     </Swiper>
-                </div>
-            </MediaQuery>
+                </div> */}
+
+                {/* </MediaQuery> */}
+            {/* </Mobile> */}
+
+            <SwiperBanner />
 
 
 
@@ -695,12 +711,12 @@ const Home = () => {
             <section className='comminsoon'>
                 <div className='logo'>
 
-                    <img className='onlyMobile' src='../../static/imgs/circulo-logo.png' />
-                    <img className='onlyDesktop' src='../../static/imgs/logo-certificacion.png' />
+                    <img className='onlyMobileTablet logo-circulo' src='../../static/imgs/circulo-logo.png' />
+                    <img className='onlyDesktopTablet logo-cortado' src='../../static/imgs/logo-certificacion.png' />
                 </div>
 
                 <div className='contenido'>
-                    <div className='contenido-contaiener'>
+                    <div className='contenido-container'>
                         <h3>- COMING SOON -</h3>
                         <h1>
                             Algo nuevo <br />

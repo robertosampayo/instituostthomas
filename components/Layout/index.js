@@ -206,6 +206,11 @@ export const Layout = ({title, children}) => {
                         display: block;
                     }
 
+                    .onlyMobileTablet {
+                        display: block;
+                    }
+
+
                     .hide-in-mobile-flex{
                         display: flex!important;
                     }
@@ -332,12 +337,19 @@ export const Layout = ({title, children}) => {
                         .onlyMobile {
                             display: none;
                         }
+                        .onlyMobileTablet {
+                            display: none;
+                        }
 
                     }
 
                     @media (min-width: 1281px) and (max-width: 1650px) {
 
                         .onlyMobile {
+                            display: none;
+                        }
+
+                        .onlyMobileTablet {
                             display: none;
                         }
                     }
@@ -347,14 +359,26 @@ export const Layout = ({title, children}) => {
                             .onlyMobile {
                                 display: none;
                             }
+
+                            .onlyMobileTablet {
+                                display: none;
+                            }
                     }
 
                     @media (min-width: 768px) and (max-width: 1024px) {
 
-                            .onlyMobile {
-                                display: none;
+
+                            .hide-in-mobile{
+                                display: none!important;
                             }
 
+                            .hide-in-mobile-flex{
+                                display: none!important;
+                            }
+
+                            .onlyDesktopTablet {
+                                display: none;
+                            }
                     }
 
                     @media (min-width: 481px) and (max-width: 767px) {
@@ -364,6 +388,10 @@ export const Layout = ({title, children}) => {
                             }
                             .hide-in-mobile-flex{
                                 display: none!important;
+                            }
+
+                            .onlyDesktopTablet {
+                                display: none;
                             }
                     }
 
@@ -378,6 +406,11 @@ export const Layout = ({title, children}) => {
                             }
 
                             .onlyDesktop {
+                                display: none;
+                            }
+
+
+                            .onlyDesktopTablet {
                                 display: none;
                             }
 

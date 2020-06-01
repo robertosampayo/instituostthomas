@@ -99,11 +99,12 @@ export default css.certificacionInternacionalStyle`
                     font-weight: 300;
                 }
 
-               .comminsoon .contenido .contenido-container{
+                .comminsoon .contenido .contenido-container{
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        width: 100%;
                 }
 
                 .linea-larga-black {
@@ -217,10 +218,10 @@ export default css.certificacionInternacionalStyle`
                         font-weight: 300;
                     }
 
-
-
                     .comminsoon h3 {
                         font-size: 30px;
+                        width: 100%;
+                        text-align: left;
                     }
                 }
 
@@ -278,13 +279,19 @@ export default css.certificacionInternacionalStyle`
                     }
 
                     .comminsoon img{
-                        left: 0%;
-                        width: 350px;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 50%;
+                        width: 35%;
                     }
 
                     .comminsoon .contenido {
-
-                        padding: 50px 0 0;
+                        width: 100%;
+                        align-items: center;
+                        height: 100%;
+                        justify-content: flex-start;
+                        margin: 50px 0;
                     }
 
                     .comminsoon .contenido h1{
@@ -379,13 +386,19 @@ export default css.certificacionInternacionalStyle`
                     }
 
                     .comminsoon img{
-                        left: 0%;
-                        width: 350px;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 55%;
+                        width: 250px;
                     }
 
                     .comminsoon .contenido {
-
-                        padding: 50px 0 0;
+                        width: 100%;
+                        align-items: center;
+                        height: 100%;
+                        justify-content: flex-start;
+                        margin: 50px 0;
                     }
 
                     .comminsoon .contenido h1{

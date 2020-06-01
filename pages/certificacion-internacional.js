@@ -34,9 +34,8 @@ const Certificacion = () => {
 
             <section className='comminsoon'>
                 <div className='logo'>
-
-                    <img className='onlyMobile' src='../../static/imgs/circulo-logo.png' />
-                    <img className='onlyDesktop' src='../../static/imgs/logo-certificacion.png' />
+                    <img className='onlyMobileTablet logo-circulo' src='../../static/imgs/circulo-logo.png' />
+                    <img className='onlyDesktopTablet logo-cortado' src='../../static/imgs/logo-certificacion.png' />
                 </div>
 
                 <div className='contenido'>

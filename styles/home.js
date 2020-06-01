@@ -621,6 +621,7 @@ export default css.homeStyle`
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        width: 100%;
                 }
 
                 .content .people{
@@ -1018,6 +1019,9 @@ export default css.homeStyle`
 
                 }
 
+
+
+
                 /*
                 ##Device = Laptops, Desktops
                 ##Screen = B/w 1025px to 1280px
@@ -1171,6 +1175,8 @@ export default css.homeStyle`
 
                     .comminsoon h3 {
                         font-size: 30px;
+                        width: 100%;
+                        text-align: left;
                     }
 
                     .momentos .content{
@@ -1195,14 +1201,85 @@ export default css.homeStyle`
 
                 @media (min-width: 768px) and (max-width: 1024px) {
 
-                    .banner, .banner2, .banner3 {
-                        background-position-x: 55%;
-                    }
-
-
                     .swiper-container{
                         width: 80%;
                     }
+
+
+                    .home-container {
+                        top: 0px;
+                    }
+
+                    .swiper-titulo-container{
+
+                        position: absolute;
+                        z-index: 9999;
+                        align-items: center;
+                        height: 100vh;
+                        justify-content: center;
+
+                    }
+
+                    .titulo-banner {
+                        width: 100vw;
+                        height: auto;
+                        align-items: center;
+                        text-align: center;
+                        position: relative;
+                        left: 0;
+
+                    }
+
+                    .titulo-banner h1{
+                        width: 70%;
+                        padding: 50px 0px;
+                        background: ${theme.backgroundSepiaTransparente};
+
+                    }
+
+
+                    .banner-container {
+                        display: none;
+                    }
+
+
+                    .banner, .banner2, .banner3{
+
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
+
+                    .banner2, .banner3 {
+                        background-position-x: 50%;
+                    }
+
+                    .banner3{
+                        background-position-x: 70%;
+                    }
+
+                    .banner h1, .banner3 h1{
+                        background: ${theme.backgroundSepia};
+                        width: 60%;
+                        margin: 0 auto;
+                        padding: 20px;
+                        color: ${theme.primaryGreen};
+                        border-style: solid;
+                        border-color: ${theme.primaryGreen};
+
+                    }
+
+                    .swiper-slide.banner2 img{
+
+                        width: 350px;
+                        background: ${theme.backgroundSepia};
+                        padding: 20px;
+                        color: #53764c;
+                        border-style: solid;
+                        border-color: #53764c;
+
+                    }
+
                     .info{
                         height: auto;
                         padding: 0px 0px 100px;
@@ -1302,18 +1379,23 @@ export default css.homeStyle`
 
                     .comminsoon {
                         height: 100vh;
-                        flex-direction: column;
+                        flex-direction: column-reverse;
                     }
 
                     .comminsoon img{
-                        left: 0%;
-                        width: 40%;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 50%;
+                        width: 35%;
                     }
 
                     .comminsoon .contenido {
                         width: 100%;
                         align-items: center;
-                        transform: translateY(30%);
+                        height: 100%;
+                        justify-content: flex-start;
+                        margin: 50px 0;
                     }
 
                     .comminsoon .contenido h1{
@@ -1332,7 +1414,12 @@ export default css.homeStyle`
 
                     .comminsoon .contenido .contenido-container {
                         width: 100%;
+                        position: relative;
+                        top:10%;
+
                     }
+
+
 
                     .momentos .content{
                         width: 80%;
@@ -1614,16 +1701,22 @@ export default css.homeStyle`
                     }
 
                     .comminsoon img{
-                        left: 0%;
-                        width: 350px;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 55%;
+                        width: 250px;
                     }
 
                     .comminsoon .contenido {
-
-                        padding: 50px 0 0;
+                        width: 100%;
+                        align-items: center;
+                        height: 100%;
+                        justify-content: flex-start;
+                        margin: 50px 0;
                     }
 
-                    .comminsoon .contenido h1{md
+                    .comminsoon .contenido h1{
                         width: 80%;
                         margin: 0 auto;
                     }
@@ -1634,14 +1727,14 @@ export default css.homeStyle`
 
                     .comminsoon .contenido h1{
                         width: 80%;
-                        font-size: 50px;
+                        font-size: 40px;
                         font-weight: 300;
                         display: flex;
                         justify-content: center;
                     }
 
                     .comminsoon h3 {
-                        font-size: 30px;
+                        font-size: 20px;
                         width: 100%;
                     }
 
