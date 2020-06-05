@@ -92,11 +92,11 @@ export default css.homeStyle`
                 }
 
                 .banner2{
-                    background-image: url('../../static/imgs/banner2.png');
+                    background-image: url('../../static/imgs/banner2.jpg');
                 }
 
                 .banner3{
-                    background-image: url('../../static/imgs/banner3.png');
+                    background-image: url('../../static/imgs/banner3.jpg');
                 }
 
 
@@ -872,6 +872,12 @@ export default css.homeStyle`
 
                 }
 
+
+
+
+
+
+
                 @media (min-width: 1281px) and (max-width: 1650px) {
 
                     .titulo-banner{
@@ -1019,7 +1025,27 @@ export default css.homeStyle`
 
                 }
 
+                @media (min-width: 1281px) and (max-width: 1445px) {
 
+                    .banner-container .cortina, .banner-container .cortina-dos, .banner-container .cortina-tres{
+                        width: 65vw;
+                        left: 0%;
+
+                    }
+
+                    .banner-container .cortina-dos
+                    {
+
+                        left: 40%;
+                    }
+
+                    .banner-container .cortina-tres {
+
+                        left: 50%;
+                    }
+
+
+                }
 
 
                 /*
@@ -1432,6 +1458,10 @@ export default css.homeStyle`
                     .swiper-slide img{
                         width: 200px;
 
+                    }
+
+                    :global(.swiper-button-prev), :global(.swiper-button-next) {
+                        width: 100px;
                     }
                 }
 

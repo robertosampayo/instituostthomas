@@ -31,6 +31,8 @@ export const Layout = ({title, children}) => {
         const hideMenuMobile = () => {
             menu.current.classList.remove('menu-opened')
             menu.current.classList.add('menu-closed')
+
+
         }
 
         return <div>
