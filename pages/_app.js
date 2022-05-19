@@ -1,68 +1,23 @@
 // import App from 'next/app'
-import App, { Container } from 'next/app'
 import 'swiper/css/swiper.css'
-import React, { useState, useEffect, useRef } from 'react'
-// import 'react-id-swiper/lib/styles/css/swiper.css'
-import { TimelineLite, Power4, CSSPlugin, gsap } from 'gsap'
-import Router from 'next/router'
+import React from 'react'
 import { PageTransition } from 'next-page-transitions'
 import 'nprogress/nprogress.css'
-import Cargador from '../components/Cargador'
 import { theme } from '../styles/theme'
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 function MyApp({ Component, pageProps, router }) {
 
-  // const [tl] = useState(new TimelineLite({}))
-  // let cortina1 = useRef();
-  // let cortina2 = useRef();
-  // let cortina3 = useRef();
-
-
-
-  // useEffect(() => {
-
-  //     tl.to(cortina3.current, {duration: 1.5,  css:{left: '0%'}, ease: Power4.easeInOut})
-  //     tl.to(cortina2.current, {duration: 1.5,  css:{left: '0%'}, ease: Power4.easeInOut}, '-=1.3')
-  //     tl.to(cortina1.current, {duration: 1.5,  css:{left: '0%'}, ease: Power4.easeInOut}, '-=1.3')
-
-
-  //     tl.to(cortina1.current, {duration: 1.5,  css:{left: '-120%'},  ease: Power4.easeInOut})
-  //     tl.to(cortina2.current, {duration: 1.5,  css:{left: '-120%'}, ease: Power4.easeInOut},'-=1.3')
-  //     tl.to(cortina3.current, {duration: 1.5,  css:{left: '-120%'},  ease: Power4.easeInOut},'-=1.3')
-
-
-  // }, [Component])
-
-
-
 
   return (
       <div>
 
-
-            {/* <Cargador /> */}
-              {/* <div className='cortina1' ref={cortina1}></div>
-              <div className='cortina2' ref={cortina2}></div>
-              <div className='cortina3' ref={cortina3}></div> */}
-
-        <PageTransition key={router.pathname} timeout={1000}
-            classNames="page-transition"
-            // loadingComponent={<Cargador />}
-            // loadingDelay={500}
-            // loadingTimeout={{
-            //   enter: 400,
-            //   exit: 0,
-            // }}
-            loadingClassNames="loading-indicator"
-            >
             <ParallaxProvider key={router.route + '-2' }>
 
                   <Component {...pageProps} key={router.route} />
               </ParallaxProvider>
 
-            </PageTransition>
 
 
             <style jsx global>{`

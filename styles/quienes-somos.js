@@ -233,6 +233,7 @@ export default css.quienesSomosStyle`
                     width: 60%;
                     margin: 0 auto;
                     display: flex;
+                    gap: 10%;
                 }
 
 
@@ -245,7 +246,7 @@ export default css.quienesSomosStyle`
                     display: flex;
                     justify-content: center;
                     position: relative;
-                    z-index: 999;
+                    z-index: -1;
                     width: 50%;
                     display: flex;
                     justify-content: end;
